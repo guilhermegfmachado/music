@@ -1,0 +1,266 @@
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.selectors {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.selectorLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.selectorInput {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  transition: border-color 0.15s;
+}
+
+.selectorInput:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.vs {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding-bottom: 0.5rem;
+}
+
+.comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sideGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .sideGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sideCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.badgeA {
+  background: #818cf8;
+  color: white;
+}
+
+.badgeB {
+  background: #f472b6;
+  color: white;
+}
+
+.scaleName {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cardMeta, .moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.formula {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.interval {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: var(--tag-bg);
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.analysis {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.analysisTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.analysisGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.analysisSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.analysisSubtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.none {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.toneList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tone {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+}
+
+.toneShared {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.toneA {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.toneB {
+  background: #fce7f3;
+  color: #9d174d;
+}
+
+[data-theme="dark"] .toneA {
+  background: #1e1b4b;
+  color: #a5b4fc;
+}
+
+[data-theme="dark"] .toneB {
+  background: #500724;
+  color: #fbcfe8;
+}
+
+.charCompare {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.charTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.charTable th {
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  font-weight: 600;
+}
+
+.charTable td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.charTable td:first-child {
+  color: var(--text-muted);
+}
+
+.placeholder {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  border: 1px dashed var(--border);
+}

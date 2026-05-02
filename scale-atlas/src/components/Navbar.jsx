@@ -1,0 +1,29 @@
+import { Link, NavLink } from 'react-router-dom'
+import styles from './Navbar.module.css'
+
+export default function Navbar({ theme, onThemeToggle }) {
+  return (
+    <nav className={styles.nav}>
+      <div className={`container ${styles.inner}`}>
+        <Link to="/" className={styles.logo}>
+          <span className={styles.logoIcon}>♪</span>
+          Scale Atlas
+        </Link>
+        <div className={styles.links}>
+          <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Explore
+          </NavLink>
+          <NavLink to="/compare" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Compare
+          </NavLink>
+          <NavLink to="/practice" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Practice
+          </NavLink>
+        </div>
+        <button className={styles.themeBtn} onClick={onThemeToggle} aria-label="Toggle theme">
+          {theme === 'light' ? '🌙' : '☀️'}
+        </button>
+      </div>
+    </nav>
+  )
+}

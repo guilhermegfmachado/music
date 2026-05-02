@@ -1,0 +1,94 @@
+.wrapper {
+  overflow-x: auto;
+}
+
+.fretboard {
+  display: flex;
+  flex-direction: column;
+  min-width: 440px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #2d1b0e;
+}
+
+.stringLabels {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.stringLabel {
+  font-size: 0.65rem;
+  color: #aaa;
+}
+
+.frets {
+  padding: 0.25rem 0;
+}
+
+.string {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  position: relative;
+  height: 28px;
+  align-items: center;
+}
+
+.stringLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #c0a060, #8a6020);
+  z-index: 0;
+}
+
+.fretCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: 2px solid #4a3020;
+  z-index: 1;
+  position: relative;
+}
+
+.fretCell:first-child {
+  border-right: 3px solid #8a6020;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.85;
+  z-index: 2;
+}
+
+.rootDot {
+  background: #f59e0b;
+  opacity: 1;
+}
+
+.fretNumbers {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  background: #1a0e06;
+  padding: 2px 0;
+}
+
+.fretNumCell {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #888;
+  font-family: monospace;
+}
+
+.note {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}

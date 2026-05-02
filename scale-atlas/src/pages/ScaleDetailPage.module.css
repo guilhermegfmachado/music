@@ -1,0 +1,260 @@
+.page {
+  padding-bottom: 4rem;
+}
+
+.inner {
+  padding-top: 1.5rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.aliases {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.favBtn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.favBtn:hover {
+  border-color: #e11d48;
+  color: #e11d48;
+}
+
+.favActive {
+  border-color: #e11d48;
+  color: #e11d48;
+}
+
+.metaRow, .moodRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.para {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.theoryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.theoryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.theoryLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.theoryValue {
+  font-size: 0.875rem;
+  color: var(--text);
+  font-family: monospace;
+}
+
+.subTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.intervalList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.intervalRow {
+  display: grid;
+  grid-template-columns: 60px 40px 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.degree {
+  font-weight: 700;
+  color: var(--text);
+  font-family: monospace;
+}
+
+.semiNum {
+  color: var(--accent);
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.intervalName {
+  color: var(--text-muted);
+}
+
+.vizSection {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.vizTabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.vizTab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+  margin-bottom: -1px;
+}
+
+.vizTab:hover {
+  color: var(--text);
+  background: var(--bg-secondary);
+}
+
+.vizTabActive {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.vizPanel {
+  padding: 1.25rem;
+}
+
+.relatedList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.relatedCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.relatedCard:hover {
+  background: var(--accent-light);
+  text-decoration: none;
+}
+
+.relatedName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.relatedRegion {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.compareLink {
+  padding-top: 0.25rem;
+}

@@ -1,0 +1,10 @@
+.wrapper {
+  overflow-x: auto;
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+}
+
+.svg {
+  display: block;
+}

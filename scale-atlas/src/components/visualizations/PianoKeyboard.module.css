@@ -1,0 +1,88 @@
+.wrapper {
+  overflow-x: auto;
+}
+
+.keyboard {
+  position: relative;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  min-width: 280px;
+  max-width: 520px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.white {
+  flex: 1;
+  background: white;
+  border-right: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 6px;
+  cursor: default;
+  position: relative;
+  z-index: 1;
+}
+
+.white:last-child {
+  border-right: none;
+}
+
+.whiteActive {
+  background: #c7d2fe;
+}
+
+.root {
+  background: var(--accent) !important;
+}
+
+.label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.black {
+  position: absolute;
+  top: 0;
+  width: 6%;
+  height: 60%;
+  background: #1a1a1a;
+  border-radius: 0 0 3px 3px;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5px;
+  transform: translateX(-50%);
+  cursor: default;
+}
+
+.blackActive {
+  background: #4f46e5;
+}
+
+.dotBlack {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+}
+
+.note {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
