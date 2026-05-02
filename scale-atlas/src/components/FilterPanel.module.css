@@ -3,6 +3,12 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 720px) {
+  .panel {
+    width: 100%;
+  }
+}
+
 .panelHeader {
   display: flex;
   align-items: center;

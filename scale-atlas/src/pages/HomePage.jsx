@@ -5,6 +5,10 @@ import { searchScales, filterScales } from '../utils/searchUtils.js'
 import { useFavorites } from '../hooks/useFavorites.js'
 import styles from './HomePage.module.css'
 
+function hasActiveFilters(filters) {
+  return Object.values(filters).some(v => v !== '' && v !== null && v !== undefined)
+}
+
 const EMPTY_FILTERS = {
   culture: '',
   region: '',
@@ -18,6 +22,7 @@ const EMPTY_FILTERS = {
 export default function HomePage({ scales }) {
   const [query, setQuery] = useState('')
   const [filters, setFilters] = useState(EMPTY_FILTERS)
+  const [filterOpen, setFilterOpen] = useState(false)
   const { favorites, toggleFavorite, isFavorite } = useFavorites()
 
   const results = useMemo(() => {
@@ -54,12 +59,14 @@ export default function HomePage({ scales }) {
       </header>
 
       <div className={`container ${styles.body}`}>
-        <FilterPanel
-          scales={scales}
-          filters={filters}
-          onChange={setFilters}
-          onReset={resetFilters}
-        />
+        <div className={`${styles.filterWrapper} ${filterOpen ? styles.filterOpen : ''}`}>
+          <FilterPanel
+            scales={scales}
+            filters={filters}
+            onChange={setFilters}
+            onReset={resetFilters}
+          />
+        </div>
 
         <main className={styles.main}>
           <div className={styles.resultsHeader}>
@@ -67,6 +74,12 @@ export default function HomePage({ scales }) {
               {results.length} scale{results.length !== 1 ? 's' : ''}
               {query && ` matching "${query}"`}
             </span>
+            <button
+              className={`${styles.filterToggle} ${hasActiveFilters(filters) ? styles.filterToggleActive : ''}`}
+              onClick={() => setFilterOpen(o => !o)}
+            >
+              ⚙ Filters{hasActiveFilters(filters) ? ' •' : ''}
+            </button>
           </div>
 
           {results.length === 0 ? (

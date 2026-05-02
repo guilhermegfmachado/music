@@ -77,18 +77,81 @@
   align-items: flex-start;
 }
 
+.filterWrapper {
+  flex-shrink: 0;
+}
+
 .main {
   flex: 1;
   min-width: 0;
 }
 
 .resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
 .count {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.filterToggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: all 0.15s;
+}
+
+.filterToggle:hover, .filterToggleActive {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .body {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 1.25rem;
+  }
+
+  .filterWrapper {
+    display: none;
+    width: 100%;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1rem;
+  }
+
+  .filterWrapper.filterOpen {
+    display: block;
+  }
+
+  .filterToggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 721px) {
+  .filterToggle {
+    display: none !important;
+  }
 }
 
 .grid {

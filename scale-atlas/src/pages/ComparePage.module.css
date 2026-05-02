@@ -22,6 +22,18 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 500px) {
+  .selectors {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vs {
+    text-align: center;
+    padding-bottom: 0;
+  }
+}
+
 .selector {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,35 @@
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-card);
+  padding: 1.25rem 0;
+  margin-top: 2rem;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.ghLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.ghLink:hover {
+  color: var(--text);
+  text-decoration: none;
+}
