@@ -54,17 +54,24 @@ function midiToFreq(midi) {
 
 export async function playScale(intervalFormula, { timbre = 'piano', tempo = 120, rootMidi = 60 } = {}) {
   await Tone.start()
+
+  Tone.Transport.stop()
+  Tone.Transport.cancel()
+  Tone.Transport.position = 0
+
   const s = getSynth(timbre)
   const notes = [...intervalsToMidi(intervalFormula, rootMidi), rootMidi + 12]
   const noteDur = 60 / tempo
-  const now = Tone.now()
 
   notes.forEach((midi, i) => {
     const freq = midiToFreq(midi)
-    s.triggerAttackRelease(freq, noteDur * 0.9, now + i * noteDur)
+    Tone.Transport.schedule((time) => {
+      s.triggerAttackRelease(freq, noteDur * 0.9, time)
+    }, i * noteDur)
   })
 
-  return (60 / tempo) * notes.length * 1000
+  Tone.Transport.start()
+  return noteDur * notes.length * 1000
 }
 
 export async function playChord(intervalFormula, { timbre = 'piano', rootMidi = 60 } = {}) {
@@ -76,7 +83,10 @@ export async function playChord(intervalFormula, { timbre = 'piano', rootMidi = 
 }
 
 export function stopAll() {
+  Tone.Transport.stop()
+  Tone.Transport.cancel()
   if (synth) {
     synth.releaseAll()
   }
 }
+

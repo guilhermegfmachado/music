@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { playScale, stopAll } from '../utils/audioUtils.js'
 import styles from './AudioPlayer.module.css'
 
@@ -19,21 +19,34 @@ export default function AudioPlayer({ scale }) {
   const [tempo, setTempo] = useState(80)
   const [root, setRoot] = useState('C')
   const timeoutRef = useRef(null)
+  const playingRef = useRef(false)
 
-  async function handlePlay() {
-    if (playing) {
+  useEffect(() => {
+    return () => {
       stopAll()
       clearTimeout(timeoutRef.current)
+    }
+  }, [])
+
+  async function handlePlay() {
+    if (playingRef.current) {
+      stopAll()
+      clearTimeout(timeoutRef.current)
+      playingRef.current = false
       setPlaying(false)
       return
     }
+    playingRef.current = true
     setPlaying(true)
     const duration = await playScale(scale.intervalFormula, {
       timbre,
       tempo,
       rootMidi: ROOT_MIDI[root],
     })
-    timeoutRef.current = setTimeout(() => setPlaying(false), duration + 200)
+    timeoutRef.current = setTimeout(() => {
+      playingRef.current = false
+      setPlaying(false)
+    }, duration + 200)
   }
 
   return (
