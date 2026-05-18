@@ -122,15 +122,57 @@ input, select {
 .tag-accent {
   background: var(--accent-light);
   color: var(--accent);
-  border: 1px solid var(--border);
 }
 
-/* All mood tags use the same muted system — clean, museum-like */
-.tag-bright, .tag-dark, .tag-melancholic, .tag-mysterious, .tag-devotional,
-.tag-romantic, .tag-exotic, .tag-bluesy, .tag-soulful, .tag-folk, .tag-modal,
-.tag-expressive, .tag-dreamlike, .tag-tense, .tag-meditative, .tag-hypnotic,
-.tag-nostalgic, .tag-morning, .tag-evening, .tag-neutral, .tag-calm,
-.tag-sophisticated, .tag-dramatic, .tag-sparse, .tag-ambiguous {
-  background: var(--tag-bg);
-  color: var(--text-muted);
-}
+/* Pastel mood tags */
+.tag-bright      { background: #fef9c3; color: #7a5c00; }
+.tag-morning     { background: #fef3c7; color: #7a4e00; }
+.tag-neutral     { background: #ece9f8; color: #4a4470; }
+.tag-calm        { background: #d1fae5; color: #1a5c40; }
+.tag-folk        { background: #dcfce7; color: #1a5c34; }
+.tag-modal       { background: #d1fae5; color: #1a5240; }
+.tag-bluesy      { background: #dbeafe; color: #1e4080; }
+.tag-soulful     { background: #bfdbfe; color: #1a3a7a; }
+.tag-dreamlike   { background: #e0f2fe; color: #0a4a6e; }
+.tag-hypnotic    { background: #c7d2fe; color: #2a2a80; }
+.tag-meditative  { background: #ede9fe; color: #4c1d95; }
+.tag-mysterious  { background: #e9d5ff; color: #5b1a8a; }
+.tag-expressive  { background: #fce7f3; color: #7a1a5a; }
+.tag-devotional  { background: #fce7f3; color: #7a1048; }
+.tag-romantic    { background: #ffe4e6; color: #7a1030; }
+.tag-melancholic { background: #e0e7ff; color: #2a2a80; }
+.tag-nostalgic   { background: #fed7aa; color: #7a3010; }
+.tag-exotic      { background: #fde68a; color: #7a4a00; }
+.tag-dramatic    { background: #fecaca; color: #7a1a1a; }
+.tag-tense       { background: #fee2e2; color: #7a1010; }
+.tag-dark        { background: #c7d2fe; color: #1e1a60; }
+.tag-evening     { background: #ddd6fe; color: #3b1a7a; }
+.tag-sophisticated { background: #ede9fe; color: #4a1a8a; }
+.tag-sparse      { background: #f1f5f9; color: #3a4a5a; }
+.tag-ambiguous   { background: #e8e5f5; color: #3a3460; }
+
+[data-theme="dark"] .tag-bright      { background: #3a2e00; color: #fde68a; }
+[data-theme="dark"] .tag-morning     { background: #3a2400; color: #fcd34d; }
+[data-theme="dark"] .tag-neutral     { background: #252238; color: #b8b0d8; }
+[data-theme="dark"] .tag-calm        { background: #042e1a; color: #6ee7b7; }
+[data-theme="dark"] .tag-folk        { background: #052e16; color: #86efac; }
+[data-theme="dark"] .tag-modal       { background: #042e1a; color: #6ee7b7; }
+[data-theme="dark"] .tag-bluesy      { background: #1e2e6a; color: #93c5fd; }
+[data-theme="dark"] .tag-soulful     { background: #1a2e5a; color: #7dd3fc; }
+[data-theme="dark"] .tag-dreamlike   { background: #0c3050; color: #7dd3fc; }
+[data-theme="dark"] .tag-hypnotic    { background: #1e1a60; color: #c7d2fe; }
+[data-theme="dark"] .tag-meditative  { background: #2e1065; color: #c4b5fd; }
+[data-theme="dark"] .tag-mysterious  { background: #2e0a6a; color: #d8b4fe; }
+[data-theme="dark"] .tag-expressive  { background: #4a0a3a; color: #f9a8d4; }
+[data-theme="dark"] .tag-devotional  { background: #4a0a30; color: #fbcfe8; }
+[data-theme="dark"] .tag-romantic    { background: #4c0a20; color: #fda4af; }
+[data-theme="dark"] .tag-melancholic { background: #1e1a60; color: #a5b4fc; }
+[data-theme="dark"] .tag-nostalgic   { background: #431407; color: #fed7aa; }
+[data-theme="dark"] .tag-exotic      { background: #3a2800; color: #fde68a; }
+[data-theme="dark"] .tag-dramatic    { background: #4c0a0a; color: #fca5a5; }
+[data-theme="dark"] .tag-tense       { background: #4c0505; color: #fca5a5; }
+[data-theme="dark"] .tag-dark        { background: #1a1a50; color: #a5b4fc; }
+[data-theme="dark"] .tag-evening     { background: #2a1060; color: #c4b5fd; }
+[data-theme="dark"] .tag-sophisticated { background: #2e0a6a; color: #d8b4fe; }
+[data-theme="dark"] .tag-sparse      { background: #1e2530; color: #94a3b8; }
+[data-theme="dark"] .tag-ambiguous   { background: #252238; color: #b8b0d8; }
