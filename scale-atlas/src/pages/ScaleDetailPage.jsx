@@ -5,13 +5,14 @@ import PianoKeyboard from '../components/visualizations/PianoKeyboard.jsx'
 import GuitarFretboard from '../components/visualizations/GuitarFretboard.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
 import StaffNotation from '../components/visualizations/StaffNotation.jsx'
+import ViolinFingerboard from '../components/visualizations/ViolinFingerboard.jsx'
 import { getRelatedScales, getIntervalName, intervalsToSemitones } from '../utils/scaleUtils.js'
 import { HeartIcon, PlayIcon, ExternalLinkIcon } from '../components/icons.jsx'
 import { useFavorites } from '../hooks/useFavorites.js'
 import { useRecentlyViewed } from '../hooks/useRecentlyViewed.js'
 import styles from './ScaleDetailPage.module.css'
 
-const VIEWS = ['Piano', 'Fretboard', 'Interval', 'Staff']
+const VIEWS = ['Piano', 'Fretboard', 'Violin', 'Interval', 'Staff']
 
 export default function ScaleDetailPage({ scales }) {
   const { id } = useParams()
@@ -100,6 +101,7 @@ export default function ScaleDetailPage({ scales }) {
               <div className={styles.vizPanel}>
                 {activeView === 'Piano' && <PianoKeyboard scale={scale} />}
                 {activeView === 'Fretboard' && <GuitarFretboard scale={scale} />}
+                {activeView === 'Violin' && <ViolinFingerboard scale={scale} />}
                 {activeView === 'Interval' && <IntervalDiagram scale={scale} />}
                 {activeView === 'Staff' && <StaffNotation scale={scale} />}
               </div>
