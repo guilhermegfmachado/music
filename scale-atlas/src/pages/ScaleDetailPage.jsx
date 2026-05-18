@@ -6,6 +6,7 @@ import GuitarFretboard from '../components/visualizations/GuitarFretboard.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
 import StaffNotation from '../components/visualizations/StaffNotation.jsx'
 import { getRelatedScales, getIntervalName, intervalsToSemitones } from '../utils/scaleUtils.js'
+import { HeartIcon } from '../components/icons.jsx'
 import { useFavorites } from '../hooks/useFavorites.js'
 import { useRecentlyViewed } from '../hooks/useRecentlyViewed.js'
 import styles from './ScaleDetailPage.module.css'
@@ -63,7 +64,7 @@ export default function ScaleDetailPage({ scales }) {
                 className={`${styles.favBtn} ${fav ? styles.favActive : ''}`}
                 onClick={() => toggleFavorite(scale.id)}
               >
-                {fav ? '♥ Saved' : '♡ Save'}
+                <HeartIcon size={13} filled={fav} /> {fav ? 'Saved' : 'Save'}
               </button>
             </div>
 

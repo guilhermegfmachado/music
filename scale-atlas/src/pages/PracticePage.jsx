@@ -1,7 +1,8 @@
-import { useState, useCallback } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AudioPlayer from '../components/AudioPlayer.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
+import { CardIcon, LightbulbIcon, ShuffleIcon } from '../components/icons.jsx'
 import styles from './PracticePage.module.css'
 
 function shuffle(arr) {
@@ -148,7 +149,7 @@ function RandomExplorer({ scales }) {
       <div className={styles.explorerHeader}>
         <h2 className={styles.explorerName}>{scale.name}</h2>
         <button className="btn btn-ghost" onClick={() => setScale(randomScale(scales))}>
-          🎲 Random
+          <ShuffleIcon size={13} /> Random
         </button>
       </div>
       <div className={styles.explorerMeta}>
@@ -168,9 +169,9 @@ function RandomExplorer({ scales }) {
 }
 
 const MODES = [
-  { id: 'flashcard', label: '🃏 Flashcards', desc: 'Study scales one by one' },
-  { id: 'quiz', label: '🧠 Quiz', desc: 'Identify scales by their intervals' },
-  { id: 'random', label: '🎲 Random', desc: 'Discover a random scale' },
+  { id: 'flashcard', Icon: CardIcon, label: 'Flashcards', desc: 'Study scales one by one' },
+  { id: 'quiz', Icon: LightbulbIcon, label: 'Quiz', desc: 'Identify scales by their intervals' },
+  { id: 'random', Icon: ShuffleIcon, label: 'Random', desc: 'Discover a random scale' },
 ]
 
 export default function PracticePage({ scales }) {
@@ -184,14 +185,14 @@ export default function PracticePage({ scales }) {
         <p className={styles.subtitle}>Ear training, scale recognition, and exploration.</p>
 
         <div className={styles.modeBar}>
-          {MODES.map(m => (
+          {MODES.map(({ id, Icon, label, desc }) => (
             <button
-              key={m.id}
-              className={`${styles.modeBtn} ${mode === m.id ? styles.modeBtnActive : ''}`}
-              onClick={() => setMode(m.id)}
+              key={id}
+              className={`${styles.modeBtn} ${mode === id ? styles.modeBtnActive : ''}`}
+              onClick={() => setMode(id)}
             >
-              <span className={styles.modeLabel}>{m.label}</span>
-              <span className={styles.modeDesc}>{m.desc}</span>
+              <span className={styles.modeLabel}><Icon size={14} /> {label}</span>
+              <span className={styles.modeDesc}>{desc}</span>
             </button>
           ))}
         </div>

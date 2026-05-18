@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { NoteIcon, MoonIcon, SunIcon } from './icons.jsx'
 import styles from './Navbar.module.css'
 
 export default function Navbar({ theme, onThemeToggle }) {
@@ -6,7 +7,7 @@ export default function Navbar({ theme, onThemeToggle }) {
     <nav className={styles.nav}>
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.logo}>
-          <span className={styles.logoIcon}>♪</span>
+          <NoteIcon size={18} />
           Scale Atlas
         </Link>
         <div className={styles.links}>
@@ -21,7 +22,7 @@ export default function Navbar({ theme, onThemeToggle }) {
           </NavLink>
         </div>
         <button className={styles.themeBtn} onClick={onThemeToggle} aria-label="Toggle theme">
-          {theme === 'light' ? '🌙' : '☀️'}
+          {theme === 'light' ? <MoonIcon size={16} /> : <SunIcon size={16} />}
         </button>
       </div>
     </nav>

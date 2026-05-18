@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import ScaleCard from '../components/ScaleCard.jsx'
 import FilterPanel from '../components/FilterPanel.jsx'
+import { SearchIcon, SlidersIcon, CloseIcon } from '../components/icons.jsx'
 import { searchScales, filterScales } from '../utils/searchUtils.js'
 import { useFavorites } from '../hooks/useFavorites.js'
 import styles from './HomePage.module.css'
@@ -43,7 +44,7 @@ export default function HomePage({ scales }) {
             An encyclopedia of musical scales from world traditions — from Indian ragas to Japanese koto tunings, Arabic maqamat to Western modes.
           </p>
           <div className={styles.searchBar}>
-            <span className={styles.searchIcon}>🔍</span>
+            <span className={styles.searchIcon}><SearchIcon size={15} /></span>
             <input
               type="text"
               placeholder="Search scales, cultures, regions…"
@@ -52,7 +53,7 @@ export default function HomePage({ scales }) {
               className={styles.searchInput}
             />
             {query && (
-              <button className={styles.clearBtn} onClick={() => setQuery('')}>✕</button>
+              <button className={styles.clearBtn} onClick={() => setQuery('')}><CloseIcon size={11} /></button>
             )}
           </div>
         </div>
@@ -78,7 +79,7 @@ export default function HomePage({ scales }) {
               className={`${styles.filterToggle} ${hasActiveFilters(filters) ? styles.filterToggleActive : ''}`}
               onClick={() => setFilterOpen(o => !o)}
             >
-              ⚙ Filters{hasActiveFilters(filters) ? ' •' : ''}
+              <SlidersIcon size={13} /> Filters{hasActiveFilters(filters) ? ' •' : ''}
             </button>
           </div>
 

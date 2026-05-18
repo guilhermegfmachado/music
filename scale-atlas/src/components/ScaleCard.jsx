@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { HeartIcon } from './icons.jsx'
 import styles from './ScaleCard.module.css'
 
 export default function ScaleCard({ scale, isFavorite, onToggleFavorite }) {
@@ -16,7 +17,7 @@ export default function ScaleCard({ scale, isFavorite, onToggleFavorite }) {
           onClick={(e) => { e.preventDefault(); onToggleFavorite(scale.id) }}
           aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
         >
-          {isFavorite ? '♥' : '♡'}
+          <HeartIcon size={15} filled={isFavorite} />
         </button>
       </div>
 
