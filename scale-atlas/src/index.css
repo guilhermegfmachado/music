@@ -5,37 +5,37 @@
 }
 
 :root {
-  --bg: #faf7f2;
-  --bg-secondary: #f3ede4;
+  --bg: #f7f6f2;
+  --bg-secondary: #efede8;
   --bg-card: #ffffff;
-  --border: #e5d9cc;
-  --text: #1c1208;
-  --text-muted: #7a6555;
-  --accent: #b84a2a;
-  --accent-hover: #9a3a1e;
-  --accent-light: #fdf0eb;
-  --tag-bg: #f0e8df;
-  --shadow: 0 1px 3px rgba(60,30,10,0.08), 0 1px 2px rgba(60,30,10,0.05);
-  --shadow-md: 0 4px 6px rgba(60,30,10,0.08), 0 2px 4px rgba(60,30,10,0.05);
-  --radius: 8px;
-  --radius-sm: 4px;
+  --border: #dddbd5;
+  --text: #111110;
+  --text-muted: #6b6b68;
+  --accent: #111110;
+  --accent-hover: #333330;
+  --accent-light: #ebebea;
+  --tag-bg: #e8e7e2;
+  --shadow: 0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --radius: 6px;
+  --radius-sm: 3px;
   --font: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   --font-heading: 'Fraunces', Georgia, serif;
 }
 
 [data-theme="dark"] {
-  --bg: #160e08;
-  --bg-secondary: #1f1510;
-  --bg-card: #261a12;
-  --border: #3a2618;
-  --text: #f0e6da;
-  --text-muted: #a08878;
-  --accent: #e07050;
-  --accent-hover: #c85c3c;
-  --accent-light: #2e1508;
-  --tag-bg: #301e14;
-  --shadow: 0 1px 3px rgba(0,0,0,0.4);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+  --bg: #0e0e0d;
+  --bg-secondary: #161615;
+  --bg-card: #1c1c1a;
+  --border: #2e2e2b;
+  --text: #f0eeea;
+  --text-muted: #888884;
+  --accent: #f0eeea;
+  --accent-hover: #d0cec8;
+  --accent-light: #242420;
+  --tag-bg: #252521;
+  --shadow: 0 1px 3px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 html {
@@ -92,7 +92,7 @@ input, select {
 
 .btn-primary {
   background: var(--accent);
-  color: white;
+  color: var(--bg);
 }
 
 .btn-primary:hover {
@@ -122,56 +122,15 @@ input, select {
 .tag-accent {
   background: var(--accent-light);
   color: var(--accent);
+  border: 1px solid var(--border);
 }
 
-.tag-bright { background: #fef9c3; color: #854d0e; }
-.tag-dark { background: #1e1b4b; color: #a5b4fc; }
-.tag-melancholic { background: #e0e7ff; color: #3730a3; }
-.tag-mysterious { background: #ede9fe; color: #6d28d9; }
-.tag-devotional { background: #fce7f3; color: #9d174d; }
-.tag-romantic { background: #ffe4e6; color: #9f1239; }
-.tag-exotic { background: #fef3c7; color: #92400e; }
-.tag-bluesy { background: #dbeafe; color: #1e40af; }
-.tag-soulful { background: #e0f2fe; color: #075985; }
-.tag-folk { background: #dcfce7; color: #166534; }
-.tag-modal { background: #f0fdf4; color: #15803d; }
-.tag-expressive { background: #fdf4ff; color: #86198f; }
-.tag-dreamlike { background: #f0f9ff; color: #0c4a6e; }
-.tag-tense { background: #fff1f2; color: #9f1239; }
-.tag-meditative { background: #f5f3ff; color: #5b21b6; }
-.tag-hypnotic { background: #eff6ff; color: #1e3a8a; }
-.tag-nostalgic { background: #fff7ed; color: #9a3412; }
-.tag-morning { background: #fffbeb; color: #92400e; }
-.tag-evening { background: #1e1b4b; color: #c7d2fe; }
-.tag-neutral { background: #f1f5f9; color: #475569; }
-.tag-calm { background: #ecfdf5; color: #065f46; }
-.tag-sophisticated { background: #faf5ff; color: #7e22ce; }
-.tag-dramatic { background: #fff1f2; color: #be123c; }
-.tag-sparse { background: #f8fafc; color: #64748b; }
-.tag-ambiguous { background: #f8f8f8; color: #6b7280; }
-
-[data-theme="dark"] .tag-bright { background: #422006; color: #fde68a; }
-[data-theme="dark"] .tag-dark { background: #1e1b4b; color: #a5b4fc; }
-[data-theme="dark"] .tag-melancholic { background: #1e1b4b; color: #a5b4fc; }
-[data-theme="dark"] .tag-mysterious { background: #2e1065; color: #c4b5fd; }
-[data-theme="dark"] .tag-folk { background: #052e16; color: #86efac; }
-[data-theme="dark"] .tag-devotional { background: #500724; color: #fbcfe8; }
-[data-theme="dark"] .tag-bluesy { background: #1e3a8a; color: #93c5fd; }
-[data-theme="dark"] .tag-neutral { background: #1e293b; color: #94a3b8; }
-[data-theme="dark"] .tag-calm { background: #022c22; color: #6ee7b7; }
-[data-theme="dark"] .tag-tense { background: #4c0519; color: #fda4af; }
-[data-theme="dark"] .tag-exotic { background: #451a03; color: #fcd34d; }
-[data-theme="dark"] .tag-dramatic { background: #4c0519; color: #fda4af; }
-[data-theme="dark"] .tag-romantic { background: #4c0519; color: #fda4af; }
-[data-theme="dark"] .tag-morning { background: #451a03; color: #fcd34d; }
-[data-theme="dark"] .tag-evening { background: #1e1b4b; color: #c7d2fe; }
-[data-theme="dark"] .tag-modal { background: #052e16; color: #86efac; }
-[data-theme="dark"] .tag-expressive { background: #3b0764; color: #e9d5ff; }
-[data-theme="dark"] .tag-dreamlike { background: #0c4a6e; color: #7dd3fc; }
-[data-theme="dark"] .tag-meditative { background: #2e1065; color: #c4b5fd; }
-[data-theme="dark"] .tag-hypnotic { background: #1e3a8a; color: #93c5fd; }
-[data-theme="dark"] .tag-nostalgic { background: #431407; color: #fed7aa; }
-[data-theme="dark"] .tag-sophisticated { background: #3b0764; color: #e9d5ff; }
-[data-theme="dark"] .tag-soulful { background: #0c4a6e; color: #7dd3fc; }
-[data-theme="dark"] .tag-ambiguous { background: #1e293b; color: #94a3b8; }
-[data-theme="dark"] .tag-sparse { background: #1e293b; color: #94a3b8; }
+/* All mood tags use the same muted system — clean, museum-like */
+.tag-bright, .tag-dark, .tag-melancholic, .tag-mysterious, .tag-devotional,
+.tag-romantic, .tag-exotic, .tag-bluesy, .tag-soulful, .tag-folk, .tag-modal,
+.tag-expressive, .tag-dreamlike, .tag-tense, .tag-meditative, .tag-hypnotic,
+.tag-nostalgic, .tag-morning, .tag-evening, .tag-neutral, .tag-calm,
+.tag-sophisticated, .tag-dramatic, .tag-sparse, .tag-ambiguous {
+  background: var(--tag-bg);
+  color: var(--text-muted);
+}
