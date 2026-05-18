@@ -112,3 +112,21 @@ export function CloseIcon({ size = 12 }) {
     </svg>
   )
 }
+
+export function PlayIcon({ size = 14 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 14 14" fill="currentColor">
+      <polygon points="3,2 12,7 3,12" />
+    </svg>
+  )
+}
+
+export function ExternalLinkIcon({ size = 12 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 2H2a1 1 0 00-1 1v7a1 1 0 001 1h7a1 1 0 001-1V7" />
+      <path d="M8 1h3v3" />
+      <line x1="11" y1="1" x2="5" y2="7" />
+    </svg>
+  )
+}

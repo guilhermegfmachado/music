@@ -6,7 +6,7 @@ import GuitarFretboard from '../components/visualizations/GuitarFretboard.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
 import StaffNotation from '../components/visualizations/StaffNotation.jsx'
 import { getRelatedScales, getIntervalName, intervalsToSemitones } from '../utils/scaleUtils.js'
-import { HeartIcon } from '../components/icons.jsx'
+import { HeartIcon, PlayIcon, ExternalLinkIcon } from '../components/icons.jsx'
 import { useFavorites } from '../hooks/useFavorites.js'
 import { useRecentlyViewed } from '../hooks/useRecentlyViewed.js'
 import styles from './ScaleDetailPage.module.css'
@@ -171,6 +171,24 @@ export default function ScaleDetailPage({ scales }) {
               <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>Characteristic Patterns</h2>
                 <p className={styles.para}>{scale.characteristicPatterns}</p>
+              </section>
+            )}
+
+            {scale.songExamples?.length > 0 && (
+              <section className={styles.section}>
+                <h2 className={styles.sectionTitle}>Listen</h2>
+                <div className={styles.listenList}>
+                  {scale.songExamples.map((ex, i) => (
+                    <a key={i} href={ex.url} target="_blank" rel="noopener noreferrer" className={styles.listenItem}>
+                      <span className={styles.listenIcon}><PlayIcon size={12} /></span>
+                      <span className={styles.listenInfo}>
+                        <span className={styles.listenTitle}>{ex.title}</span>
+                        <span className={styles.listenArtist}>{ex.artist}</span>
+                      </span>
+                      <span className={styles.listenExternal}><ExternalLinkIcon size={11} /></span>
+                    </a>
+                  ))}
+                </div>
               </section>
             )}
 

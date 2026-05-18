@@ -150,6 +150,7 @@ input, select {
 .tag-sophisticated { background: #ede9fe; color: #4a1a8a; }
 .tag-sparse      { background: #f1f5f9; color: #3a4a5a; }
 .tag-ambiguous   { background: #e8e5f5; color: #3a3460; }
+.tag-spiritual   { background: #e0f2fe; color: #0a4a6e; }
 
 [data-theme="dark"] .tag-bright      { background: #3a2e00; color: #fde68a; }
 [data-theme="dark"] .tag-morning     { background: #3a2400; color: #fcd34d; }
@@ -176,3 +177,4 @@ input, select {
 [data-theme="dark"] .tag-sophisticated { background: #2e0a6a; color: #d8b4fe; }
 [data-theme="dark"] .tag-sparse      { background: #1e2530; color: #94a3b8; }
 [data-theme="dark"] .tag-ambiguous   { background: #252238; color: #b8b0d8; }
+[data-theme="dark"] .tag-spiritual   { background: #0c3050; color: #7dd3fc; }
