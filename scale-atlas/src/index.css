@@ -19,7 +19,8 @@
   --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06);
   --radius: 8px;
   --radius-sm: 4px;
-  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --font: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Fraunces', Georgia, serif;
 }
 
 [data-theme="dark"] {
@@ -41,6 +42,10 @@ html {
   font-family: var(--font);
   background: var(--bg);
   color: var(--text);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
 }
 
 body {
