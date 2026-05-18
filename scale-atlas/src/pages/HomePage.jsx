@@ -39,7 +39,7 @@ export default function HomePage({ scales }) {
     <div className={styles.page}>
       <header className={styles.hero}>
         <div className="container">
-          <h1 className={styles.title}>Scale Atlas</h1>
+          <h1 className={styles.title}>Svara</h1>
           <p className={styles.subtitle}>
             An encyclopedia of musical scales from world traditions — from Indian ragas to Japanese koto tunings, Arabic maqamat to Western modes.
           </p>

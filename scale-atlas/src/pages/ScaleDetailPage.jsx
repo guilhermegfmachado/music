@@ -43,7 +43,7 @@ export default function ScaleDetailPage({ scales }) {
       <div className={`container ${styles.inner}`}>
         {/* Breadcrumb */}
         <nav className={styles.breadcrumb}>
-          <Link to="/">Scale Atlas</Link>
+          <Link to="/">Svara</Link>
           <span>›</span>
           <span>{scale.region}</span>
           <span>›</span>

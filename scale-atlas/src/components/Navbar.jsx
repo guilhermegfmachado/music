@@ -8,7 +8,7 @@ export default function Navbar({ theme, onThemeToggle }) {
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.logo}>
           <NoteIcon size={18} />
-          Scale Atlas
+          Svara
         </Link>
         <div className={styles.links}>
           <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
