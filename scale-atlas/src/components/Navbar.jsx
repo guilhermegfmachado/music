@@ -14,6 +14,12 @@ export default function Navbar({ theme, onThemeToggle }) {
           <NavLink to="/" end className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
             Explore
           </NavLink>
+          <NavLink to="/map" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Map
+          </NavLink>
+          <NavLink to="/tunings" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Tunings
+          </NavLink>
           <NavLink to="/compare" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
             Compare
           </NavLink>

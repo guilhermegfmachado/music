@@ -49,6 +49,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Common Time",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Standard Western meter for classical and pop music"
+        },
+        {
+          "name": "Waltz",
+          "timeSignature": "3/4",
+          "beat": "1+2+3",
+          "description": "Triple meter dance feel"
+        }
+      ],
       "songExamples": [
         {
           "title": "Prelude in C Major",
@@ -116,6 +130,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Ballad",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Slow expressive 4/4 common in rock and classical"
+        },
+        {
+          "name": "6/8 Feel",
+          "timeSignature": "6/8",
+          "beat": "3+3",
+          "description": "Compound duple meter, common in ballads and laments"
+        }
+      ],
       "songExamples": [
         {
           "title": "Stairway to Heaven",
@@ -311,6 +339,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Jazz Groove",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Swing feel fundamental to modal jazz"
+        },
+        {
+          "name": "Funk 16ths",
+          "timeSignature": "4/4",
+          "beat": "16th-note grid",
+          "description": "16th-note funk feel with syncopated accents"
+        }
+      ],
       "songExamples": [
         {
           "title": "So What",
@@ -758,6 +800,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": true
       },
+      "rhythmPatterns": [
+        {
+          "name": "12-Bar Shuffle",
+          "timeSignature": "12/8",
+          "beat": "3+3 x4",
+          "description": "The defining blues rhythm — triplet-feel shuffle in 12/8"
+        },
+        {
+          "name": "Slow Blues",
+          "timeSignature": "12/8",
+          "beat": "3+3 x4",
+          "description": "Slow, expressive 12/8 feel for deep blues expression"
+        }
+      ],
       "songExamples": [
         {
           "title": "The Thrill Is Gone",
@@ -1027,6 +1083,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Teentaal",
+          "timeSignature": "16/16",
+          "beat": "4+4+4+4",
+          "description": "The most common taal (rhythmic cycle) in Hindustani classical music"
+        },
+        {
+          "name": "Jhaptaal",
+          "timeSignature": "10/16",
+          "beat": "2+3+2+3",
+          "description": "10-beat cycle used in medium-tempo compositions"
+        }
+      ],
       "songExamples": [
         {
           "title": "Raga Bhairavi — Morning Raga",
@@ -1552,6 +1622,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Maqsum",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Most common Arabic rhythm: DUM-tak-DUM DUM-tak"
+        },
+        {
+          "name": "Samai Thaqil",
+          "timeSignature": "10/8",
+          "beat": "3+2+2+3",
+          "description": "Classical 10-beat Arabic cycle for instrumental suites"
+        }
+      ],
       "songExamples": [
         {
           "title": "Longa Rast",
@@ -1618,6 +1702,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": true
       },
+      "rhythmPatterns": [
+        {
+          "name": "Maqsum",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Ubiquitous Arabic rhythmic pattern"
+        },
+        {
+          "name": "Wahda",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Simple 4/4 feel common in Egyptian music"
+        }
+      ],
       "songExamples": [
         {
           "title": "Bayati Maqam — Quran recitation style",
@@ -1935,6 +2033,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": true
       },
+      "rhythmPatterns": [
+        {
+          "name": "Hyoshi (2/4)",
+          "timeSignature": "2/4",
+          "beat": "1+1",
+          "description": "Simple duple meter for koto music"
+        },
+        {
+          "name": "Free (Ma)",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Ma — the Japanese concept of meaningful silence and spacing in music"
+        }
+      ],
       "songExamples": [
         {
           "title": "Hirajoshi Koto Tuning",
@@ -1995,6 +2107,20 @@
         "isSymmetric": true,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Lancaran",
+          "timeSignature": "8/8",
+          "beat": "2+2+2+2",
+          "description": "Fast-paced gamelan form with even pulse"
+        },
+        {
+          "name": "Ketawang",
+          "timeSignature": "8/8",
+          "beat": "varied",
+          "description": "Medium gamelan form with cyclical colotomic structure"
+        }
+      ],
       "songExamples": [
         {
           "title": "Gamelan Slendro — Gendhing Bonang",
@@ -2058,6 +2184,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": true
       },
+      "rhythmPatterns": [
+        {
+          "name": "Gending",
+          "timeSignature": "variable",
+          "beat": "cyclical",
+          "description": "Formal gamelan composition with layered stratified rhythms"
+        },
+        {
+          "name": "Ladrang",
+          "timeSignature": "32 beats",
+          "beat": "cyclical",
+          "description": "Medium-length Javanese gamelan form"
+        }
+      ],
       "songExamples": [
         {
           "title": "Gamelan Pelog — Gending Ketawang",
@@ -2119,6 +2259,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": true
       },
+      "rhythmPatterns": [
+        {
+          "name": "Tizita 6/8",
+          "timeSignature": "6/8",
+          "beat": "3+3",
+          "description": "The characteristic gentle 6/8 lilt of Ethiopian tizita songs"
+        },
+        {
+          "name": "Andante",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Slow expressive 4/4 for tizita ballads"
+        }
+      ],
       "songExamples": [
         {
           "title": "Tizita — Mulatu Astatke",
@@ -3604,6 +3758,20 @@
         "isSymmetric": false,
         "hasAugmentedInterval": false
       },
+      "rhythmPatterns": [
+        {
+          "name": "Vilambit Teentaal",
+          "timeSignature": "16 beats",
+          "beat": "4+4+4+4",
+          "description": "Very slow 16-beat cycle for deep meditative khyal"
+        },
+        {
+          "name": "Ati Vilambit",
+          "timeSignature": "16 beats",
+          "beat": "very slow",
+          "description": "Extremely slow cycle used for Malkauns's midnight meditation"
+        }
+      ],
       "songExamples": [
         {
           "title": "Raga Malkauns — Alap",
@@ -3879,6 +4047,1132 @@
           "title": "Mixolydian b6 Improvisation",
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=Mixolydian+b6+jazz+improvisation+dominant"
+        }
+      ]
+    },
+    {
+      "id": "nikriz",
+      "name": "Nikriz",
+      "aliases": [
+        "Niavent",
+        "Nikriz Makam"
+      ],
+      "culture": "Turkish/Arabic",
+      "region": "Middle East",
+      "tradition": "Ottoman/Arabic Maqam",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "#4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "description": "Nikriz is a pivotal maqam in Ottoman and Arabic music, built around a characteristic augmented second between the minor third and augmented fourth degrees. This interval gives it a peculiarly tense, yearning quality unlike any other maqam.\n\nWidely used in Ottoman court music and Turkish fasil, Nikriz often appears in modulations from Rast or Hijaz, lending dramatic contrast. The maqam is associated with longing, heroism, and complex emotion.",
+      "usage": "Ottoman court music, Turkish fasil, Arabic classical, film music for Middle Eastern settings.",
+      "characteristicPatterns": "The augmented second between b3 and #4 is the defining gesture. Strong descending phrases from the 5th are idiomatic.",
+      "relatedScales": [
+        "maqam-rast",
+        "maqam-hijaz",
+        "hungarian-minor"
+      ],
+      "characteristics": {
+        "mood": [
+          "dramatic",
+          "exotic",
+          "expressive"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Semai",
+          "timeSignature": "3/4",
+          "beat": "1+1+1",
+          "description": "Classic Ottoman 3/4 feel used in instrumental forms"
+        },
+        {
+          "name": "Aksak",
+          "timeSignature": "9/8",
+          "beat": "2+2+2+3",
+          "description": "Limping rhythm fundamental to Turkish and Balkan music"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Nikriz Maqam Taksim Oud",
+          "artist": "Traditional",
+          "url": "https://www.youtube.com/results?search_query=Nikriz+maqam+taksim+oud"
+        },
+        {
+          "title": "Ottoman Nikriz Makam Classical",
+          "artist": "Traditional Ottoman",
+          "url": "https://www.youtube.com/results?search_query=Ottoman+Nikriz+makam+classical"
+        },
+        {
+          "title": "Nikriz Fasil Turkish Music",
+          "artist": "Traditional Turkish",
+          "url": "https://www.youtube.com/results?search_query=Nikriz+fasil+Turkish+music"
+        }
+      ]
+    },
+    {
+      "id": "hijaz-kar",
+      "name": "Hijaz Kar",
+      "aliases": [
+        "Byzantine Scale",
+        "Double Augmented Scale",
+        "Chahargah variant"
+      ],
+      "culture": "Turkish/Greek/Arabic",
+      "region": "Middle East / Eastern Europe",
+      "tradition": "Ottoman / Byzantine",
+      "toneCount": 7,
+      "intervalFormula": [
+        1,
+        3,
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "3",
+        "4",
+        "5",
+        "b6",
+        "7"
+      ],
+      "description": "Hijaz Kar (meaning 'Hijaz work' or 'double Hijaz') is one of the most harmonically rich scales in Ottoman music, featuring two augmented seconds — one between b2 and 3, and another between b6 and 7. This gives it a uniquely symmetrical, intensely exotic quality.\n\nAlso known as the Byzantine scale in Western theory, it forms the basis of much Greek Orthodox liturgical chant and appears prominently in Balkan folk music, Turkish classical repertoire, and flamenco.",
+      "usage": "Greek Orthodox chant, Turkish Ottoman classical, Balkan folk, flamenco, film scoring.",
+      "characteristicPatterns": "Two augmented seconds create a symmetrical tension. The b2 and natural 7 create a strong pull to the root.",
+      "relatedScales": [
+        "double-harmonic-major",
+        "maqam-hijaz",
+        "harmonic-minor-scale",
+        "phrygian-dominant"
+      ],
+      "characteristics": {
+        "mood": [
+          "dramatic",
+          "exotic",
+          "spiritual"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Karsilama",
+          "timeSignature": "9/8",
+          "beat": "2+2+2+3",
+          "description": "Energetic Balkan/Turkish dance rhythm"
+        },
+        {
+          "name": "Tsifteteli",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Greek belly dance rhythm with ornamental phrasing"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Hijaz Kar Maqam Taksim",
+          "artist": "Traditional",
+          "url": "https://www.youtube.com/results?search_query=Hijaz+Kar+maqam+taksim"
+        },
+        {
+          "title": "Byzantine Scale Greek Orthodox Chant",
+          "artist": "Traditional Byzantine",
+          "url": "https://www.youtube.com/results?search_query=Byzantine+scale+Greek+Orthodox+chant"
+        },
+        {
+          "title": "Hijaz Kar Ottoman Music Ney",
+          "artist": "Traditional Ottoman",
+          "url": "https://www.youtube.com/results?search_query=Hijaz+Kar+Ottoman+music+ney"
+        }
+      ]
+    },
+    {
+      "id": "bulgarian-folk",
+      "name": "Bulgarian Folk Scale",
+      "aliases": [
+        "Thracian Scale",
+        "Preslav Scale"
+      ],
+      "culture": "Bulgarian",
+      "region": "Eastern Europe / Balkans",
+      "tradition": "Bulgarian Folk",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "b5",
+        "b6",
+        "6"
+      ],
+      "description": "The Bulgarian folk scale is a distinctive heptatonic mode found in the traditional music of Bulgaria, particularly in Thracian and Rhodope folk music. Its unusual interval pattern, featuring an augmented second at the top of the scale, gives it a simultaneously dark and energetic character.\n\nBulgarian folk music is famous worldwide for its use of irregular asymmetric rhythms (7/8, 11/16, 9/8, 7/16) combined with highly ornamented melodic lines. This scale is frequently heard in the celebrated Bulgarian women's choirs and in the wedding music (svirnya) tradition.",
+      "usage": "Bulgarian folk singing, Thracian instrumental music, Bulgarian wedding music, gaida (bagpipe) repertoire.",
+      "characteristicPatterns": "Heavily ornamented with rapid mordents and trills. Often played in irregular 7/8 or 11/16 rhythms. The top augmented second is frequently exploited melodically.",
+      "relatedScales": [
+        "harmonic-minor-scale",
+        "hungarian-minor",
+        "nikriz"
+      ],
+      "characteristics": {
+        "mood": [
+          "dramatic",
+          "expressive",
+          "melancholic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Rachenitsa",
+          "timeSignature": "7/8",
+          "beat": "2+2+3",
+          "description": "Most iconic Bulgarian asymmetric rhythm, used in fast dance music"
+        },
+        {
+          "name": "Kopanitsa",
+          "timeSignature": "11/16",
+          "beat": "2+2+3+2+2",
+          "description": "Complex Macedonian/Bulgarian dance rhythm"
+        },
+        {
+          "name": "Daichovo",
+          "timeSignature": "9/8",
+          "beat": "2+2+2+3",
+          "description": "A stately Bulgarian dance feel"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Bulgarian Folk Music 7/8 Rhythm",
+          "artist": "Traditional Bulgarian",
+          "url": "https://www.youtube.com/results?search_query=Bulgarian+folk+music+7%2F8+rhythm"
+        },
+        {
+          "title": "Le Mystere des Voix Bulgares",
+          "artist": "Bulgarian State Radio and Television Female Vocal Choir",
+          "url": "https://www.youtube.com/results?search_query=Le+Mystere+des+Voix+Bulgares"
+        },
+        {
+          "title": "Bulgarian Gaida Folk Scale",
+          "artist": "Traditional Bulgarian",
+          "url": "https://www.youtube.com/results?search_query=Bulgarian+gaida+folk+scale"
+        }
+      ]
+    },
+    {
+      "id": "hutsul",
+      "name": "Hutsul Scale",
+      "aliases": [
+        "Carpathian Scale",
+        "Ukrainian Mountain Scale"
+      ],
+      "culture": "Ukrainian/Carpathian",
+      "region": "Eastern Europe",
+      "tradition": "Hutsul Folk",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "#4",
+        "5",
+        "6",
+        "7"
+      ],
+      "description": "The Hutsul scale comes from the Hutsul people of the Carpathian mountains — a region spanning western Ukraine, Romania, and Slovakia. It is defined by an augmented second between the minor third and the Lydian (raised) fourth, creating a haunting mixture of Eastern European folk melancholy and mountain wildness.\n\nBéla Bartók collected Hutsul folk melodies in his ethnographic fieldwork and incorporated this scale into his compositions, calling attention to its unique expressive power. The scale also appears in Romanian, Slovak, and Polish mountain folk traditions.",
+      "usage": "Hutsul folk music, Carpathian folk violin, trembita (alpine horn), contemporary art music.",
+      "characteristicPatterns": "The augmented second combined with the raised 4th gives it a modal ambiguity. Often used with drone accompaniment. Fast ornamented passages.",
+      "relatedScales": [
+        "ukrainian-dorian",
+        "hungarian-minor",
+        "nikriz"
+      ],
+      "characteristics": {
+        "mood": [
+          "expressive",
+          "melancholic",
+          "dramatic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Kolomyjka",
+          "timeSignature": "2/4",
+          "beat": "1+1",
+          "description": "Fast lively Carpathian dance in 2/4, usually very quick"
+        },
+        {
+          "name": "Arkan",
+          "timeSignature": "3/4",
+          "beat": "1+1+1",
+          "description": "Hutsul men's circle dance in triple time"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Hutsul Folk Music Carpathian Ukraine",
+          "artist": "Traditional Hutsul",
+          "url": "https://www.youtube.com/results?search_query=Hutsul+folk+music+Carpathian+Ukraine"
+        },
+        {
+          "title": "Bartok Hutsul Folk Melody",
+          "artist": "Béla Bartók",
+          "url": "https://www.youtube.com/results?search_query=Bartok+Hutsul+folk+melody"
+        },
+        {
+          "title": "Carpathian Mountain Music Violin",
+          "artist": "Traditional Carpathian",
+          "url": "https://www.youtube.com/results?search_query=Carpathian+mountain+music+violin"
+        }
+      ]
+    },
+    {
+      "id": "romani-scale",
+      "name": "Romani Scale",
+      "aliases": [
+        "Gypsy Minor",
+        "Double Harmonic Minor",
+        "Gypsy Scale"
+      ],
+      "culture": "Romani / Pan-European",
+      "region": "Eastern Europe / South Asia",
+      "tradition": "Romani Folk",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        3,
+        1,
+        1,
+        3,
+        1
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "#4",
+        "5",
+        "b6",
+        "7"
+      ],
+      "description": "The Romani scale — sometimes called the double harmonic minor or Gypsy minor — is strongly associated with the Romani people whose musical tradition spans from India (where they originated) through Persia, Turkey, and across Europe. It features two augmented seconds, one in each tetrachord, giving it a uniquely passionate, ornate quality.\n\nThis scale is the backbone of Romani flamenco, Hungarian csárdás, Romanian manele, and Balkan wedding music. The same interval structure appears in Indian ragas such as Bhairav, reflecting the Romani's South Asian origins. Django Reinhardt, the father of jazz manouche, built much of his style on this scale.",
+      "usage": "Romani folk, flamenco, gypsy jazz (jazz manouche), Hungarian folk, Balkan wedding music.",
+      "characteristicPatterns": "Heavy ornamentation, fast scalar runs, expressive wide vibrato. Two augmented seconds create intense emotional character.",
+      "relatedScales": [
+        "hungarian-minor",
+        "double-harmonic-major",
+        "bhairav",
+        "harmonic-minor-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "expressive",
+          "dramatic",
+          "romantic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Csárdás",
+          "timeSignature": "2/4",
+          "beat": "1+1",
+          "description": "Hungarian/Romani dance: slow lassu followed by fast friss"
+        },
+        {
+          "name": "Flamenco Bulería",
+          "timeSignature": "12/8",
+          "beat": "3+3+2+2+2",
+          "description": "Fast flamenco rhythm with complex accent pattern"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Django Reinhardt Gypsy Jazz Romani Scale",
+          "artist": "Django Reinhardt",
+          "url": "https://www.youtube.com/results?search_query=Django+Reinhardt+gypsy+jazz+Romani+scale"
+        },
+        {
+          "title": "Hungarian Roma Folk Violin",
+          "artist": "Traditional Hungarian Roma",
+          "url": "https://www.youtube.com/results?search_query=Hungarian+Roma+folk+violin"
+        },
+        {
+          "title": "Romani Flamenco Guitar",
+          "artist": "Traditional Romani",
+          "url": "https://www.youtube.com/results?search_query=Romani+flamenco+guitar"
+        }
+      ]
+    },
+    {
+      "id": "chinese-gong",
+      "name": "Gong Scale",
+      "aliases": [
+        "Chinese Major Pentatonic",
+        "Palace Scale",
+        "宫调式"
+      ],
+      "culture": "Chinese",
+      "region": "East Asia",
+      "tradition": "Chinese Classical",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "description": "The Gong scale (宫调式) is the first of the five classical Chinese pentatonic modes (五声调式). Equivalent to the Western major pentatonic, it is the oldest documented scale in Chinese music theory, traced back to ancient texts on music and cosmology. The five pentatonic modes correspond to the five elements (wood, fire, earth, metal, water) and the five cardinal directions.\n\nThe Gong mode is associated with earth, the center, and the imperial court. It forms the basis of much of classical Chinese court music, guqin compositions, and remains foundational in Chinese folk music across all regions.",
+      "usage": "Chinese court music, guqin music, folk songs, Chinese opera, traditional ensemble music.",
+      "characteristicPatterns": "Smooth, stepwise motion between the minor thirds. Drone-like bass accompaniment on guqin. Characteristic ending on the root with a descending gesture.",
+      "relatedScales": [
+        "pentatonic-major",
+        "raga-hamsadhwani",
+        "mande-pentatonic"
+      ],
+      "characteristics": {
+        "mood": [
+          "bright",
+          "calm",
+          "neutral"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Sanban",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Free-tempo unmeasured rhythm used in guqin solo music"
+        },
+        {
+          "name": "Yiban Yiban",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Standard measured 4/4 used in ensemble music"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Guqin Music Gong Mode Chinese Classical",
+          "artist": "Traditional Chinese",
+          "url": "https://www.youtube.com/results?search_query=Guqin+music+Gong+mode+Chinese+classical"
+        },
+        {
+          "title": "Chinese Pentatonic Gong Scale Erhu",
+          "artist": "Traditional Chinese",
+          "url": "https://www.youtube.com/results?search_query=Chinese+pentatonic+Gong+scale+erhu"
+        },
+        {
+          "title": "春江花月夜 Spring River Flower Moon Night",
+          "artist": "Traditional Chinese",
+          "url": "https://www.youtube.com/results?search_query=%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C+Spring+River+Flower+Moon+Night"
+        }
+      ]
+    },
+    {
+      "id": "chinese-zhi",
+      "name": "Zhi Scale",
+      "aliases": [
+        "Chinese Sol Scale",
+        "徵调式"
+      ],
+      "culture": "Chinese",
+      "region": "East Asia",
+      "tradition": "Chinese Classical",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "b7"
+      ],
+      "description": "The Zhi scale (徵调式) is the fourth of the five classical Chinese pentatonic modes, built on the fifth degree of the Gong scale. Associated with the element of fire and the south direction in Chinese cosmological thought, it has a warmer, slightly more plaintive quality than the Gong mode.\n\nThe Zhi scale is widely used in Chinese folk music and is closely related to the blues scale in its interval structure, a parallel that has fascinated comparative musicologists. It appears frequently in southern Chinese folk traditions and is the basis of many famous Chinese melodies.",
+      "usage": "Chinese folk music, southern regional folk songs, Chinese opera, folk instruments.",
+      "characteristicPatterns": "The minor seventh gives it a slightly open, unresolved quality. Often used with modal interchange between Gong and Zhi modes.",
+      "relatedScales": [
+        "pentatonic-minor",
+        "chinese-gong",
+        "mande-pentatonic"
+      ],
+      "characteristics": {
+        "mood": [
+          "melancholic",
+          "expressive",
+          "calm"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Sizhu",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Silk and bamboo ensemble rhythmic feel, smooth and flowing"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Chinese Zhi Mode Pentatonic Folk Music",
+          "artist": "Traditional Chinese",
+          "url": "https://www.youtube.com/results?search_query=Chinese+Zhi+mode+pentatonic+folk+music"
+        },
+        {
+          "title": "Erhu Chinese Folk Zhi Scale",
+          "artist": "Traditional Chinese",
+          "url": "https://www.youtube.com/results?search_query=Erhu+Chinese+folk+Zhi+scale"
+        },
+        {
+          "title": "Chinese Folk Song Minor Pentatonic",
+          "artist": "Traditional Chinese",
+          "url": "https://www.youtube.com/results?search_query=Chinese+folk+song+minor+pentatonic"
+        }
+      ]
+    },
+    {
+      "id": "celtic-minor",
+      "name": "Celtic Minor",
+      "aliases": [
+        "Scottish Minor",
+        "Gaelic Minor Pentatonic"
+      ],
+      "culture": "Celtic",
+      "region": "Western Europe",
+      "tradition": "Celtic / Scottish Folk",
+      "toneCount": 5,
+      "intervalFormula": [
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "degrees": [
+        "1",
+        "b3",
+        "4",
+        "5",
+        "b7"
+      ],
+      "description": "The Celtic minor pentatonic is the distinctive scale underlying much of Irish, Scottish, and broader Celtic folk music. While similar to the universal minor pentatonic, its use in Celtic music involves specific ornamental techniques — cuts, taps, rolls, and crans on the uilleann pipes and fiddle — that give it a uniquely North Atlantic character.\n\nThe scale is particularly associated with laments, slow airs, and sean-nós (old style) singing in Ireland, and with pibroch (classical bagpipe music) in Scotland. Its open, fifth-dominated sound evokes windswept coastal landscapes and became a primary influence on American folk, country, and bluegrass music through Irish and Scottish emigration.",
+      "usage": "Irish traditional music, Scottish folk, uilleann pipes, fiddle tunes, sean-nós singing, bluegrass.",
+      "characteristicPatterns": "Ornamental cuts and rolls between the b3 and 4 are idiomatic. Slow descending phrases from the 5th. Drone on root and fifth.",
+      "relatedScales": [
+        "pentatonic-minor",
+        "dorian-mode",
+        "mixolydian-mode"
+      ],
+      "characteristics": {
+        "mood": [
+          "melancholic",
+          "expressive",
+          "folk"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Jig",
+          "timeSignature": "6/8",
+          "beat": "3+3",
+          "description": "Fundamental Celtic dance rhythm in compound duple time"
+        },
+        {
+          "name": "Reel",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Fast Celtic dance in cut time, driving eighth-note feel"
+        },
+        {
+          "name": "Slow Air",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Unmeasured, deeply ornamented expression of slow Irish airs"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Irish Slow Air Celtic Minor Pentatonic Fiddle",
+          "artist": "Traditional Irish",
+          "url": "https://www.youtube.com/results?search_query=Irish+slow+air+Celtic+minor+pentatonic+fiddle"
+        },
+        {
+          "title": "Scottish Pibroch Bagpipe Gaelic",
+          "artist": "Traditional Scottish",
+          "url": "https://www.youtube.com/results?search_query=Scottish+pibroch+bagpipe+Gaelic"
+        },
+        {
+          "title": "Sean-Nos Singing Irish Traditional",
+          "artist": "Traditional Irish",
+          "url": "https://www.youtube.com/results?search_query=Sean-nos+singing+Irish+traditional"
+        }
+      ]
+    },
+    {
+      "id": "flamenco-phrygian",
+      "name": "Flamenco Scale",
+      "aliases": [
+        "Spanish Phrygian",
+        "Frigio Mayor",
+        "Modo Flamenco"
+      ],
+      "culture": "Spanish / Romani",
+      "region": "Southern Europe",
+      "tradition": "Flamenco",
+      "toneCount": 7,
+      "intervalFormula": [
+        1,
+        3,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "3",
+        "4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "description": "The Flamenco scale (also called Phrygian dominant or Frigio Mayor) is the defining tonal element of flamenco music — a fusion of Romani, Moorish, Jewish, and Castilian musical traditions that developed in Andalusia, Spain. It is identical to the fifth mode of harmonic minor but carries its own distinct ornamental vocabulary.\n\nIn flamenco, this scale is not merely a note collection but a system of melodic gestures: the characteristic Andalusian cadence (bVII-bVI-V-i), the falseta (melodic interlude), and the picado (rapid scalar runs) are all rooted in this scale. Each flamenco palo (form) — soleares, seguiriyas, bulerías, alegrías — employs the scale with distinct rhythmic and emotional character.",
+      "usage": "Flamenco guitar, cante jondo (deep song), flamenco dance accompaniment, Spanish classical guitar.",
+      "characteristicPatterns": "The Andalusian cadence (descending from bVII to I). Rapid ascending runs. Heavy use of the b2 as an expressive tone. Rasgueado strumming patterns.",
+      "relatedScales": [
+        "phrygian-dominant",
+        "maqam-hijaz",
+        "romani-scale",
+        "harmonic-minor-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "dramatic",
+          "expressive",
+          "exotic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Bulería",
+          "timeSignature": "12/8",
+          "beat": "3+3+2+2+2",
+          "description": "Fastest flamenco compás, complex accents, highly syncopated"
+        },
+        {
+          "name": "Soleá",
+          "timeSignature": "12/8",
+          "beat": "3+3+2+2+2",
+          "description": "The mother of all flamenco forms, stately and deep"
+        },
+        {
+          "name": "Seguiriya",
+          "timeSignature": "12/8",
+          "beat": "3+2+2+3+2",
+          "description": "The deepest, most anguished flamenco form"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Paco de Lucia Flamenco Soleares",
+          "artist": "Paco de Lucia",
+          "url": "https://www.youtube.com/results?search_query=Paco+de+Lucia+flamenco+soleares"
+        },
+        {
+          "title": "Flamenco Guitar Phrygian Scale Cante Jondo",
+          "artist": "Various",
+          "url": "https://www.youtube.com/results?search_query=flamenco+guitar+Phrygian+scale+cante+jondo"
+        },
+        {
+          "title": "Camaron de la Isla Seguiriya",
+          "artist": "Camarón de la Isla",
+          "url": "https://www.youtube.com/results?search_query=Camaron+de+la+Isla+seguiriya"
+        }
+      ]
+    },
+    {
+      "id": "persian-chahargah",
+      "name": "Chahargah",
+      "aliases": [
+        "Dastgah Chahargah",
+        "چهارگاه"
+      ],
+      "culture": "Persian/Iranian",
+      "region": "Middle East",
+      "tradition": "Persian Classical (Dastgah)",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "#4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "description": "Chahargah (meaning 'fourth place' or 'fourth position') is one of the twelve main dastgahs of Persian classical music. It has a powerful, heroic character with a characteristic augmented second in its lower tetrachord that immediately sets it apart from the other dastgahs.\n\nIn Persian music, a dastgah is more than a scale — it is an entire melodic system with prescribed phrases, modulations, and emotional associations. Chahargah is associated with power and heroism, and is frequently used in epic contexts. It shares interval structure with the Turkish Nikriz makam, reflecting centuries of musical exchange between Persian and Ottoman cultures.",
+      "usage": "Persian classical music (radif), tar and setar solos, traditional Persian ensemble, sacred and ceremonial music.",
+      "characteristicPatterns": "Characteristic ascending phrase emphasizing the augmented second. The #4 (Chahargah's defining note) is approached with specific ornamentation called tahrir.",
+      "relatedScales": [
+        "nikriz",
+        "maqam-hijaz",
+        "persian-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "dramatic",
+          "expressive",
+          "spiritual"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Chahargah Avaz",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Unmeasured improvisation (avaz) in the Chahargah dastgah"
+        },
+        {
+          "name": "Chahargah Reng",
+          "timeSignature": "6/8",
+          "beat": "3+3",
+          "description": "Measured dance-like section within Chahargah performance"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Chahargah Dastgah Persian Classical Tar",
+          "artist": "Traditional Persian",
+          "url": "https://www.youtube.com/results?search_query=Chahargah+dastgah+Persian+classical+tar"
+        },
+        {
+          "title": "Shajarian Chahargah Persian Music",
+          "artist": "Mohammad Reza Shajarian",
+          "url": "https://www.youtube.com/results?search_query=Shajarian+Chahargah+Persian+music"
+        },
+        {
+          "title": "Persian Classical Music Chahargah Radif",
+          "artist": "Traditional Persian",
+          "url": "https://www.youtube.com/results?search_query=Persian+classical+music+Chahargah+radif"
+        }
+      ]
+    },
+    {
+      "id": "vietnamese-pentatonic",
+      "name": "Vietnamese Pentatonic",
+      "aliases": [
+        "Thang Am Nam",
+        "Southern Vietnamese Scale"
+      ],
+      "culture": "Vietnamese",
+      "region": "Southeast Asia",
+      "tradition": "Vietnamese Traditional",
+      "toneCount": 5,
+      "intervalFormula": [
+        3,
+        2,
+        2,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "b3",
+        "4",
+        "5",
+        "6"
+      ],
+      "description": "Vietnamese traditional music uses a variety of pentatonic modes, with the southern Vietnamese pentatonic (thang am nam) being perhaps the most characteristic. It differs from Chinese and other East Asian pentatonics through its use of microtonal ornaments — bends, slides, and vibrato techniques that cannot be captured in standard notation.\n\nThis scale underlies traditional forms including Nhã nhạc (royal court music, UNESCO heritage), Đờn ca tài tử (southern amateur music), and Cải lương (reformed opera). The đàn tranh (16-string zither), đàn bầu (monochord), and đàn nguyệt (moon lute) are the primary vehicles for this scale.",
+      "usage": "Vietnamese court music, Đờn ca tài tử, Cải lương opera, đàn tranh and đàn bầu solos.",
+      "characteristicPatterns": "Characteristic microtonal bends particularly on the b3 and 6. Ornamented descending phrases. Drone on root.",
+      "relatedScales": [
+        "pentatonic-minor",
+        "chinese-zhi",
+        "celtic-minor"
+      ],
+      "characteristics": {
+        "mood": [
+          "melancholic",
+          "expressive",
+          "meditative"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Nam Ai",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Slow, expressive unmeasured form associated with deep emotion"
+        },
+        {
+          "name": "Ly Con Sao",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Moderate folk song rhythm from central Vietnam"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Vietnamese Dan Tranh Traditional Music",
+          "artist": "Traditional Vietnamese",
+          "url": "https://www.youtube.com/results?search_query=Vietnamese+dan+tranh+traditional+music"
+        },
+        {
+          "title": "Nha Nhac Vietnamese Court Music UNESCO",
+          "artist": "Traditional Vietnamese",
+          "url": "https://www.youtube.com/results?search_query=Nha+nhac+Vietnamese+court+music+UNESCO"
+        },
+        {
+          "title": "Dan Bau Vietnamese Monochord Music",
+          "artist": "Traditional Vietnamese",
+          "url": "https://www.youtube.com/results?search_query=dan+bau+Vietnamese+monochord+music"
+        }
+      ]
+    },
+    {
+      "id": "moroccan-gnawa",
+      "name": "Gnawa Scale",
+      "aliases": [
+        "Lila Scale",
+        "Gnaoua Scale"
+      ],
+      "culture": "Moroccan / West African",
+      "region": "North Africa",
+      "tradition": "Gnawa",
+      "toneCount": 5,
+      "intervalFormula": [
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "degrees": [
+        "1",
+        "b3",
+        "4",
+        "#5",
+        "b7"
+      ],
+      "description": "The Gnawa musical tradition of Morocco descends from Sub-Saharan African slaves brought to North Africa centuries ago, blending Islamic mysticism with pre-Islamic animist ritual. Gnawa music is inseparable from the lila — an all-night healing ceremony in which musicians invoke spiritual entities (mluk) through specific melodic colors, each associated with a different spirit, color, and emotional state.\n\nThe scale played on the guembri (three-string bass lute) has a deep, hypnotic quality. The music influenced 1960s rock psychedelia (Jimi Hendrix recorded in Morocco), and Gnawa fusion has become an important genre in contemporary world music.",
+      "usage": "Lila healing ceremonies, Sufi-influenced spiritual music, world music fusion, contemporary Moroccan music.",
+      "characteristicPatterns": "Heavy repetitive bass lines on guembri. Cascading metal qraqeb (castanets) in syncopated patterns. Trance-inducing cyclical phrases.",
+      "relatedScales": [
+        "pentatonic-minor",
+        "mande-pentatonic",
+        "ethiopian-tizita"
+      ],
+      "characteristics": {
+        "mood": [
+          "spiritual",
+          "meditative",
+          "hypnotic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Gnawa Lila",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Hypnotic repeated cycle with syncopated qraqeb (castanets)"
+        },
+        {
+          "name": "Maalem Pattern",
+          "timeSignature": "6/8",
+          "beat": "3+3",
+          "description": "Driving 6/8 feel for energetic Gnawa sections"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Maalem Mahmoud Guinia Gnawa Music Morocco",
+          "artist": "Maalem Mahmoud Guinia",
+          "url": "https://www.youtube.com/results?search_query=Maalem+Mahmoud+Guinia+Gnawa+music+Morocco"
+        },
+        {
+          "title": "Gnawa Lila Ceremony Morocco Healing Music",
+          "artist": "Traditional Gnawa",
+          "url": "https://www.youtube.com/results?search_query=Gnawa+lila+ceremony+Morocco+healing+music"
+        },
+        {
+          "title": "Gnawa Fusion World Music Morocco",
+          "artist": "Various",
+          "url": "https://www.youtube.com/results?search_query=Gnawa+fusion+world+music+Morocco"
+        }
+      ]
+    },
+    {
+      "id": "scottish-mixolydian",
+      "name": "Scottish Mixolydian",
+      "aliases": [
+        "Highland Modal",
+        "Caledonian Mode"
+      ],
+      "culture": "Celtic / Scottish",
+      "region": "Western Europe",
+      "tradition": "Scottish Highland",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "b7"
+      ],
+      "description": "Scottish folk music has a strong Mixolydian character, using the natural seventh (b7) rather than the leading tone. This gives Scottish melodies their characteristic sense of unresolved forward motion — powerful yet never quite landing, suggesting something beyond the horizon.\n\nThe Highland bagpipe (great Highland pipes) is inherently Mixolydian because of its fixed tuning and lack of a standard leading tone. Countless Scottish reels, strathspeys, marches, and laments use this mode. It also flows into Irish traditional music through shared cultural history.",
+      "usage": "Scottish folk music, Highland pipe tunes, strathspeys, reels, marches, laments.",
+      "characteristicPatterns": "Characteristic movement between the 6th and b7th degrees. Strong melodic phrases ending on the 5th or root without strong leading-tone resolution.",
+      "relatedScales": [
+        "mixolydian-mode",
+        "dorian-mode",
+        "celtic-minor"
+      ],
+      "characteristics": {
+        "mood": [
+          "folk",
+          "bright",
+          "nostalgic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Strathspey",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Scottish dance with characteristic 'Scotch snap' (short-long) rhythm"
+        },
+        {
+          "name": "March",
+          "timeSignature": "2/4",
+          "beat": "1+1",
+          "description": "Military and ceremonial pipe march feel"
+        },
+        {
+          "name": "Slow Strathspey",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Stately version of the strathspey for airs and laments"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Highland Bagpipe Reel Mixolydian Scottish",
+          "artist": "Traditional Scottish",
+          "url": "https://www.youtube.com/results?search_query=Highland+bagpipe+reel+Mixolydian+Scottish"
+        },
+        {
+          "title": "Scottish Traditional Fiddle Mixolydian",
+          "artist": "Traditional Scottish",
+          "url": "https://www.youtube.com/results?search_query=Scottish+traditional+fiddle+Mixolydian"
+        },
+        {
+          "title": "Amazing Grace Bagpipe Scottish",
+          "artist": "Traditional Scottish",
+          "url": "https://www.youtube.com/results?search_query=Amazing+Grace+bagpipe+Scottish"
+        }
+      ]
+    },
+    {
+      "id": "persian-segah",
+      "name": "Segah",
+      "aliases": [
+        "دستگاه سه گاه",
+        "Dastgah Segah"
+      ],
+      "culture": "Persian/Iranian",
+      "region": "Middle East",
+      "tradition": "Persian Classical (Dastgah)",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "description": "Segah (meaning 'third place') is one of the twelve dastgahs of Persian classical music and one of the most intimate and spiritual. It uses characteristic microtonal intervals — particularly a slightly lowered third degree — that cannot be reproduced on equal-tempered instruments.\n\nSegah is deeply associated with the Islamic call to prayer and devotional contexts. The famous Persian musician Shajarian has performed some of his most celebrated recordings in Segah. The dastgah has a warm, inward quality very different from the heroic Chahargah or the melancholic Shur.",
+      "usage": "Persian classical radif, devotional and spiritual contexts, tar and setar, vocal improvisation.",
+      "characteristicPatterns": "The lowered third (koron) is the defining feature. Characteristic gusheh (melodic module) phrases circle around the b3 and resolve to the root.",
+      "relatedScales": [
+        "persian-scale",
+        "maqam-bayati",
+        "natural-minor-scale",
+        "persian-chahargah"
+      ],
+      "characteristics": {
+        "mood": [
+          "melancholic",
+          "spiritual",
+          "expressive"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Segah Avaz",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Unmeasured vocal or instrumental improvisation in Segah"
+        },
+        {
+          "name": "Tasnif",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Measured song form in the Persian classical tradition"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Shajarian Segah Persian Classical Vocal",
+          "artist": "Mohammad Reza Shajarian",
+          "url": "https://www.youtube.com/results?search_query=Shajarian+Segah+Persian+classical+vocal"
+        },
+        {
+          "title": "Segah Dastgah Tar Persian Music",
+          "artist": "Traditional Persian",
+          "url": "https://www.youtube.com/results?search_query=Segah+dastgah+tar+Persian+music"
+        },
+        {
+          "title": "Persian Classical Music Segah Radif",
+          "artist": "Traditional Persian",
+          "url": "https://www.youtube.com/results?search_query=Persian+classical+music+Segah+radif"
         }
       ]
     }

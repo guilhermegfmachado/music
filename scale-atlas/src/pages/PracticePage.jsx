@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import AudioPlayer from '../components/AudioPlayer.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
-import { CardIcon, LightbulbIcon, ShuffleIcon } from '../components/icons.jsx'
+import { CardIcon, LightbulbIcon, ShuffleIcon, NoteIcon } from '../components/icons.jsx'
+import { playScale, stopAll } from '../utils/audioUtils.js'
 import styles from './PracticePage.module.css'
 
 function shuffle(arr) {
@@ -168,9 +169,89 @@ function RandomExplorer({ scales }) {
   )
 }
 
+// --- Ear Training Mode ---
+const ROOT_MIDI = { C:60,'C#':61,D:62,'D#':63,E:64,F:65,'F#':66,G:67,'G#':68,A:69,'A#':70,B:71 }
+
+function EarTraining({ scales }) {
+  const [question, setQuestion] = useState(() => makeEarQuestion(scales))
+  const [selected, setSelected] = useState(null)
+  const [score, setScore] = useState({ correct: 0, total: 0 })
+  const [playing, setPlaying] = useState(false)
+  const timeoutRef = useRef(null)
+
+  function makeEarQuestion(scales) {
+    const target = randomScale(scales)
+    const others = shuffle(scales.filter(s => s.id !== target.id)).slice(0, 3)
+    return { target, options: shuffle([target, ...others]) }
+  }
+
+  async function handlePlay() {
+    if (playing) { stopAll(); clearTimeout(timeoutRef.current); setPlaying(false); return }
+    setPlaying(true)
+    const dur = await playScale(question.target.intervalFormula, { timbre: 'piano', tempo: 72, rootMidi: 60 })
+    timeoutRef.current = setTimeout(() => setPlaying(false), dur + 200)
+  }
+
+  function answer(scale) {
+    if (selected) return
+    stopAll(); clearTimeout(timeoutRef.current); setPlaying(false)
+    setSelected(scale.id)
+    setScore(s => ({ correct: s.correct + (scale.id === question.target.id ? 1 : 0), total: s.total + 1 }))
+  }
+
+  function next() {
+    setSelected(null)
+    setQuestion(makeEarQuestion(scales))
+  }
+
+  const { target, options } = question
+
+  return (
+    <div className={styles.quiz}>
+      <div className={styles.quizScore}>Score: {score.correct} / {score.total}</div>
+      <div className={styles.quizPrompt}>
+        <p className={styles.quizInstruction}>Listen to the scale and identify it</p>
+        <button
+          className={`${styles.playBtn} ${playing ? styles.playBtnActive : ''}`}
+          onClick={handlePlay}
+        >
+          {playing ? '■ Stop' : '▶ Play Scale'}
+        </button>
+        {selected && (
+          <div className={styles.revealViz}>
+            <IntervalDiagram scale={target} />
+          </div>
+        )}
+      </div>
+      <div className={styles.quizOptions}>
+        {options.map(opt => {
+          let cls = styles.option
+          if (selected) {
+            if (opt.id === target.id) cls = `${styles.option} ${styles.optionCorrect}`
+            else if (opt.id === selected) cls = `${styles.option} ${styles.optionWrong}`
+          }
+          return (
+            <button key={opt.id} className={cls} onClick={() => answer(opt)}>
+              <span className={styles.optionName}>{opt.name}</span>
+              <span className={styles.optionMeta}>{opt.region} · {opt.toneCount} tones</span>
+            </button>
+          )
+        })}
+      </div>
+      {selected && (
+        <div className={styles.quizFeedback}>
+          {selected === target.id ? '✓ Correct!' : `✗ That was ${target.name}`}
+          <button className="btn btn-primary" style={{ marginLeft: '1rem' }} onClick={next}>Next →</button>
+        </div>
+      )}
+    </div>
+  )
+}
+
 const MODES = [
   { id: 'flashcard', Icon: CardIcon, label: 'Flashcards', desc: 'Study scales one by one' },
-  { id: 'quiz', Icon: LightbulbIcon, label: 'Quiz', desc: 'Identify scales by their intervals' },
+  { id: 'quiz', Icon: LightbulbIcon, label: 'Quiz', desc: 'Identify scales by intervals' },
+  { id: 'ear', Icon: NoteIcon, label: 'Ear Training', desc: 'Identify scales by sound' },
   { id: 'random', Icon: ShuffleIcon, label: 'Random', desc: 'Discover a random scale' },
 ]
 
@@ -205,6 +286,7 @@ export default function PracticePage({ scales }) {
             />
           )}
           {mode === 'quiz' && <Quiz scales={scales} />}
+          {mode === 'ear' && <EarTraining scales={scales} />}
           {mode === 'random' && <RandomExplorer scales={scales} />}
         </div>
       </div>

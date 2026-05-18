@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage.jsx'
 import ScaleDetailPage from './pages/ScaleDetailPage.jsx'
 import ComparePage from './pages/ComparePage.jsx'
 import PracticePage from './pages/PracticePage.jsx'
+import MapPage from './pages/MapPage.jsx'
+import TuningsPage from './pages/TuningsPage.jsx'
 import scalesData from './data/scales.json'
 
 export default function App() {
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/scale/:id" element={<ScaleDetailPage scales={scales} />} />
           <Route path="/compare" element={<ComparePage scales={scales} />} />
           <Route path="/practice" element={<PracticePage scales={scales} />} />
+          <Route path="/map" element={<MapPage scales={scales} />} />
+          <Route path="/tunings" element={<TuningsPage scales={scales} />} />
         </Routes>
       </div>
       <Footer />

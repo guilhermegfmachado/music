@@ -53,3 +53,37 @@ export function getRelatedScales(scale, allScales) {
     .map(id => allScales.find(s => s.id === id))
     .filter(Boolean)
 }
+
+export function computeDiatonicChords(intervalFormula) {
+  if (intervalFormula.length < 5) return []
+  const scale = intervalsToSemitones(intervalFormula)
+  const n = scale.length
+  const ROMAN = ['I','II','III','IV','V','VI','VII','VIII','IX']
+
+  return scale.map((root, i) => {
+    const third = scale[(i + 2) % n]
+    const fifth = scale[(i + 4) % n]
+
+    let t = third - root
+    if (t <= 0) t += 12
+    let f = fifth - root
+    if (f <= 0) f += 12
+    if (f < t) f += 12
+
+    let quality
+    if      (t === 4 && f === 7) quality = 'maj'
+    else if (t === 3 && f === 7) quality = 'min'
+    else if (t === 3 && f === 6) quality = 'dim'
+    else if (t === 4 && f === 8) quality = 'aug'
+    else                         quality = 'other'
+
+    const label = quality === 'maj' ? ROMAN[i] :
+                  quality === 'min' ? ROMAN[i].toLowerCase() :
+                  quality === 'dim' ? ROMAN[i].toLowerCase() + '°' :
+                  quality === 'aug' ? ROMAN[i] + '+' :
+                  ROMAN[i] + '?'
+
+    return { degree: ROMAN[i] || String(i + 1), label, quality }
+  })
+}
+

@@ -1,18 +1,19 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import AudioPlayer from '../components/AudioPlayer.jsx'
 import PianoKeyboard from '../components/visualizations/PianoKeyboard.jsx'
 import GuitarFretboard from '../components/visualizations/GuitarFretboard.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
 import StaffNotation from '../components/visualizations/StaffNotation.jsx'
 import ViolinFingerboard from '../components/visualizations/ViolinFingerboard.jsx'
-import { getRelatedScales, getIntervalName, intervalsToSemitones } from '../utils/scaleUtils.js'
+import { getRelatedScales, getIntervalName, intervalsToSemitones, computeDiatonicChords } from '../utils/scaleUtils.js'
 import { HeartIcon, PlayIcon, ExternalLinkIcon } from '../components/icons.jsx'
 import { useFavorites } from '../hooks/useFavorites.js'
 import { useRecentlyViewed } from '../hooks/useRecentlyViewed.js'
 import styles from './ScaleDetailPage.module.css'
 
 const VIEWS = ['Piano', 'Fretboard', 'Violin', 'Interval', 'Staff']
+const ROOTS = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
 
 export default function ScaleDetailPage({ scales }) {
   const { id } = useParams()
@@ -21,6 +22,7 @@ export default function ScaleDetailPage({ scales }) {
   const { isFavorite, toggleFavorite } = useFavorites()
   const { addViewed } = useRecentlyViewed()
   const [activeView, setActiveView] = useState('Piano')
+  const [rootNote, setRootNote] = useState('C')
 
   useEffect(() => {
     if (scale) addViewed(scale.id)
@@ -38,6 +40,7 @@ export default function ScaleDetailPage({ scales }) {
   const related = getRelatedScales(scale, scales)
   const semitones = intervalsToSemitones(scale.intervalFormula)
   const fav = isFavorite(scale.id)
+  const chords = scale.intervalFormula.length >= 6 ? computeDiatonicChords(scale.intervalFormula) : []
 
   return (
     <div className={styles.page}>
@@ -97,11 +100,21 @@ export default function ScaleDetailPage({ scales }) {
                     {v}
                   </button>
                 ))}
+                <div className={styles.rootPicker}>
+                  <label className={styles.rootLabel}>Root</label>
+                  <select
+                    className={styles.rootSelect}
+                    value={rootNote}
+                    onChange={e => setRootNote(e.target.value)}
+                  >
+                    {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
+                  </select>
+                </div>
               </div>
               <div className={styles.vizPanel}>
-                {activeView === 'Piano' && <PianoKeyboard scale={scale} />}
-                {activeView === 'Fretboard' && <GuitarFretboard scale={scale} />}
-                {activeView === 'Violin' && <ViolinFingerboard scale={scale} />}
+                {activeView === 'Piano' && <PianoKeyboard scale={scale} rootNote={rootNote} />}
+                {activeView === 'Fretboard' && <GuitarFretboard scale={scale} rootNote={rootNote} />}
+                {activeView === 'Violin' && <ViolinFingerboard scale={scale} rootNote={rootNote} />}
                 {activeView === 'Interval' && <IntervalDiagram scale={scale} />}
                 {activeView === 'Staff' && <StaffNotation scale={scale} />}
               </div>
@@ -150,6 +163,41 @@ export default function ScaleDetailPage({ scales }) {
                 </div>
               </div>
             </section>
+
+            {/* Chord palette */}
+            {chords.length > 0 && (
+              <section className={styles.section}>
+                <h2 className={styles.sectionTitle}>Diatonic Chords</h2>
+                <div className={styles.chordRow}>
+                  {chords.map((c, i) => (
+                    <div key={i} className={`${styles.chordChip} ${styles[`chord_${c.quality}`]}`}>
+                      <span className={styles.chordLabel}>{c.label}</span>
+                      <span className={styles.chordQuality}>{c.quality}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className={styles.chordNote}>Triads built on each scale degree. Root = {rootNote}.</p>
+              </section>
+            )}
+
+            {/* Rhythm patterns */}
+            {scale.rhythmPatterns?.length > 0 && (
+              <section className={styles.section}>
+                <h2 className={styles.sectionTitle}>Rhythm Patterns</h2>
+                <div className={styles.rhythmList}>
+                  {scale.rhythmPatterns.map((r, i) => (
+                    <div key={i} className={styles.rhythmItem}>
+                      <div className={styles.rhythmHeader}>
+                        <span className={styles.rhythmName}>{r.name}</span>
+                        <span className={styles.rhythmSig}>{r.timeSignature}</span>
+                        {r.beat && <span className={styles.rhythmBeat}>{r.beat}</span>}
+                      </div>
+                      <p className={styles.rhythmDesc}>{r.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
           </div>
 
           {/* Right column */}

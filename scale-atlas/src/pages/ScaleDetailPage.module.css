@@ -193,6 +193,35 @@
 .vizTabs {
   display: flex;
   border-bottom: 1px solid var(--border);
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.rootPicker {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  padding: 0 0.5rem;
+}
+
+.rootLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rootSelect {
+  font-size: 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  padding: 0.15rem 0.4rem;
+  cursor: pointer;
 }
 
 .vizTab {
@@ -257,6 +286,106 @@
 
 .compareLink {
   padding-top: 0.25rem;
+}
+
+/* Chord palette */
+.chordRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chordChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  min-width: 44px;
+}
+
+.chord_maj  { background: #d1fae5; border-color: #6ee7b7; }
+.chord_min  { background: #dbeafe; border-color: #93c5fd; }
+.chord_dim  { background: #fce7f3; border-color: #f9a8d4; }
+.chord_aug  { background: #fef9c3; border-color: #fcd34d; }
+.chord_other{ background: var(--bg-secondary); }
+
+[data-theme="dark"] .chord_maj  { background: #042e1a; border-color: #065f46; }
+[data-theme="dark"] .chord_min  { background: #1e2e6a; border-color: #3b4ea0; }
+[data-theme="dark"] .chord_dim  { background: #4a0a3a; border-color: #831843; }
+[data-theme="dark"] .chord_aug  { background: #3a2800; border-color: #92400e; }
+
+.chordLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: monospace;
+}
+
+.chordQuality {
+  font-size: 0.55rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.chordNote {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Rhythm patterns */
+.rhythmList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.rhythmItem {
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rhythmHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.rhythmName {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.rhythmSig {
+  font-size: 0.75rem;
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+}
+
+.rhythmBeat {
+  font-size: 0.7rem;
+  font-family: monospace;
+  color: var(--text-muted);
+}
+
+.rhythmDesc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .listenList {

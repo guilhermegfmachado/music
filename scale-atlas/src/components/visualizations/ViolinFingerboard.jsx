@@ -8,16 +8,18 @@ const STRING_THICKNESS = [1, 1.5, 2, 2.8]
 const SEMITONE_COUNT = 13
 // Common reference positions (like fret dots) — semitones 3, 5, 7, 12
 const GUIDE_POSITIONS = new Set([3, 5, 7, 12])
+const NOTE_NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
 
-export default function ViolinFingerboard({ scale }) {
+export default function ViolinFingerboard({ scale, rootNote = 'C' }) {
+  const rootIdx = NOTE_NAMES.indexOf(rootNote)
   const semitones = new Set(intervalsToSemitones(scale.intervalFormula))
 
   function isInScale(midi) {
-    return semitones.has(midi % 12)
+    return semitones.has((midi - rootIdx + 120) % 12)
   }
 
   function isRoot(midi) {
-    return (midi % 12) === 0
+    return (midi % 12) === rootIdx % 12
   }
 
   return (
@@ -62,7 +64,7 @@ export default function ViolinFingerboard({ scale }) {
           </div>
         </div>
       </div>
-      <p className={styles.note}>Root = C · Fretless — positions shown as semitones · Amber = root</p>
+      <p className={styles.note}>Root = {rootNote} · Fretless · Amber = root</p>
     </div>
   )
 }

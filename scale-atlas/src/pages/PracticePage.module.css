@@ -284,3 +284,28 @@
   color: var(--text-muted);
   line-height: 1.6;
 }
+
+/* Ear Training */
+.playBtn {
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.15s;
+  margin: 0.5rem 0;
+}
+
+.playBtn:hover {
+  background: var(--accent-hover);
+}
+
+.playBtnActive {
+  background: #dc2626;
+}
+
+.revealViz {
+  margin-top: 0.75rem;
+}

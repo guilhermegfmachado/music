@@ -5,11 +5,12 @@ const WHITE_KEYS = [0, 2, 4, 5, 7, 9, 11] // C D E F G A B
 const BLACK_KEYS = [1, 3, 6, 8, 10]        // C# D# F# G# A#
 const NOTE_LABELS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
-export default function PianoKeyboard({ scale }) {
+export default function PianoKeyboard({ scale, rootNote = 'C' }) {
+  const rootIdx = NOTE_LABELS.indexOf(rootNote)
   const semitones = new Set(intervalsToSemitones(scale.intervalFormula))
 
-  const isInScale = (note) => semitones.has(note % 12)
-  const isRoot = (note) => (note % 12) === 0
+  const isInScale = (note) => semitones.has((note - rootIdx + 120) % 12)
+  const isRoot = (note) => (note % 12) === rootIdx % 12
 
   return (
     <div className={styles.wrapper}>
@@ -25,7 +26,7 @@ export default function PianoKeyboard({ scale }) {
                 className={`${styles.white} ${inScale ? styles.whiteActive : ''} ${root ? styles.root : ''}`}
                 title={NOTE_LABELS[note]}
               >
-                {root && <span className={styles.label}>R</span>}
+                {root && <span className={styles.label}>{rootNote}</span>}
                 {inScale && !root && <span className={styles.dot} />}
               </div>
             )
@@ -50,7 +51,7 @@ export default function PianoKeyboard({ scale }) {
           })
         )}
       </div>
-      <p className={styles.note}>Root = C (12-TET approximation for non-Western scales)</p>
+      <p className={styles.note}>Root = {rootNote} · 12-TET approximation</p>
     </div>
   )
 }
