@@ -181,6 +181,7 @@ export default function MapPage({ scales, theme }) {
             projectionConfig={{ scale: 130, center: [15, 20] }}
             width={800}
             height={420}
+            style={{ width: '100%', height: 'auto', display: 'block' }}
           >
             <Sphere fill={isDark ? '#0f1117' : '#f0f4ff'} stroke={isDark ? '#2a2d3e' : '#cbd5e1'} strokeWidth={0.5} />
             <Graticule stroke={isDark ? '#1e2232' : '#e2e8f0'} strokeWidth={0.3} />

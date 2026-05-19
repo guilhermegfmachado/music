@@ -51,9 +51,18 @@
   .sidebar {
     position: static;
     max-height: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
+  .sidebar::-webkit-scrollbar { display: none; }
+  .sidebarGroup { flex-shrink: 0; min-width: 120px; }
+  .sidebarGroupLabel { white-space: nowrap; }
 }
 
 .sidebarGroup {
