@@ -106,10 +106,10 @@ function scaleToRegionId(region, culture, tradition) {
   const t = (tradition || '').toLowerCase()
   if (r.includes('east asia') || c.includes('japanese') || c.includes('chinese') || c.includes('okinawan') || c.includes('korean')) return 'east-asia'
   if (r.includes('central asia') || c.includes('mongolian') || c.includes('tibetan') || c.includes('uzbek') || c.includes('kazakh')) return 'central-asia'
-  if (r.includes('south asia') || c.includes('indian') || c.includes('carnatic') || c.includes('hindustani') || c.includes('nepali')) return 'south-asia'
+  if (r.includes('south asia') || r.includes('india') || c.includes('indian') || c.includes('carnatic') || c.includes('hindustani') || c.includes('nepali')) return 'south-asia'
   if (r.includes('southeast asia') || c.includes('javanese') || c.includes('balinese') || c.includes('vietnamese') || c.includes('indonesian')) return 'southeast-asia'
   if (r.includes('middle east') || c.includes('persian') || c.includes('turkish') || c.includes('arabic') || c.includes('ottoman') || c.includes('iraqi')) return 'middle-east'
-  if (r.includes('eastern europe') || r.includes('balkans') || r.includes('carpathian') || c.includes('bulgarian') || c.includes('romani') || c.includes('ukrainian') || c.includes('hungarian') || c.includes('hutsul')) return 'eastern-europe'
+  if (r === 'russia' || r.includes('eastern europe') || r.includes('balkans') || r.includes('carpathian') || c.includes('bulgarian') || c.includes('romani') || c.includes('ukrainian') || c.includes('hungarian') || c.includes('hutsul')) return 'eastern-europe'
   if (r.includes('north africa') || c.includes('moroccan') || c.includes('gnawa') || c.includes('egyptian') || c.includes('algerian')) return 'north-africa'
   if (r.includes('west africa') || c.includes('mande') || c.includes('west african') || c.includes('yoruba') || c.includes('ewe')) return 'west-africa'
   if (r.includes('east africa') || c.includes('ethiopian') || c.includes('kenyan')) return 'east-africa'
@@ -186,7 +186,9 @@ export default function MapPage({ scales, theme }) {
             <Sphere fill={isDark ? '#0f1117' : '#f0f4ff'} stroke={isDark ? '#2a2d3e' : '#cbd5e1'} strokeWidth={0.5} />
             <Graticule stroke={isDark ? '#1e2232' : '#e2e8f0'} strokeWidth={0.3} />
             <Geographies geography={GEO_URL}>
-              {({ geographies }) =>
+              {({ geographies }) => geographies.length === 0 ? (
+                <text x="400" y="210" textAnchor="middle" fill={isDark ? '#4a5568' : '#94a3b8'} fontSize="14">Loading map…</text>
+              ) :
                 geographies.map(geo => {
                   const rid = CODE_TO_REGION[geo.id]
                   const reg = rid ? REGION_BY_ID[rid] : null
