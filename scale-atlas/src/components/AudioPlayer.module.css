@@ -98,3 +98,9 @@
   border-color: var(--accent);
   color: var(--accent);
 }
+
+.audioError {
+  font-size: 0.75rem;
+  color: #e11d48;
+  font-weight: 500;
+}

@@ -15,6 +15,7 @@ const ROOT_MIDI = { C:60, 'C#':61, D:62, 'D#':63, E:64, F:65, 'F#':66, G:67, 'G#
 
 export default function AudioPlayer({ scale }) {
   const [playing, setPlaying] = useState(false)
+  const [error, setError] = useState(null)
   const [timbre, setTimbre] = useState('piano')
   const [tempo, setTempo] = useState(80)
   const [root, setRoot] = useState('C')
@@ -36,17 +37,25 @@ export default function AudioPlayer({ scale }) {
       setPlaying(false)
       return
     }
+    setError(null)
     playingRef.current = true
     setPlaying(true)
-    const duration = await playScale(scale.intervalFormula, {
-      timbre,
-      tempo,
-      rootMidi: ROOT_MIDI[root],
-    })
-    timeoutRef.current = setTimeout(() => {
+    try {
+      const duration = await playScale(scale.intervalFormula, {
+        timbre,
+        tempo,
+        rootMidi: ROOT_MIDI[root],
+      })
+      timeoutRef.current = setTimeout(() => {
+        playingRef.current = false
+        setPlaying(false)
+      }, duration + 200)
+    } catch (e) {
+      console.error('Audio playback failed:', e)
       playingRef.current = false
       setPlaying(false)
-    }, duration + 200)
+      setError('Audio failed — tap Play again')
+    }
   }
 
   return (
@@ -55,6 +64,7 @@ export default function AudioPlayer({ scale }) {
         <button className={`${styles.playBtn} ${playing ? styles.playing : ''}`} onClick={handlePlay}>
           {playing ? '■ Stop' : '▶ Play Scale'}
         </button>
+        {error && <span className={styles.audioError}>{error}</span>}
 
         <div className={styles.control}>
           <label>Root</label>
