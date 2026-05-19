@@ -23,6 +23,9 @@ export default function Navbar({ theme, onThemeToggle }) {
           <NavLink to="/compare" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
             Compare
           </NavLink>
+          <NavLink to="/rhythms" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Rhythms
+          </NavLink>
           <NavLink to="/practice" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
             Practice
           </NavLink>

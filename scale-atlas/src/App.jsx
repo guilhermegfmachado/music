@@ -8,6 +8,7 @@ import ComparePage from './pages/ComparePage.jsx'
 import PracticePage from './pages/PracticePage.jsx'
 import MapPage from './pages/MapPage.jsx'
 import TuningsPage from './pages/TuningsPage.jsx'
+import RhythmsPage from './pages/RhythmsPage.jsx'
 import scalesData from './data/scales.json'
 
 export default function App() {
@@ -31,8 +32,9 @@ export default function App() {
           <Route path="/scale/:id" element={<ScaleDetailPage scales={scales} />} />
           <Route path="/compare" element={<ComparePage scales={scales} />} />
           <Route path="/practice" element={<PracticePage scales={scales} />} />
-          <Route path="/map" element={<MapPage scales={scales} />} />
+          <Route path="/map" element={<MapPage scales={scales} theme={theme} />} />
           <Route path="/tunings" element={<TuningsPage scales={scales} />} />
+          <Route path="/rhythms" element={<RhythmsPage scales={scales} />} />
         </Routes>
       </div>
       <Footer />

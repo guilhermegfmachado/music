@@ -1,0 +1,363 @@
+.page {
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  padding-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left list */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  top: 70px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.groupLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.rhythmBtn {
+  text-align: left;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.rhythmBtn:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+
+.rhythmBtnActive {
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+
+.rName {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.rMeta {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.rTs {
+  font-size: 0.7rem;
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+}
+
+.rRegion {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+/* Right detail */
+.detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  min-height: 300px;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  height: 300px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.placeholderIcon {
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.detailInner {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.detailName {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  flex: 1;
+}
+
+.detailMeta {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detailTs {
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: 800;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+}
+
+.detailBeat {
+  font-size: 0.78rem;
+  font-family: monospace;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.detailDesc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.detailFrom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+}
+
+.detailFromLabel {
+  color: var(--text-muted);
+}
+
+.detailFromLink {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.detailFromLink:hover {
+  text-decoration: underline;
+}
+
+/* Metronome */
+.metroSection {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.metroTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.metroControls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.bpmDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  padding: 0 0.25rem;
+}
+
+.bpmNum {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: monospace;
+  color: var(--text);
+  line-height: 1;
+}
+
+.bpmLabel {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bpmBtn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.bpmBtn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.playBtn {
+  margin-left: auto;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.playBtn:hover {
+  opacity: 0.85;
+}
+
+.playBtnActive {
+  background: #e11d48;
+}
+
+/* Beat grid */
+.beatGrid {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.beat {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  transition: transform 0.06s, background 0.06s;
+  flex-shrink: 0;
+}
+
+.beatAccent {
+  background: var(--accent);
+  width: 24px;
+  height: 24px;
+}
+
+.beatNormal {
+  background: color-mix(in srgb, var(--accent) 35%, var(--bg-card));
+}
+
+.beatOff {
+  background: var(--border);
+  opacity: 0.5;
+}
+
+.beatActive {
+  transform: scale(1.35);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+.freeNote {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Beat key */
+.beatKey {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.beatKeyItem {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.beatKeyItem .beat {
+  width: 12px;
+  height: 12px;
+}
+
+.beatKeyItem .beatAccent {
+  width: 14px;
+  height: 14px;
+}

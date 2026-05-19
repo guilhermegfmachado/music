@@ -5175,6 +5175,315 @@
           "url": "https://www.youtube.com/results?search_query=Persian+classical+music+Segah+radif"
         }
       ]
+    },
+    {
+      "id": "okinawan",
+      "name": "Okinawan Scale",
+      "aliases": [
+        "Ryukyuan Scale",
+        "Shuri Scale",
+        "Ryūkyū pentatonic"
+      ],
+      "culture": "Okinawan",
+      "region": "East Asia",
+      "tradition": "Ryukyuan / Okinawan Folk",
+      "toneCount": 5,
+      "intervalFormula": [
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      "degrees": [
+        "1",
+        "b3",
+        "3",
+        "5",
+        "7"
+      ],
+      "description": "The Okinawan (Ryukyuan) pentatonic scale is strikingly distinct from both mainland Japanese and Chinese scales, reflecting Okinawa's unique position as a trading crossroads between Japan, China, and Southeast Asia. Its defining feature is the coexistence of a minor third and a natural (major) third — a neutral quality found in almost no other scale tradition.\n\nThe scale is played primarily on the sanshin (Okinawan three-string lute, ancestor of the Japanese shamisen) and is at the core of traditional Ryukyuan music including kachāshī (celebratory dance), narrative songs, and court music. The 2024 Oscar-winning song 'Naatu Naatu' and the global resurgence of Okinawan music have brought renewed attention to this distinctive sound.",
+      "usage": "Okinawan sanshin music, Ryukyuan court music, kachāshī dance, contemporary J-pop with Okinawan flavor.",
+      "characteristicPatterns": "The major third following the minor third is the key gesture. Bright, celebratory upward phrases. Often played with a cheerful rhythmic feel.",
+      "relatedScales": [
+        "akebono",
+        "pentatonic-yo",
+        "chinese-gong"
+      ],
+      "characteristics": {
+        "mood": [
+          "bright",
+          "expressive",
+          "folk"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Kachāshī",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Lively Okinawan celebratory dance rhythm, fast and joyful"
+        },
+        {
+          "name": "Yotsudake",
+          "timeSignature": "4/4",
+          "beat": "2+2",
+          "description": "Okinawan castanet-accompanied rhythmic pattern"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Haisai Ojisan",
+          "artist": "Kina Shokichi",
+          "url": "https://www.youtube.com/results?search_query=Kina+Shokichi+Haisai+Ojisan+Okinawa"
+        },
+        {
+          "title": "Tinsagu nu Hana",
+          "artist": "Traditional Okinawan",
+          "url": "https://www.youtube.com/results?search_query=Tinsagu+nu+Hana+Okinawa+sanshin"
+        },
+        {
+          "title": "Subete no Hito no Kokoro ni Hana wo",
+          "artist": "Kina Shokichi",
+          "url": "https://www.youtube.com/results?search_query=Kina+Shokichi+Okinawan+music+sanshin"
+        }
+      ]
+    },
+    {
+      "id": "mongolian-pentatonic",
+      "name": "Mongolian Pentatonic",
+      "aliases": [
+        "Guu Scale",
+        "Mongolian Major Pentatonic",
+        "Urtiin Duu Scale"
+      ],
+      "culture": "Mongolian",
+      "region": "Central Asia",
+      "tradition": "Mongolian Traditional",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "description": "The Mongolian pentatonic scale underlies the vast repertoire of Mongolian traditional music, from the sweeping urtiin duu (long songs) of the steppes to the rapid, rhythmic bogino duu (short songs). While the interval structure resembles the Chinese Gong mode and Western major pentatonic, Mongolian music gives it a distinctive character through vast open melodic leaps, glottal ornaments, and the overtone-rich timbre of the morin khuur (horsehead fiddle) and tovshuur (lute).\n\nMongolian urtiin duu — UNESCO-recognized intangible cultural heritage — features extraordinarily long vocal phrases with minimal accompaniment, evoking the infinite landscape of the Mongolian steppe. Khoomei (throat singing), in which singers simultaneously produce a drone and a high whistle tone, often elaborates the overtone series of this scale.",
+      "usage": "Urtiin duu (long song), bogino duu (short song), khoomei performance, morin khuur solos, Mongolian court and folk music.",
+      "characteristicPatterns": "Wide leaping intervals across multiple octaves. Extremely long phrases with minimal breath. The pentatonic avoids semitones, giving open spacious quality.",
+      "relatedScales": [
+        "pentatonic-major",
+        "chinese-gong",
+        "pentatonic-yo"
+      ],
+      "characteristics": {
+        "mood": [
+          "bright",
+          "meditative",
+          "expressive"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Urtiin Duu",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Unmeasured, freely flowing long-phrase vocal style with vast range"
+        },
+        {
+          "name": "Bogino Duu",
+          "timeSignature": "2/4",
+          "beat": "1+1",
+          "description": "Measured short-song rhythm, quicker and more dance-oriented"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Mongolian Urtiin Duu — Long Song",
+          "artist": "Norovbanzad",
+          "url": "https://www.youtube.com/results?search_query=Norovbanzad+Mongolian+long+song+urtiin+duu"
+        },
+        {
+          "title": "Khoomei Throat Singing",
+          "artist": "Tuvinian/Mongolian Khoomei",
+          "url": "https://www.youtube.com/results?search_query=Mongolian+khoomei+throat+singing+morin+khuur"
+        },
+        {
+          "title": "Morin Khuur Solo",
+          "artist": "Traditional Mongolian",
+          "url": "https://www.youtube.com/results?search_query=morin+khuur+horsehead+fiddle+Mongolian+traditional"
+        }
+      ]
+    },
+    {
+      "id": "tibetan-folk",
+      "name": "Tibetan Folk Scale",
+      "aliases": [
+        "Tibetan Pentatonic",
+        "Dramnyen Scale"
+      ],
+      "culture": "Tibetan",
+      "region": "Central Asia",
+      "tradition": "Tibetan Folk / Buddhist",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        3,
+        2,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "description": "Tibetan traditional music spans sacred Buddhist ceremony and secular folk, with a pentatonic framework underlying much of the folk repertoire. The dramnyen (six-string lute) and lingbu (transverse flute) are the primary melodic instruments of Tibetan folk music, while sacred music uses dungchen (long trumpets), dung dkar (conch shells), and rolmo (cymbals) that create washes of sound rather than melody.\n\nTibetan folk songs (lo-gzhas) and dance songs (gzhas-gzhas) use this pentatonic framework with a characteristic style of ornamentation and microtonal inflection that reflects the thin-air acoustics of high altitude living. Tibetan music is also heavily influenced by its role in Buddhist meditation practice, where sustained tones and harmonics induce contemplative states.",
+      "usage": "Tibetan folk songs, lo-gzhas (folk songs), dramnyen lute music, informal community music.",
+      "characteristicPatterns": "Simple repeated pentatonic phrases. Upward melodic movement from the 4th to 5th is characteristic. Drone on the root.",
+      "relatedScales": [
+        "pentatonic-major",
+        "mongolian-pentatonic",
+        "ethiopian-tizita"
+      ],
+      "characteristics": {
+        "mood": [
+          "meditative",
+          "spiritual",
+          "melancholic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Gzhas",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "Standard folk dance song rhythm from Tibet"
+        },
+        {
+          "name": "Free Ceremonial",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Unmeasured sacred/ceremonial Tibetan Buddhist music context"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Tibetan Folk Song — Dramnyen",
+          "artist": "Traditional Tibetan",
+          "url": "https://www.youtube.com/results?search_query=Tibetan+folk+song+dramnyen+lute+traditional"
+        },
+        {
+          "title": "Tibetan Buddhist Chant",
+          "artist": "Monks of Gyuto",
+          "url": "https://www.youtube.com/results?search_query=Gyuto+monks+Tibetan+Buddhist+chant"
+        },
+        {
+          "title": "Ama La (Traditional Tibetan Folk)",
+          "artist": "Traditional",
+          "url": "https://www.youtube.com/results?search_query=Ama+La+Tibetan+folk+song+traditional"
+        }
+      ]
+    },
+    {
+      "id": "rittsu-mode",
+      "name": "Rittsu Mode",
+      "aliases": [
+        "Ritsu",
+        "Riku",
+        "Japanese Dorian",
+        "Chinese Lu Mode"
+      ],
+      "culture": "Japanese / Chinese",
+      "region": "East Asia",
+      "tradition": "Japanese Gagaku / Chinese Classical",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        3,
+        2,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "b7"
+      ],
+      "description": "The Rittsu mode (ritsu-chō) is one of the two foundational pentatonic modes in Japanese court music (gagaku), the other being the brighter Ryō mode. Imported from Tang dynasty China along with gagaku itself in the 7th–8th centuries, Rittsu corresponds to the Chinese Lü scale and is built on a minor-flavored pentatonic with a lowered seventh.\n\nIn Japanese gagaku, Rittsu melodies are traditionally assigned to the autumn and winter seasons and are associated with introspection and solemnity. The mode is played on the shō (mouth organ), hichiriki (double-reed pipe), and ryūteki (transverse flute). Contemporary Japanese composers and musicians continue to draw on Rittsu mode for its distinctive, grounded character.",
+      "usage": "Japanese gagaku court music, Buddhist ceremonial music, contemporary Japanese composition.",
+      "characteristicPatterns": "Smooth pentatonic movement emphasizing the lowered seventh. Sustained tones on the shō create harmonic clusters around the mode's notes.",
+      "relatedScales": [
+        "pentatonic-in",
+        "hirajoshi",
+        "pentatonic-yo",
+        "chinese-zhi"
+      ],
+      "characteristics": {
+        "mood": [
+          "meditative",
+          "folk",
+          "calm"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Gagaku Free Meter",
+          "timeSignature": "free",
+          "beat": "free",
+          "description": "Gagaku uses extremely slow, unmeasured pacing guided by drum signals"
+        },
+        {
+          "name": "Etenraku",
+          "timeSignature": "4/4",
+          "beat": "1+1+1+1",
+          "description": "The most famous gagaku piece, in measured moderate tempo"
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Etenraku — Gagaku Court Music",
+          "artist": "Tokyo Geidai Gagaku",
+          "url": "https://www.youtube.com/results?search_query=Etenraku+gagaku+Japanese+court+music"
+        },
+        {
+          "title": "Gagaku Rittsu Mode",
+          "artist": "Traditional Japanese",
+          "url": "https://www.youtube.com/results?search_query=Rittsu+mode+gagaku+Japanese+traditional+hichiriki"
+        },
+        {
+          "title": "Shō Mouth Organ — Gagaku",
+          "artist": "Traditional Japanese",
+          "url": "https://www.youtube.com/results?search_query=sho+mouth+organ+gagaku+Japanese+court+music"
+        }
+      ]
     }
   ]
 }
