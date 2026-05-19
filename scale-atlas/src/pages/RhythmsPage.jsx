@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import * as Tone from 'tone'
 import styles from './RhythmsPage.module.css'
@@ -180,13 +180,22 @@ function Metronome({ pattern }) {
 
 export default function RhythmsPage({ scales }) {
   const [active, setActive] = useState(null)
-  const rhythms = collectRhythms(scales)
-  const grouped = TS_GROUPS.map(g => ({
-    ...g,
-    items: rhythms.filter(r => g.filter(r.timeSignature)),
-  })).filter(g => g.items.length > 0)
 
-  const activeRhythm = rhythms.find((r, i) => i === active) || null
+  // stable across renders — new objects only when scales prop changes
+  const rhythms = useMemo(() => collectRhythms(scales), [scales])
+
+  // each item carries its index in rhythms so no indexOf needed
+  const grouped = useMemo(() =>
+    TS_GROUPS.map(g => ({
+      label: g.label,
+      items: rhythms.reduce((acc, r, i) => {
+        if (g.filter(r.timeSignature)) acc.push({ r, i })
+        return acc
+      }, []),
+    })).filter(g => g.items.length > 0),
+  [rhythms])
+
+  const activeRhythm = active !== null ? rhythms[active] : null
 
   return (
     <div className={styles.page}>
@@ -200,22 +209,19 @@ export default function RhythmsPage({ scales }) {
             {grouped.map(group => (
               <div key={group.label} className={styles.group}>
                 <div className={styles.groupLabel}>{group.label}</div>
-                {group.items.map((r, _) => {
-                  const globalIdx = rhythms.indexOf(r)
-                  return (
-                    <button
-                      key={globalIdx}
-                      className={`${styles.rhythmBtn} ${active === globalIdx ? styles.rhythmBtnActive : ''}`}
-                      onClick={() => setActive(prev => prev === globalIdx ? null : globalIdx)}
-                    >
-                      <div className={styles.rName}>{r.name}</div>
-                      <div className={styles.rMeta}>
-                        <span className={styles.rTs}>{r.timeSignature}</span>
-                        <span className={styles.rRegion}>{r.scaleRegion}</span>
-                      </div>
-                    </button>
-                  )
-                })}
+                {group.items.map(({ r, i }) => (
+                  <button
+                    key={i}
+                    className={`${styles.rhythmBtn} ${active === i ? styles.rhythmBtnActive : ''}`}
+                    onClick={() => setActive(prev => prev === i ? null : i)}
+                  >
+                    <div className={styles.rName}>{r.name}</div>
+                    <div className={styles.rMeta}>
+                      <span className={styles.rTs}>{r.timeSignature}</span>
+                      <span className={styles.rRegion}>{r.scaleRegion}</span>
+                    </div>
+                  </button>
+                ))}
               </div>
             ))}
           </div>
