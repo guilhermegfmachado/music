@@ -161,7 +161,7 @@ export default function ScaleDetailPage({ scales }) {
                 </div>
               </div>
 
-              <div className={styles.intervalTable}>
+              <div>
                 <h3 className={styles.subTitle}>Intervals from Root</h3>
                 <div className={styles.intervalList}>
                   {semitones.map((s, i) => (

@@ -141,6 +141,7 @@ export default function ComparePage({ scales }) {
 
               <div className={styles.charCompare}>
                 <h4 className={styles.analysisSubtitle}>Characteristics</h4>
+                <div className={styles.charTableWrap}>
                 <table className={styles.charTable}>
                   <thead>
                     <tr>
@@ -164,6 +165,7 @@ export default function ComparePage({ scales }) {
                     ))}
                   </tbody>
                 </table>
+                </div>
               </div>
             </div>
           </div>

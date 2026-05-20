@@ -243,6 +243,11 @@
   gap: 0.5rem;
 }
 
+.charTableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .charTable {
   width: 100%;
   border-collapse: collapse;

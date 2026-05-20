@@ -188,8 +188,13 @@ function EarTraining({ scales }) {
   async function handlePlay() {
     if (playing) { stopAll(); clearTimeout(timeoutRef.current); setPlaying(false); return }
     setPlaying(true)
-    const dur = await playScale(question.target.intervalFormula, { timbre: 'piano', tempo: 72, rootMidi: 60 })
-    timeoutRef.current = setTimeout(() => setPlaying(false), dur + 200)
+    try {
+      const dur = await playScale(question.target.intervalFormula, { timbre: 'piano', tempo: 72, rootMidi: 60 })
+      timeoutRef.current = setTimeout(() => setPlaying(false), dur + 200)
+    } catch (e) {
+      console.error('Audio playback failed:', e)
+      setPlaying(false)
+    }
   }
 
   function answer(scale) {
