@@ -225,6 +225,20 @@
           "artist": "Dick Dale",
           "url": "https://www.youtube.com/results?search_query=Dick+Dale+Miserlou"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Waltz",
+          "timeSignature": "3/4",
+          "beat": "♩ = 126",
+          "description": "The harmonic minor's raised 7th lends waltzes an exotic, yearning quality — a staple of 19th-century Romantic composers."
+        },
+        {
+          "name": "Dramatic 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 76",
+          "description": "Slow, cinematic 4/4 exploiting the leading-tone tension inherent in the harmonic minor scale."
+        }
       ]
     },
     {
@@ -289,6 +303,20 @@
           "title": "Black Orpheus",
           "artist": "Luiz Bonfá",
           "url": "https://www.youtube.com/results?search_query=Luiz+Bonfa+Manha+de+Carnaval"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Jazz 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "The melodic minor is a cornerstone of modern jazz and fusion improvisation, often used over altered dominant chords."
+        },
+        {
+          "name": "Neo-soul groove",
+          "timeSignature": "4/4",
+          "beat": "♩ = 88",
+          "description": "Smooth, syncopated groove common in neo-soul and R&B exploiting the scale's characteristic flatted 6th."
         }
       ]
     },
@@ -434,6 +462,20 @@
           "artist": "Paco de Lucia",
           "url": "https://www.youtube.com/results?search_query=Paco+de+Lucia+flamenco+solea"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Flamenco compás",
+          "timeSignature": "3/4",
+          "beat": "♩ = 116",
+          "description": "Andalusian flamenco rhythm with its characteristic 12-beat cycle (soleares), the natural home of the Phrygian mode."
+        },
+        {
+          "name": "Metal riff",
+          "timeSignature": "4/4",
+          "beat": "♩ = 140",
+          "description": "Heavy, driving 4/4 used extensively in metal genres for its dark, ominous character."
+        }
       ]
     },
     {
@@ -498,6 +540,20 @@
           "title": "Lydian (studio version)",
           "artist": "Steve Vai",
           "url": "https://www.youtube.com/results?search_query=Steve+Vai+For+the+Love+of+God"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Cinematic 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 88",
+          "description": "Ethereal, floating 4/4 favored in film scores for dreamlike or otherworldly scenes — the raised 4th creates a sense of wonder."
+        },
+        {
+          "name": "Jazz waltz",
+          "timeSignature": "3/4",
+          "beat": "♩ = 160",
+          "description": "Bright, playful jazz waltz exploiting the Lydian mode's bright, open character."
         }
       ]
     },
@@ -565,6 +621,20 @@
           "artist": "Bob Seger",
           "url": "https://www.youtube.com/results?search_query=Bob+Seger+Old+Time+Rock+and+Roll"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Rock groove",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "The dominant rock and folk groove — the flatted 7th gives that classic \"Southern rock\" or blues-rock feel."
+        },
+        {
+          "name": "Celtic 6/8",
+          "timeSignature": "6/8",
+          "beat": "♩. = 84",
+          "description": "Lively compound-time jig or reel, extremely common in Irish and Scottish traditional music played in Mixolydian."
+        }
       ]
     },
     {
@@ -630,6 +700,14 @@
           "artist": "Allan Holdsworth",
           "url": "https://www.youtube.com/results?search_query=Allan+Holdsworth+jazz+fusion"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Experimental 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 100",
+          "description": "Rarely used as a tonal center due to its unstable diminished 5th; favored in modern experimental and extreme metal contexts."
+        }
       ]
     },
     {
@@ -692,6 +770,20 @@
           "artist": "Traditional",
           "url": "https://www.youtube.com/results?search_query=Swing+Low+Sweet+Chariot+spiritual"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Pentatonic folk",
+          "timeSignature": "4/4",
+          "beat": "♩ = 96",
+          "description": "Simple, open-feeling 4/4 groove found across East Asian, African, and Celtic folk traditions that use the major pentatonic."
+        },
+        {
+          "name": "Country shuffle",
+          "timeSignature": "4/4",
+          "beat": "♩ = 112",
+          "description": "Swinging country or bluegrass rhythm — the major pentatonic is the bedrock of American country music lead playing."
+        }
       ]
     },
     {
@@ -752,6 +844,20 @@
           "title": "Sweet Child O' Mine (intro)",
           "artist": "Guns N' Roses",
           "url": "https://www.youtube.com/results?search_query=Guns+N+Roses+Sweet+Child+O+Mine"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Blues shuffle",
+          "timeSignature": "4/4",
+          "beat": "♩ = 108",
+          "description": "Swung, shuffled 4/4 that underpins blues and rock'n'roll — the minor pentatonic is the most-used scale in popular music."
+        },
+        {
+          "name": "Rock riff",
+          "timeSignature": "4/4",
+          "beat": "♩ = 132",
+          "description": "Straight-eighth driving rock groove; the minor pentatonic provides the backbone of classic rock guitar riffs."
         }
       ]
     },
@@ -892,6 +998,14 @@
           "artist": "Claude Debussy",
           "url": "https://www.youtube.com/results?search_query=Debussy+General+Lavine+Eccentric"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Impressionist 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 72",
+          "description": "Slow, atmospheric 4/4 in the style of Debussy and Ravel, where the whole-tone scale creates ambiguous, floating harmonies."
+        }
       ]
     },
     {
@@ -958,6 +1072,20 @@
           "title": "Diminished Feels (jazz lesson)",
           "artist": "Adam Neely",
           "url": "https://www.youtube.com/results?search_query=Adam+Neely+diminished+scale+jazz"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Jazz bebop",
+          "timeSignature": "4/4",
+          "beat": "♩ = 200",
+          "description": "Fast bebop 4/4 — the diminished (octatonic) scale is used over dominant 7th chords in advanced jazz improvisation."
+        },
+        {
+          "name": "Symmetrical 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "The symmetrical nature of the diminished scale allows patterns to repeat every 3 semitones, creating hypnotic, cycling rhythmic figures."
         }
       ]
     },
@@ -1032,6 +1160,14 @@
           "title": "Chromatic Fantasy and Fugue",
           "artist": "J.S. Bach",
           "url": "https://www.youtube.com/results?search_query=Bach+Chromatic+Fantasy+and+Fugue"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Free",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "The chromatic scale contains all 12 pitches and is not bound to a particular rhythmic tradition — used in atonal and 12-tone composition."
         }
       ]
     },
@@ -1179,6 +1315,20 @@
           "artist": "Pandit Ravi Shankar",
           "url": "https://www.youtube.com/results?search_query=Ravi+Shankar+Raga+Bhairav"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Teentaal",
+          "timeSignature": "4/4",
+          "beat": "♩ = 60",
+          "description": "Vilambit (slow) Teentaal — 16 beats in 4 groups of 4. Raga Bhairav is a morning raga traditionally performed at dawn in stately, slow tempo."
+        },
+        {
+          "name": "Jhaptaal",
+          "timeSignature": "10/8",
+          "beat": "♩. = 56",
+          "description": "Jhaptaal — 10 beats (2+3+2+3), a medium-tempo tala well-suited to Bhairav's meditative morning character."
+        }
       ]
     },
     {
@@ -1245,6 +1395,20 @@
           "artist": "Nikhil Banerjee",
           "url": "https://www.youtube.com/results?search_query=Nikhil+Banerjee+Yaman+sitar"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Teentaal (Vilambit)",
+          "timeSignature": "4/4",
+          "beat": "♩ = 48",
+          "description": "Vilambit (slow) Teentaal — Raga Yaman is traditionally an evening raga and is often first presented in a slow, expansive tempo."
+        },
+        {
+          "name": "Teentaal (Drut)",
+          "timeSignature": "4/4",
+          "beat": "♩ = 200",
+          "description": "Drut (fast) Teentaal — after the vilambit section, Yaman traditionally moves to a fast, exhilarating pace with intricate tana passages."
+        }
       ]
     },
     {
@@ -1309,6 +1473,20 @@
           "title": "Miyan ki Todi",
           "artist": "Mallikarjun Mansur",
           "url": "https://www.youtube.com/results?search_query=Mallikarjun+Mansur+Miyan+ki+Todi"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Teentaal",
+          "timeSignature": "4/4",
+          "beat": "♩ = 52",
+          "description": "Raga Todi is typically performed in Teentaal at a deliberate, meditative pace, allowing its complex microtonal inflections full expression."
+        },
+        {
+          "name": "Rupak taal",
+          "timeSignature": "7/8",
+          "beat": "♩ = 72",
+          "description": "Rupak taal (7 beats: 3+2+2) highlights Todi's asymmetric, searching character with its unusual phrase lengths."
         }
       ]
     },
@@ -1376,6 +1554,14 @@
           "artist": "Ravi Shankar",
           "url": "https://www.youtube.com/results?search_query=Ravi+Shankar+Darbari+Kanada"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Vilambit Teentaal",
+          "timeSignature": "4/4",
+          "beat": "♩ = 36",
+          "description": "Darbari Kanada is almost exclusively performed in very slow (ati-vilambit) Teentaal, creating an atmosphere of deep midnight contemplation."
+        }
       ]
     },
     {
@@ -1440,6 +1626,20 @@
           "title": "Carnatic Alapana Mayamalavagowla",
           "artist": "Semmangudi Srinivasa Iyer",
           "url": "https://www.youtube.com/results?search_query=Semmangudi+Mayamalavagowla+alapana"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Adi Tala",
+          "timeSignature": "4/4",
+          "beat": "♩ = 80",
+          "description": "Adi Tala (8 beats), the most common tala in Carnatic music. Mayamalavagowla is the first scale taught to Carnatic students."
+        },
+        {
+          "name": "Rupaka Tala",
+          "timeSignature": "3/4",
+          "beat": "♩ = 100",
+          "description": "Rupaka tala (6 beats), often used in Carnatic kritis — the scale's symmetric structure fits neatly into balanced 3/4 phrases."
         }
       ]
     },
@@ -1506,6 +1706,20 @@
           "artist": "Balamurali Krishna",
           "url": "https://www.youtube.com/results?search_query=Balamurali+Krishna+Shankarabharanam"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Adi Tala",
+          "timeSignature": "4/4",
+          "beat": "♩ = 88",
+          "description": "Adi Tala (8 beats) — Shankarabharanam (the Carnatic major scale) is performed across all tempos in classical Carnatic music."
+        },
+        {
+          "name": "Misra Chapu",
+          "timeSignature": "7/8",
+          "beat": "♩ = 96",
+          "description": "Misra Chapu (7 beats: 3+4) — a popular semi-classical tala used for kritis and light classical pieces in this janya scale."
+        }
       ]
     },
     {
@@ -1571,6 +1785,20 @@
           "title": "Kalyani Ragam Tanam Pallavi",
           "artist": "Semmangudi Srinivasa Iyer",
           "url": "https://www.youtube.com/results?search_query=Kalyani+ragam+tanam+pallavi"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Adi Tala",
+          "timeSignature": "4/4",
+          "beat": "♩ = 80",
+          "description": "Adi Tala — Kalyani (the Carnatic Lydian, with all sharp notes) is among the most majestic melakartas, performed in stately Adi Tala kritis."
+        },
+        {
+          "name": "Rupaka Tala",
+          "timeSignature": "3/4",
+          "beat": "♩ = 96",
+          "description": "Rupaka tala — the scale's raised 4th creates a bright, expansive feel that pairs elegantly with the flowing triple-meter tala."
         }
       ]
     },
@@ -1798,6 +2026,20 @@
           "artist": "Dick Dale",
           "url": "https://www.youtube.com/results?search_query=Dick+Dale+Miserlou+surf+guitar"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Maqsum",
+          "timeSignature": "4/4",
+          "beat": "♩ = 108",
+          "description": "Maqsum — the most common Arabic rhythm (D.T.Ts.D): a driving 4/4 groove fundamental to Egyptian and Levantine Hijaz taksim and muwashahat."
+        },
+        {
+          "name": "Baladi",
+          "timeSignature": "4/4",
+          "beat": "♩ = 96",
+          "description": "Baladi — a heavier variant of Maqsum with a distinctive double-dum at the start, heard in folk and belly-dance music across the Arab world."
+        }
       ]
     },
     {
@@ -1866,6 +2108,20 @@
           "artist": "Van Halen",
           "url": "https://www.youtube.com/results?search_query=Van+Halen+Eruption+guitar+solo"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Flamenco soleares",
+          "timeSignature": "3/4",
+          "beat": "♩ = 116",
+          "description": "Soleares compás — the 12-beat Andalusian cycle (1-2, 1-2, 1-2-3, 1-2-3, 1-2-3) that is the natural habitat of the Phrygian dominant scale in flamenco."
+        },
+        {
+          "name": "Tango",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "Tango-style 4/4 — the Phrygian dominant scale appears in the \"Habanera\" bass pattern and adds an Iberian-Middle Eastern flavor to the dance."
+        }
       ]
     },
     {
@@ -1926,6 +2182,14 @@
           "title": "Rokudan no Shirabe",
           "artist": "Yatsuhashi Kengyo",
           "url": "https://www.youtube.com/results?search_query=Rokudan+no+Shirabe+koto+Japanese"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Gagaku pulse",
+          "timeSignature": "4/4",
+          "beat": "♩ = 48",
+          "description": "Slow, stately 4/4 pulse inspired by Japanese court music (gagaku), where the Yo pentatonic forms the basis of bright, ceremonial pieces."
         }
       ]
     },
@@ -1988,6 +2252,20 @@
           "title": "Tsugaru Shamisen",
           "artist": "Takahashi Chikuzan",
           "url": "https://www.youtube.com/results?search_query=Takahashi+Chikuzan+Tsugaru+shamisen"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Buddhist chant",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "Free-meter chant — the In scale (with its semitone cluster) is associated with Japanese Buddhist ceremonial music and koto pieces of a introspective character."
+        },
+        {
+          "name": "Shakuhachi 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 60",
+          "description": "Meditative 4/4 as heard in shakuhachi and koto repertoire — long, breathy phrases separated by silence."
         }
       ]
     },
@@ -2350,6 +2628,14 @@
           "artist": "Mulatu Astatke",
           "url": "https://www.youtube.com/results?search_query=Mulatu+Astatke+Yekermo+Sew"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Eskista 6/8",
+          "timeSignature": "6/8",
+          "beat": "♩. = 76",
+          "description": "Eskista-influenced 6/8 groove — the Bati scale's minor pentatonic character underpins much Ethiopian secular folk music with its characteristic shoulder-rolling dance."
+        }
       ]
     },
     {
@@ -2409,6 +2695,20 @@
           "title": "Iwato Guitar — Dark Japanese Atmosphere",
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=Iwato+scale+guitar+dark"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Noh/Kabuki free",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "Free meter, as heard in Japanese Noh and Kabuki theater. Iwato's extreme dissonances require expressive freedom rather than a strict pulse."
+        },
+        {
+          "name": "Koto 3/4",
+          "timeSignature": "3/4",
+          "beat": "♩ = 72",
+          "description": "Slow koto-style triple meter — Iwato's dark character finds an outlet in introspective solo koto pieces with sparse, haunting phrases."
         }
       ]
     },
@@ -2477,6 +2777,20 @@
           "artist": "Jimi Hendrix",
           "url": "https://www.youtube.com/results?search_query=Jimi+Hendrix+Little+Wing"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Jazz swing",
+          "timeSignature": "4/4",
+          "beat": "♩ = 176",
+          "description": "Swung jazz 4/4 — Lydian dominant is the sound of the tritone-substitute dominant chord in jazz, producing the characteristic \"Simpsons theme\" sound."
+        },
+        {
+          "name": "Fusion groove",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "Syncopated funk-fusion groove — favored in jazz fusion for the bright, unresolved tension of a dominant chord with a raised 4th."
+        }
       ]
     },
     {
@@ -2543,6 +2857,20 @@
           "title": "Moment's Notice",
           "artist": "John Coltrane",
           "url": "https://www.youtube.com/results?search_query=John+Coltrane+Moments+Notice"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Jazz ballad",
+          "timeSignature": "4/4",
+          "beat": "♩ = 60",
+          "description": "Slow ballad 4/4 — the altered scale is used over an altered dominant (7#9, 7b9) creating maximum tension before resolving to the tonic."
+        },
+        {
+          "name": "Bebop fast",
+          "timeSignature": "4/4",
+          "beat": "♩ = 220",
+          "description": "Fast bebop — at high tempos, the altered scale creates fluid, chromatic lines over the V chord in ii-V-I progressions."
         }
       ]
     },
@@ -2612,6 +2940,20 @@
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=double+harmonic+major+scale+oud"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Turkish Aksak",
+          "timeSignature": "9/8",
+          "beat": "♩. = 80",
+          "description": "Aksak (9 beats: 2+2+2+3) — the double harmonic major is the basis of the Turkish Hicaz Hümayun makam, common in Ottoman classical music."
+        },
+        {
+          "name": "Greek Zeibekiko",
+          "timeSignature": "9/8",
+          "beat": "♩. = 60",
+          "description": "Zeibekiko — a slow, improvised 9/8 Greek solo dance with roots in Asia Minor; the double harmonic scale underpins much of the rebetiko tradition."
+        }
       ]
     },
     {
@@ -2679,6 +3021,20 @@
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=Hungarian+minor+scale+gypsy+jazz"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Csárdás",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "Csárdás — the Hungarian national dance with its slow \"lassú\" and fast \"friss\" sections, perfectly suited to the Hungarian minor's exotic augmented seconds."
+        },
+        {
+          "name": "Verbunkos",
+          "timeSignature": "4/4",
+          "beat": "♩ = 76",
+          "description": "Verbunkos — the 18th-century Hungarian military recruitment dance, used by Liszt and Bartók, that brought the Hungarian minor into the classical canon."
+        }
       ]
     },
     {
@@ -2744,6 +3100,20 @@
           "title": "The Sky Is Crying",
           "artist": "Stevie Ray Vaughan",
           "url": "https://www.youtube.com/results?search_query=Stevie+Ray+Vaughan+Sky+Is+Crying"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Slow blues",
+          "timeSignature": "12/8",
+          "beat": "♩. = 48",
+          "description": "Slow 12-bar blues in 12/8 — the natural rhythmic home of the blues scale with its triplet-feel subdivisions and expressive space for bends."
+        },
+        {
+          "name": "Chicago shuffle",
+          "timeSignature": "4/4",
+          "beat": "♩ = 100",
+          "description": "Chicago-style blues shuffle — the swinging, dotted groove of electric Chicago blues, where the heptatonic scale is layered over the 12-bar progression."
         }
       ]
     },
@@ -2813,6 +3183,14 @@
           "artist": "Francisco Tárrega",
           "url": "https://www.youtube.com/results?search_query=Tarrega+Recuerdos+de+la+Alhambra"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Bulería",
+          "timeSignature": "3/4",
+          "beat": "♩ = 160",
+          "description": "Bulería compás — the fastest and most complex flamenco form, with its exhilarating 12-beat cycle often phrased in groups of 3. The Spanish Octatonic creates intensely dramatic tension."
+        }
       ]
     },
     {
@@ -2877,6 +3255,14 @@
           "artist": "Scriabin",
           "url": "https://www.youtube.com/results?search_query=Scriabin+Sonata+9+Black+Mass"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Scriabin Mystic",
+          "timeSignature": "4/4",
+          "beat": "♩ = 72",
+          "description": "Slow, mystical 4/4 inspired by Scriabin's late piano works — the \"Mystic chord\" built on this scale suggests expansive, meditative phrasing."
+        }
       ]
     },
     {
@@ -2937,6 +3323,14 @@
           "title": "Modal Jazz — Suspended Sound",
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=suspended+pentatonic+scale+modal+jazz"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "North African groove",
+          "timeSignature": "4/4",
+          "beat": "♩ = 104",
+          "description": "Driving 4/4 groove combining the pentatonic scale with North African polyrhythmic sensibilities, heard in fusion and world music contexts."
         }
       ]
     },
@@ -3003,6 +3397,14 @@
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=Neapolitan+minor+exotic+scale"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Romantic nocturne",
+          "timeSignature": "3/4",
+          "beat": "♩ = 72",
+          "description": "Slow, lyrical 3/4 — the Neapolitan minor's chromatic flat-2nd and raised-7th create an intensely yearning character suited to the Romantic nocturne style."
+        }
       ]
     },
     {
@@ -3067,6 +3469,20 @@
           "title": "Homayoun Dastgah",
           "artist": "Traditional Persian",
           "url": "https://www.youtube.com/results?search_query=Homayoun+Dastgah+Persian+music"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Persian Dastgah",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "Free-meter improvisation (avaz) — traditional Persian classical music avoids strict meter in the core melodic sections, using rhythm only for dance pieces (reng)."
+        },
+        {
+          "name": "Reng 6/4",
+          "timeSignature": "3/4",
+          "beat": "♩ = 100",
+          "description": "Reng — a light, dance-like metric section within a Persian classical performance, typically in triple meter."
         }
       ]
     },
@@ -3135,6 +3551,20 @@
           "artist": "Traditional Ukrainian",
           "url": "https://www.youtube.com/results?search_query=Ukrainian+folk+music+Dorian"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Kolomyjka",
+          "timeSignature": "4/4",
+          "beat": "♩ = 144",
+          "description": "Kolomyjka — a fast, driving Ukrainian dance in 2/4 or 4/4, one of the most energetic Carpathian folk forms that features the Ukrainian Dorian scale."
+        },
+        {
+          "name": "Dumka",
+          "timeSignature": "4/4",
+          "beat": "♩ = 60",
+          "description": "Dumka — an Eastern European folk ballad alternating slow, reflective sections with fast dance outbursts, often featuring the Ukrainian Dorian's characteristic raised 4th."
+        }
       ]
     },
     {
@@ -3196,6 +3626,20 @@
           "title": "Mande Music",
           "artist": "Salif Keita",
           "url": "https://www.youtube.com/results?search_query=Salif+Keita+Mande+griot+music"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Kora groove",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "Ostinato-based 4/4 groove of West African kora and balafon music — the pentatonic scale repeats in interlocking harp patterns over a steady pulse."
+        },
+        {
+          "name": "Djembe 12/8",
+          "timeSignature": "12/8",
+          "beat": "♩. = 60",
+          "description": "West African 12/8 polyrhythmic groove with djembe — the 3-against-2 feel creates a rolling, dance-inducing forward momentum characteristic of Mande music."
         }
       ]
     },
@@ -3262,6 +3706,20 @@
           "artist": "Stella Chiweshe",
           "url": "https://www.youtube.com/results?search_query=Stella+Chiweshe+mbira+Zimbabwe"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Bira ceremony",
+          "timeSignature": "12/8",
+          "beat": "♩. = 60",
+          "description": "All-night bira ceremony pattern — the mbira's 48-pulse cycle in 12/8 creates hypnotic, interlocking patterns between bass and treble tines, drawing ancestral spirits."
+        },
+        {
+          "name": "Nhemamusasa",
+          "timeSignature": "4/4",
+          "beat": "♩ = 96",
+          "description": "Nhemamusasa-style pattern — one of the most important mbira pieces, with cross-rhythmic ostinatos cycling every 12 or 48 pulses."
+        }
       ]
     },
     {
@@ -3322,6 +3780,20 @@
           "title": "Quena Solo — Huayno",
           "artist": "Traditional Andean",
           "url": "https://www.youtube.com/results?search_query=quena+huayno+Andean+pentatonic+traditional"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Huayno",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "Huayno — the most widespread Andean dance-song form, in a driving 4/4 with strong offbeat accents, common across Peru, Bolivia, and Ecuador."
+        },
+        {
+          "name": "Sanjuanito",
+          "timeSignature": "4/4",
+          "beat": "♩ = 132",
+          "description": "Sanjuanito — an Ecuadorian and northern Peruvian dance in fast 4/4, one of the most joyous expressions of the Andean pentatonic tradition."
         }
       ]
     },
@@ -3389,6 +3861,20 @@
           "artist": "Traditional",
           "url": "https://www.youtube.com/results?search_query=Longa+Nahawand+Arabic+Turkish+music"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Sama'i Thaqil",
+          "timeSignature": "10/8",
+          "beat": "♩ = 60",
+          "description": "Sama'i Thaqil (10 beats: 3+2+3+2) — the classic Ottoman Sama'i rhythm, used for composed instrumental pieces (samāʿī) often in Nahawand."
+        },
+        {
+          "name": "Masmoudi",
+          "timeSignature": "4/4",
+          "beat": "♩ = 76",
+          "description": "Masmoudi Kabir (8 beats) — a stately, processional Egyptian rhythm often paired with Nahawand's minor-key character in classical Arabic music."
+        }
       ]
     },
     {
@@ -3455,6 +3941,14 @@
           "artist": "Om Kalsoum",
           "url": "https://www.youtube.com/results?search_query=Om+Kalsoum+Ya+Garat+al-Wadi"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Maqsum",
+          "timeSignature": "4/4",
+          "beat": "♩ = 96",
+          "description": "Maqsum — the standard Arabic 4/4 dance rhythm. Maqam Saba's sorrowful, descending character is often accompanied by this insistent groove in taqasim and mawwal."
+        }
       ]
     },
     {
@@ -3517,6 +4011,20 @@
           "artist": "Traditional Japanese",
           "url": "https://www.youtube.com/results?search_query=Dan-no-Ura+koto+Japanese+music"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Koto jo-ha-kyu",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "Free meter following the jo-ha-kyū (introduction–development–rapid) structure of Japanese classical music, with Kumoi's melancholic minor pentatonic."
+        },
+        {
+          "name": "Nagauta 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 80",
+          "description": "Nagauta-style 4/4 — a measured tempo as heard in kabuki shamisen music, Kumoi's pentatonic providing a plaintive, aristocratic melody."
+        }
       ]
     },
     {
@@ -3577,6 +4085,20 @@
           "title": "Japanese Dawn Music",
           "artist": "Michio Miyagi",
           "url": "https://www.youtube.com/results?search_query=Michio+Miyagi+koto+Japanese+classical"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Shakuhachi free",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "Free-meter shakuhachi meditation — Akebono (named for the dawn) is central to Japanese solo shakuhachi and koto pieces exploring stillness and breath."
+        },
+        {
+          "name": "Hirajoshi groove",
+          "timeSignature": "4/4",
+          "beat": "♩ = 72",
+          "description": "Measured 4/4 as heard in modern arrangements — Akebono's unique interval structure bridges traditional Japanese and contemporary fusion aesthetics."
         }
       ]
     },
@@ -3643,6 +4165,14 @@
           "title": "Inner Urge",
           "artist": "Joe Henderson",
           "url": "https://www.youtube.com/results?search_query=Joe+Henderson+Inner+Urge+Lydian+jazz"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Film score 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 80",
+          "description": "Atmospheric film score groove — Lydian augmented (#4, #5) is John Williams' and Danny Elfman's go-to mode for magical, otherworldly cinematic moments."
         }
       ]
     },
@@ -3711,6 +4241,20 @@
           "title": "Scrapple from the Apple",
           "artist": "Charlie Parker",
           "url": "https://www.youtube.com/results?search_query=Charlie+Parker+Scrapple+from+the+Apple"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Bebop swing",
+          "timeSignature": "4/4",
+          "beat": "♩ = 220",
+          "description": "Fast bebop swing — the 8-note bebop dominant scale fits perfectly over a swung 4/4 so each chord tone lands on a downbeat at high tempos."
+        },
+        {
+          "name": "Medium swing",
+          "timeSignature": "4/4",
+          "beat": "♩ = 140",
+          "description": "Medium swing groove — at this tempo the extra chromatic passing tone in the bebop dominant scale creates characteristic bebop melodic lines."
         }
       ]
     },
@@ -3850,6 +4394,14 @@
           "artist": "Ravi Shankar",
           "url": "https://www.youtube.com/results?search_query=Ravi+Shankar+Hamsadhwani+sitar"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Adi Tala",
+          "timeSignature": "4/4",
+          "beat": "♩ = 96",
+          "description": "Adi Tala (8 beats) — Hamsadhwani is a light, joyful pentatonic raga (no Ma or Dha) performed in Adi Tala at brisk tempos, especially at concerts' end."
+        }
       ]
     },
     {
@@ -3915,6 +4467,20 @@
           "title": "Uşşak Şarkı — Fasıl",
           "artist": "Traditional Turkish",
           "url": "https://www.youtube.com/results?search_query=Ussak+makam+fasil+Turkish+classical+music"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Aksak",
+          "timeSignature": "9/8",
+          "beat": "♩. = 80",
+          "description": "Aksak (9 beats: 2+2+2+3) — the quintessential asymmetric Turkish rhythm, called \"limping\" rhythm. Makam Ussak's lyrical character pairs naturally with its gentle limp."
+        },
+        {
+          "name": "Sofyan",
+          "timeSignature": "4/4",
+          "beat": "♩ = 100",
+          "description": "Sofyan (2 beats) — simple duple meter common in Turkish folk songs (türkü) performed in Ussak, such as the well-known \"Üsküdara giderken\"."
         }
       ]
     },
@@ -3982,6 +4548,14 @@
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=Neapolitan+major+scale+film+music+composition"
         }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Impressionist 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 76",
+          "description": "Slow, searching 4/4 — the Neapolitan major's unusual flat-2nd in a major context creates the chromatic ambiguity favored in late Romantic and Impressionist harmony."
+        }
       ]
     },
     {
@@ -4047,6 +4621,14 @@
           "title": "Mixolydian b6 Improvisation",
           "artist": "Various",
           "url": "https://www.youtube.com/results?search_query=Mixolydian+b6+jazz+improvisation+dominant"
+        }
+      ],
+      "rhythmPatterns": [
+        {
+          "name": "Khyal",
+          "timeSignature": "4/4",
+          "beat": "♩ = 52",
+          "description": "Vilambit (slow) Khyal in Teentaal — the Hindu scale (Aeolian with natural 6th) is used in several late-evening ragas performed in the Khyal style."
         }
       ]
     },
@@ -5482,6 +6064,222 @@
           "title": "Shō Mouth Organ — Gagaku",
           "artist": "Traditional Japanese",
           "url": "https://www.youtube.com/results?search_query=sho+mouth+organ+gagaku+Japanese+court+music"
+        }
+      ]
+    },
+    {
+      "id": "raga-kafi",
+      "name": "Raga Kafi",
+      "aliases": [
+        "Kafi Thaat",
+        "Dorian Raga"
+      ],
+      "culture": "Indian",
+      "region": "North India",
+      "tradition": "Hindustani",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "5",
+        "6",
+        "b7"
+      ],
+      "description": "Raga Kafi belongs to the Kafi thaat (parent scale) and is classified as a late-night raga traditionally performed between 9 pm and midnight. Its Dorian-like character — with a flat third and flat seventh but natural second and sixth — gives it a romantic, slightly wistful quality distinct from the heavier evening ragas.\n\nKafi is associated with the spring season (Vasant) and is one of the oldest ragas in the Hindustani system, with roots in dhrupad performance. It has spawned an entire family of derivative ragas including Bageshri, Sindhura, and Pilu.",
+      "usage": "Classical Khyal and Dhrupad performances, light-classical thumri and dadra, folk songs of the Gangetic plains, and devotional music.",
+      "characteristicPatterns": "Andolita (oscillating) notes on the Ga and Ni; characteristic ascending phrases that skip from Sa to Pa; descending lines that linger on Ga and Ni.",
+      "relatedScales": [
+        "dorian-mode",
+        "natural-minor-scale",
+        "bhairavi"
+      ],
+      "characteristics": {
+        "mood": [
+          "romantic",
+          "melancholic",
+          "contemplative"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Teentaal",
+          "timeSignature": "4/4",
+          "beat": "♩ = 72",
+          "description": "Medium Teentaal (16 beats, 4×4) — Raga Kafi is presented across all tempos, but medium Teentaal is the most common format for Khyal performances."
+        },
+        {
+          "name": "Keherwa",
+          "timeSignature": "4/4",
+          "beat": "♩ = 120",
+          "description": "Keherwa (8 beats) — a light, popular tala used for thumri and dadra in Kafi, reflecting the raga's connection to folk and semi-classical traditions."
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Kafi Hori",
+          "artist": "Pandit Jasraj",
+          "url": "https://www.youtube.com/results?search_query=Raga+Kafi+Pandit+Jasraj+Hori"
+        },
+        {
+          "title": "Raga Kafi Thumri",
+          "artist": "Girija Devi",
+          "url": "https://www.youtube.com/results?search_query=Raga+Kafi+Thumri+Girija+Devi"
+        }
+      ]
+    },
+    {
+      "id": "ethiopian-ambassel",
+      "name": "Ethiopian Ambassel",
+      "aliases": [
+        "Ambassel Mode",
+        "Tizita Major"
+      ],
+      "culture": "Ethiopian",
+      "region": "East Africa",
+      "tradition": "Ethiopian Orthodox / Amhara folk",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "b7"
+      ],
+      "description": "The Ambassel mode is one of the principal scales of Ethiopian music, used in the highlands of the Amhara and Tigrinya peoples. Its major-pentatonic character — built on whole steps and minor thirds — gives it a luminous, open quality associated with religious praise, festivity, and the bright morning hours.\n\nAmbasselse music is closely tied to the begena (a large 10-string lyre regarded as sacred) and the masenqo (single-string bowed lute). Its symmetrical interval structure — alternating whole tones and minor thirds — makes it particularly suited to the call-and-response singing style of Ethiopian folk and sacred music.",
+      "usage": "Ethiopian Orthodox Christian sacred music, Amhara wedding songs, festive and ceremonial occasions, begena lyre music.",
+      "characteristicPatterns": "Call-and-response between soloist and chorus; pentatonic melodic sequences in 6/8 feel; melismatic ornamentation of scale degrees 2 and 4.",
+      "relatedScales": [
+        "pentatonic-major",
+        "ethiopian-tizita",
+        "ethiopian-bati"
+      ],
+      "characteristics": {
+        "mood": [
+          "devotional",
+          "joyful",
+          "peaceful"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Eskista 6/8",
+          "timeSignature": "6/8",
+          "beat": "♩. = 72",
+          "description": "Compound 6/8 groove underlying Eskista shoulder dancing — the rolling compound meter captures the buoyant, dance-ready character of Ambassel celebrations."
+        },
+        {
+          "name": "Begena free meter",
+          "timeSignature": "free",
+          "beat": "",
+          "description": "Free-meter begena improvisation — in sacred contexts the scale is played without strict rhythm, with long resonant tones on the lyre creating a meditative, hypnotic atmosphere."
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Ambassel Lyre Music",
+          "artist": "Alemu Aga",
+          "url": "https://www.youtube.com/results?search_query=Alemu+Aga+begena+Ethiopian+lyre"
+        },
+        {
+          "title": "Ethiopian Highland Folk",
+          "artist": "Mahmoud Ahmed",
+          "url": "https://www.youtube.com/results?search_query=Mahmoud+Ahmed+Ethiopian+Ambassel+folk"
+        }
+      ]
+    },
+    {
+      "id": "yoruba-pentatonic",
+      "name": "Yoruba Pentatonic",
+      "aliases": [
+        "West African Pentatonic",
+        "Yoruba Scale"
+      ],
+      "culture": "Yoruba",
+      "region": "West Africa",
+      "tradition": "Yoruba / West African traditional",
+      "toneCount": 5,
+      "intervalFormula": [
+        2,
+        3,
+        2,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "description": "The Yoruba pentatonic scale is central to the music of the Yoruba people of southwestern Nigeria and Benin, one of Africa's most musically influential cultures. It forms the melodic foundation for jùjú music, fúji, and much traditional music associated with the Yoruba Ọrìṣà (deity) worship system.\n\nThis scale's characteristic interval pattern — two whole steps, a minor third, two more whole steps, and a closing minor third — generates melodies of great warmth and forward momentum. It underpins the polyrhythmic talking-drum music (dùndún) that 'speaks' the tonal Yoruba language, as well as the sacred songs (oríkì) used in Ọrìṣà ceremonies.",
+      "usage": "Jùjú music, fúji, traditional Ọrìṣà ceremonies, talking-drum compositions, contemporary Afrobeats melodic foundations.",
+      "characteristicPatterns": "Cyclical melodic ostinatos over polyrhythmic percussion; call-and-response between soloist and chorus; talking-drum melodic imitation; pentatonic runs in 12/8.",
+      "relatedScales": [
+        "pentatonic-major",
+        "mande-pentatonic"
+      ],
+      "characteristics": {
+        "mood": [
+          "energetic",
+          "joyful",
+          "spiritual"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      },
+      "rhythmPatterns": [
+        {
+          "name": "Dùndún 12/8",
+          "timeSignature": "12/8",
+          "beat": "♩. = 72",
+          "description": "Yoruba dùndún talking-drum groove in 12/8 — the compound triple feel allows the melodic pentatonic scale to be 'spoken' through tonal percussion in the 3-against-2 West African polyrhythmic framework."
+        },
+        {
+          "name": "Jùjú 4/4",
+          "timeSignature": "4/4",
+          "beat": "♩ = 112",
+          "description": "Jùjú groove — the modern Yoruba popular style pioneered by King Sunny Ade, combining the pentatonic scale with steel-guitar, talking-drum, and syncopated 4/4."
+        }
+      ],
+      "songExamples": [
+        {
+          "title": "Ja Funmi",
+          "artist": "King Sunny Ade",
+          "url": "https://www.youtube.com/results?search_query=King+Sunny+Ade+juju+Yoruba"
+        },
+        {
+          "title": "Oriki Sango",
+          "artist": "Babatunde Olatunji",
+          "url": "https://www.youtube.com/results?search_query=Babatunde+Olatunji+Yoruba+traditional+music"
         }
       ]
     }
