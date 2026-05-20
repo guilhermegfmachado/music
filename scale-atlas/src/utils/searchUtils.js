@@ -6,7 +6,9 @@ export function searchScales(scales, query) {
     s.culture.toLowerCase().includes(q) ||
     s.region.toLowerCase().includes(q) ||
     (s.aliases || []).some(a => a.toLowerCase().includes(q)) ||
-    (s.tradition || '').toLowerCase().includes(q)
+    (s.tradition || '').toLowerCase().includes(q) ||
+    (s.description || '').slice(0, 300).toLowerCase().includes(q) ||
+    (s.usage || '').slice(0, 300).toLowerCase().includes(q)
   )
 }
 

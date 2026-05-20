@@ -54,6 +54,37 @@ export function getRelatedScales(scale, allScales) {
     .filter(Boolean)
 }
 
+export function computeModes(intervalFormula) {
+  return intervalFormula.map((_, startIdx) => {
+    const rotated = [...intervalFormula.slice(startIdx), ...intervalFormula.slice(0, startIdx)]
+    return rotated
+  })
+}
+
+export function findSimilarScales(scale, allScales, limit = 4) {
+  const scaleSemitones = intervalsToSemitones(scale.intervalFormula)
+  const scaleMoods = scale.characteristics?.mood || []
+
+  const scored = allScales
+    .filter(s => s.id !== scale.id)
+    .map(s => {
+      let score = 0
+      const sMoods = s.characteristics?.mood || []
+      for (const m of scaleMoods) {
+        if (sMoods.includes(m)) score += 3
+      }
+      const sSemitones = intervalsToSemitones(s.intervalFormula)
+      for (const st of scaleSemitones) {
+        if (sSemitones.includes(st)) score += 2
+      }
+      if (s.toneCount === scale.toneCount) score += 1
+      return { scale: s, score }
+    })
+
+  scored.sort((a, b) => b.score - a.score)
+  return scored.slice(0, limit).map(x => x.scale)
+}
+
 export function computeDiatonicChords(intervalFormula) {
   if (intervalFormula.length < 5) return []
   const scale = intervalsToSemitones(intervalFormula)

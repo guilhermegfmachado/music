@@ -104,3 +104,25 @@
   color: #e11d48;
   font-weight: 500;
 }
+
+.loopBtn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.loopBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.loopBtnActive {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}
