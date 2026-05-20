@@ -6,14 +6,13 @@ import GuitarFretboard from '../components/visualizations/GuitarFretboard.jsx'
 import IntervalDiagram from '../components/visualizations/IntervalDiagram.jsx'
 import StaffNotation from '../components/visualizations/StaffNotation.jsx'
 import ViolinFingerboard from '../components/visualizations/ViolinFingerboard.jsx'
-import { getRelatedScales, getIntervalName, intervalsToSemitones, computeDiatonicChords } from '../utils/scaleUtils.js'
+import { getRelatedScales, getIntervalName, intervalsToSemitones, computeDiatonicChords, computeModes, findSimilarScales } from '../utils/scaleUtils.js'
 import { HeartIcon, PlayIcon, ExternalLinkIcon } from '../components/icons.jsx'
 import { useFavorites } from '../hooks/useFavorites.js'
 import { useRecentlyViewed } from '../hooks/useRecentlyViewed.js'
 import styles from './ScaleDetailPage.module.css'
 
 const VIEWS = ['Piano', 'Fretboard', 'Violin', 'Interval', 'Staff']
-const ROOTS = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
 
 export default function ScaleDetailPage({ scales }) {
   const { id } = useParams()
@@ -23,6 +22,8 @@ export default function ScaleDetailPage({ scales }) {
   const { addViewed } = useRecentlyViewed()
   const [activeView, setActiveView] = useState('Piano')
   const [rootNote, setRootNote] = useState('C')
+  const [copied, setCopied] = useState(false)
+  const [showAllModes, setShowAllModes] = useState(false)
 
   useEffect(() => {
     if (scale) addViewed(scale.id)
@@ -38,9 +39,20 @@ export default function ScaleDetailPage({ scales }) {
   }
 
   const related = getRelatedScales(scale, scales)
+  const relatedIds = new Set(related.map(r => r.id))
   const semitones = intervalsToSemitones(scale.intervalFormula)
   const fav = isFavorite(scale.id)
   const chords = scale.intervalFormula.length >= 6 ? computeDiatonicChords(scale.intervalFormula) : []
+  const modes = scale.toneCount >= 5 ? computeModes(scale.intervalFormula) : []
+  const similar = findSimilarScales(scale, scales, 4).filter(s => !relatedIds.has(s.id))
+
+  function handleCopyLink() {
+    navigator.clipboard.writeText(window.location.href)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 1500)
+  }
+
+  const modesDisplay = showAllModes ? modes : modes.slice(0, 4)
 
   return (
     <div className={styles.page}>
@@ -64,12 +76,21 @@ export default function ScaleDetailPage({ scales }) {
                   <p className={styles.aliases}>{scale.aliases.join(' · ')}</p>
                 )}
               </div>
-              <button
-                className={`${styles.favBtn} ${fav ? styles.favActive : ''}`}
-                onClick={() => toggleFavorite(scale.id)}
-              >
-                <HeartIcon size={13} filled={fav} /> {fav ? 'Saved' : 'Save'}
-              </button>
+              <div style={{ display: 'flex', gap: '0.5rem', flexShrink: 0 }}>
+                <button
+                  className={styles.copyBtn}
+                  onClick={handleCopyLink}
+                  title="Copy link to this scale"
+                >
+                  {copied ? 'Copied!' : '⎘ Copy link'}
+                </button>
+                <button
+                  className={`${styles.favBtn} ${fav ? styles.favActive : ''}`}
+                  onClick={() => toggleFavorite(scale.id)}
+                >
+                  <HeartIcon size={13} filled={fav} /> {fav ? 'Saved' : 'Save'}
+                </button>
+              </div>
             </div>
 
             <div className={styles.metaRow}>
@@ -85,8 +106,8 @@ export default function ScaleDetailPage({ scales }) {
               ))}
             </div>
 
-            {/* Audio player */}
-            <AudioPlayer scale={scale} />
+            {/* Audio player — root/setRoot shared with visualizations */}
+            <AudioPlayer scale={scale} root={rootNote} setRoot={setRootNote} />
 
             {/* Visualizations */}
             <div className={styles.vizSection}>
@@ -100,16 +121,6 @@ export default function ScaleDetailPage({ scales }) {
                     {v}
                   </button>
                 ))}
-                <div className={styles.rootPicker}>
-                  <label className={styles.rootLabel}>Root</label>
-                  <select
-                    className={styles.rootSelect}
-                    value={rootNote}
-                    onChange={e => setRootNote(e.target.value)}
-                  >
-                    {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
-                  </select>
-                </div>
               </div>
               <div className={styles.vizPanel}>
                 {activeView === 'Piano' && <PianoKeyboard scale={scale} rootNote={rootNote} />}
@@ -180,6 +191,30 @@ export default function ScaleDetailPage({ scales }) {
               </section>
             )}
 
+            {/* Modes of this Scale */}
+            {modes.length > 0 && (
+              <section className={styles.section}>
+                <h2 className={styles.sectionTitle}>Modes of this Scale</h2>
+                <div className={styles.modesSection}>
+                  {modesDisplay.map((modeFormula, i) => (
+                    <div key={i} className={styles.modeRow}>
+                      <span className={styles.modeNum}>{i + 1}</span>
+                      <span className={styles.modeFormula}>{modeFormula.join(' – ')}</span>
+                    </div>
+                  ))}
+                </div>
+                {modes.length > 7 && (
+                  <button
+                    className={styles.copyBtn}
+                    onClick={() => setShowAllModes(v => !v)}
+                    style={{ alignSelf: 'flex-start' }}
+                  >
+                    {showAllModes ? 'Show less' : `Show all ${modes.length} modes`}
+                  </button>
+                )}
+              </section>
+            )}
+
             {/* Rhythm patterns */}
             {scale.rhythmPatterns?.length > 0 && (
               <section className={styles.section}>
@@ -237,6 +272,21 @@ export default function ScaleDetailPage({ scales }) {
                       </span>
                       <span className={styles.listenExternal}><ExternalLinkIcon size={11} /></span>
                     </a>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Scales Like This */}
+            {similar.length > 0 && (
+              <section className={styles.section}>
+                <h2 className={styles.sectionTitle}>Scales Like This</h2>
+                <div className={styles.relatedList}>
+                  {similar.map(s => (
+                    <Link key={s.id} to={`/scale/${s.id}`} className={styles.relatedCard}>
+                      <span className={styles.relatedName}>{s.name}</span>
+                      <span className={styles.relatedRegion}>{s.region}</span>
+                    </Link>
                   ))}
                 </div>
               </section>
