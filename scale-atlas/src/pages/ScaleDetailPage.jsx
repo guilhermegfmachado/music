@@ -47,7 +47,7 @@ export default function ScaleDetailPage({ scales }) {
   const similar = findSimilarScales(scale, scales, 4).filter(s => !relatedIds.has(s.id))
 
   function handleCopyLink() {
-    navigator.clipboard.writeText(window.location.href)
+    navigator.clipboard.writeText(window.location.href).catch(() => {})
     setCopied(true)
     setTimeout(() => setCopied(false), 1500)
   }
@@ -203,7 +203,7 @@ export default function ScaleDetailPage({ scales }) {
                     </div>
                   ))}
                 </div>
-                {modes.length > 7 && (
+                {modes.length > 4 && (
                   <button
                     className={styles.copyBtn}
                     onClick={() => setShowAllModes(v => !v)}
