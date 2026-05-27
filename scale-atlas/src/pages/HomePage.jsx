@@ -25,6 +25,8 @@ export default function HomePage({ scales }) {
   const [filters, setFilters] = useState(EMPTY_FILTERS)
   const [filterOpen, setFilterOpen] = useState(false)
   const { favorites, toggleFavorite, isFavorite } = useFavorites()
+  const regionCount = new Set(scales.map(s => s.region)).size
+  const cultureCount = new Set(scales.map(s => s.culture)).size
 
   const results = useMemo(() => {
     const searched = searchScales(scales, query)
@@ -43,6 +45,11 @@ export default function HomePage({ scales }) {
           <p className={styles.subtitle}>
             An encyclopedia of musical scales from world traditions — from Indian ragas to Japanese koto tunings, Arabic maqamat to Western modes.
           </p>
+          <div className={styles.heroStats}>
+            <span className={styles.heroStat}><strong>{scales.length}</strong> scales</span>
+            <span className={styles.heroStat}><strong>{regionCount}</strong> world regions</span>
+            <span className={styles.heroStat}><strong>{cultureCount}</strong> cultures</span>
+          </div>
           <div className={styles.searchBar}>
             <span className={styles.searchIcon}><SearchIcon size={15} /></span>
             <input

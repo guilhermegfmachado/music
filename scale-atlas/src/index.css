@@ -16,8 +16,7 @@
   --accent-light: #edeaf8;
   --tag-bg: #e8e5f5;
   --shadow: none;
-  --shadow-md: none;
-  --radius: 8px;
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.09), 0 1px 4px rgba(0,0,0,0.05);
   --radius-sm: 4px;
   --font: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   --font-heading: 'Fraunces', Georgia, serif;
@@ -34,8 +33,7 @@
   --accent-hover: #b5b0e0;
   --accent-light: #211e35;
   --tag-bg: #252238;
-  --shadow: none;
-  --shadow-md: none;
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.45), 0 1px 4px rgba(0,0,0,0.2);
 }
 
 html {

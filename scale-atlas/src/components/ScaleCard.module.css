@@ -1,17 +1,20 @@
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
+  border-left: 3px solid var(--card-accent, var(--border));
   border-radius: var(--radius);
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  transition: box-shadow 0.15s, border-color 0.15s;
+  transition: box-shadow 0.2s, border-color 0.15s, transform 0.2s;
 }
 
 .card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+  border-color: var(--border);
+  border-left-color: var(--card-accent, var(--accent));
+  transform: translateY(-2px);
 }
 
 .header {
@@ -65,10 +68,11 @@
 }
 
 .name {
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--text);
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .nameLink:hover .name {
