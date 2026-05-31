@@ -55,6 +55,7 @@ export default function HomePage({ scales }) {
             <input
               type="text"
               placeholder="Search scales, cultures, regions…"
+              aria-label="Search scales"
               value={query}
               onChange={e => setQuery(e.target.value)}
               className={styles.searchInput}

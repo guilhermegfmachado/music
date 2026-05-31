@@ -47,11 +47,15 @@
 .favBtn {
   background: none;
   border: none;
-  font-size: 1.1rem;
   color: var(--text-muted);
   transition: color 0.15s;
-  padding: 0.1rem;
+  padding: 0.35rem;
   line-height: 1;
+  min-width: 28px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .favBtn:hover, .favActive {

@@ -23,32 +23,32 @@ export default function FilterPanel({ scales, filters, onChange, onReset }) {
       </div>
 
       <div className={styles.section}>
-        <label className={styles.label}>Culture</label>
-        <select value={filters.culture || ''} onChange={e => set('culture', e.target.value)}>
+        <label htmlFor="filter-culture" className={styles.label}>Culture</label>
+        <select id="filter-culture" value={filters.culture || ''} onChange={e => set('culture', e.target.value)}>
           <option value="">All cultures</option>
           {cultures.map(c => <option key={c} value={c}>{c}</option>)}
         </select>
       </div>
 
       <div className={styles.section}>
-        <label className={styles.label}>Region</label>
-        <select value={filters.region || ''} onChange={e => set('region', e.target.value)}>
+        <label htmlFor="filter-region" className={styles.label}>Region</label>
+        <select id="filter-region" value={filters.region || ''} onChange={e => set('region', e.target.value)}>
           <option value="">All regions</option>
           {regions.map(r => <option key={r} value={r}>{r}</option>)}
         </select>
       </div>
 
       <div className={styles.section}>
-        <label className={styles.label}>Tone Count</label>
-        <select value={filters.toneCount || ''} onChange={e => set('toneCount', e.target.value)}>
+        <label htmlFor="filter-tones" className={styles.label}>Tone Count</label>
+        <select id="filter-tones" value={filters.toneCount || ''} onChange={e => set('toneCount', e.target.value)}>
           <option value="">Any</option>
           {toneCounts.map(n => <option key={n} value={n}>{n} tones</option>)}
         </select>
       </div>
 
       <div className={styles.section}>
-        <label className={styles.label}>Mood</label>
-        <select value={filters.mood || ''} onChange={e => set('mood', e.target.value)}>
+        <label htmlFor="filter-mood" className={styles.label}>Mood</label>
+        <select id="filter-mood" value={filters.mood || ''} onChange={e => set('mood', e.target.value)}>
           <option value="">Any mood</option>
           {moods.map(m => <option key={m} value={m}>{m}</option>)}
         </select>

@@ -91,19 +91,21 @@ export default function AudioPlayer({ scale, root: rootProp, setRoot: setRootPro
         {error && <span className={styles.audioError}>{error}</span>}
 
         <div className={styles.control}>
-          <label>Root</label>
-          <select value={root} onChange={e => setRoot(e.target.value)}>
+          <label htmlFor="audio-root">Root</label>
+          <select id="audio-root" value={root} onChange={e => setRoot(e.target.value)}>
             {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
           </select>
         </div>
 
         <div className={styles.control}>
-          <label>Tempo</label>
+          <label htmlFor="audio-tempo">Tempo</label>
           <input
+            id="audio-tempo"
             type="range"
             min="40"
             max="200"
             value={tempo}
+            aria-label={`Tempo: ${tempo} bpm`}
             onChange={e => setTempo(Number(e.target.value))}
           />
           <span>{tempo} bpm</span>
