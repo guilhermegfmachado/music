@@ -4,20 +4,21 @@
 
 .hero {
   background:
-    radial-gradient(ellipse 900px 500px at 10% 80%, var(--accent-light), transparent),
+    radial-gradient(ellipse 1000px 600px at 0% 100%, var(--accent-light), transparent),
+    radial-gradient(ellipse 600px 400px at 90% 10%, var(--bg-secondary), transparent),
     var(--bg);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   padding: 4rem 0 3.25rem;
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: 3.25rem;
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 400;
   color: var(--text);
   margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
 }
 
 .subtitle {
