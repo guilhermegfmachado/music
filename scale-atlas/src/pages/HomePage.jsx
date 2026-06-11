@@ -42,6 +42,9 @@ export default function HomePage({ scales }) {
       <header className={styles.hero}>
         <div className="container">
           <h1 className={styles.title}>Svara</h1>
+          <div className={styles.tileRow} aria-hidden="true">
+            <span /><span /><span /><span /><span />
+          </div>
           <p className={styles.subtitle}>
             An encyclopedia of musical scales from world traditions — from Indian ragas to Japanese koto tunings, Arabic maqamat to Western modes.
           </p>

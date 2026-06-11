@@ -5,21 +5,71 @@
 .hero {
   background:
     radial-gradient(ellipse 1000px 600px at 0% 100%, var(--accent-light), transparent),
-    radial-gradient(ellipse 600px 400px at 90% 10%, var(--bg-secondary), transparent),
     var(--bg);
   border-bottom: 2px solid var(--border);
-  padding: 4rem 0 3.25rem;
+  padding: 4.25rem 0 3.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* MCM geometric decoration: outlined + filled circles, upper right */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -60px;
+  width: 380px;
+  height: 380px;
+  border: 2.5px solid var(--border);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 110px;
+  right: 200px;
+  width: 130px;
+  height: 130px;
+  background: #D9A441;
+  opacity: 0.28;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero > :global(.container) {
+  position: relative;
+  z-index: 1;
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 400;
   color: var(--text);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.01em;
   line-height: 1.05;
 }
+
+/* Mosaic tile divider — classic mid-century motif */
+.tileRow {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.tileRow span {
+  width: 34px;
+  height: 10px;
+}
+
+.tileRow span:nth-child(1) { background: #C45214; }
+.tileRow span:nth-child(2) { background: #D9A441; }
+.tileRow span:nth-child(3) { background: #7A7A3A; }
+.tileRow span:nth-child(4) { background: #3A7A6A; }
+.tileRow span:nth-child(5) { background: #8A4A2A; }
 
 .subtitle {
   font-size: 1rem;

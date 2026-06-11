@@ -24,8 +24,9 @@
   align-items: center;
   align-self: stretch;
   gap: 0.5rem;
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1.25rem;
   color: var(--text);
   text-decoration: none;
   flex-shrink: 0;
