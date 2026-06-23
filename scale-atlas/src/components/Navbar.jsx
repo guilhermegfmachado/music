@@ -20,6 +20,9 @@ export default function Navbar({ theme, onThemeToggle }) {
           <NavLink to="/tunings" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
             Tunings
           </NavLink>
+          <NavLink to="/chords" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+            Chords
+          </NavLink>
           <NavLink to="/compare" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
             Compare
           </NavLink>

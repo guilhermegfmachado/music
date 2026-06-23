@@ -83,6 +83,13 @@ export async function playChord(intervalFormula, { timbre = 'piano', rootMidi = 
   s.triggerAttackRelease(freqs, '2n')
 }
 
+export async function playMidiNotes(midiNotes, timbre = 'piano') {
+  await Tone.start()
+  const s = getSynth(timbre)
+  const freqs = midiNotes.map(midiToFreq)
+  s.triggerAttackRelease(freqs, '2n')
+}
+
 export function stopAll() {
   const transport = Tone.getTransport()
   transport.stop()
