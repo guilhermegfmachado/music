@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { TUNINGS } from '../data/tunings.js'
 import { findVoicings, voicingToMidi, CHORD_TYPES, NOTE_NAMES } from '../utils/chordUtils.js'
 import { playMidiNotes, stopAll } from '../utils/audioUtils.js'
@@ -29,10 +29,12 @@ export default function ChordsPage() {
   const tuning = ALL_TUNINGS.find(t => t.id === tuningId) || STANDARD
   const chordType = CHORD_TYPES.find(c => c.id === chordTypeId) || CHORD_TYPES[0]
 
-  const voicings = useMemo(() => {
-    setActiveVoicing(0)
-    return findVoicings(tuning.midi, rootIdx, chordType.intervals)
-  }, [tuning, rootIdx, chordType])
+  const voicings = useMemo(
+    () => findVoicings(tuning.midi, rootIdx, chordType.intervals),
+    [tuning, rootIdx, chordType]
+  )
+
+  useEffect(() => { setActiveVoicing(0) }, [voicings])
 
   const chordName = NOTE_NAMES[rootIdx] + chordType.suffix
   const chordNotes = chordType.intervals.map(i => NOTE_NAMES[(rootIdx + i) % 12]).join(' · ')
