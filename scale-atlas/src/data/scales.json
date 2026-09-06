@@ -1285,7 +1285,6 @@
       "characteristicPatterns": "The komal re and komal dha create augmented seconds. Slow, meditative, austere. Strong emphasis on Ga.",
       "relatedScales": [
         "bhairavi",
-        "ahir-bhairav",
         "harmonic-minor-scale"
       ],
       "characteristics": {
@@ -6282,6 +6281,872 @@
           "url": "https://www.youtube.com/results?search_query=Babatunde+Olatunji+Yoruba+traditional+music"
         }
       ]
+    },
+    {
+      "id": "whole-half-diminished",
+      "name": "Whole-Half Diminished",
+      "aliases": [
+        "Diminished Scale (Whole-Half)",
+        "Octatonic Mode 1"
+      ],
+      "culture": "European",
+      "region": "Western Europe",
+      "tradition": "Classical Western / Jazz",
+      "toneCount": 8,
+      "intervalFormula": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "♭3",
+        "4",
+        "♭5",
+        "♯5",
+        "6",
+        "7"
+      ],
+      "description": "The complement of the half-whole diminished scale, built by alternating whole steps and half steps. Its eight notes divide the octave with perfect symmetry, so the whole pattern repeats every minor third — there are only three distinct transpositions.\n\nRimsky-Korsakov, Stravinsky and Bartók all drew on it for its unsettled, rootless colour, and it later became the standard scale for improvising over diminished seventh chords.",
+      "usage": "Played over diminished seventh chords in jazz; used for harmonic ambiguity in 20th-century classical music.",
+      "characteristicPatterns": "Symmetry every minor third means any lick transposes up or down 3 semitones unchanged. Contains four diminished triads and two diminished seventh chords.",
+      "relatedScales": [
+        "diminished-scale",
+        "whole-tone-scale",
+        "altered-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "mysterious",
+          "tense",
+          "sophisticated"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": true,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "augmented-scale",
+      "name": "Augmented Scale",
+      "aliases": [
+        "Hexatonic Augmented",
+        "Six-Tone Symmetrical"
+      ],
+      "culture": "European",
+      "region": "Western Europe",
+      "tradition": "Classical Western / Jazz",
+      "toneCount": 6,
+      "intervalFormula": [
+        3,
+        1,
+        3,
+        1,
+        3,
+        1
+      ],
+      "degrees": [
+        "1",
+        "♯2",
+        "3",
+        "5",
+        "♯5",
+        "7"
+      ],
+      "description": "A six-note scale alternating minor thirds and semitones, dividing the octave into three equal major thirds. Like the whole-tone and diminished scales it is a mode of limited transposition — only four distinct versions exist.\n\nLiszt and Debussy used it for its weightless, unanchored quality; John Coltrane later built entire improvisations on its symmetry.",
+      "usage": "Jazz improvisation over augmented and maj7♯5 chords; impressionist and late-Romantic classical writing.",
+      "characteristicPatterns": "Contains two augmented triads a semitone apart. Every pattern repeats at the major third, giving three identical shapes per octave.",
+      "relatedScales": [
+        "whole-tone-scale",
+        "lydian-augmented",
+        "diminished-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "mysterious",
+          "dramatic",
+          "ambiguous"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": true,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "major-blues",
+      "name": "Major Blues Scale",
+      "aliases": [
+        "Major Blues",
+        "Gospel Scale"
+      ],
+      "culture": "African American",
+      "region": "North America",
+      "tradition": "Blues / Gospel",
+      "toneCount": 6,
+      "intervalFormula": [
+        2,
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "♭3",
+        "3",
+        "5",
+        "6"
+      ],
+      "description": "The major pentatonic with an added blue third, sitting between the minor and major third. That single added note creates the sliding, vocal quality heard throughout gospel, country blues and early rock and roll.\n\nWhere the minor blues scale is mournful, the major blues is buoyant — the same bent-note expressiveness applied to a major tonality.",
+      "usage": "Country, gospel, rockabilly, western swing, and major-key blues.",
+      "characteristicPatterns": "The ♭3 → 3 move is the whole point: bend or slide between them rather than playing both as separate notes.",
+      "relatedScales": [
+        "blues-scale",
+        "pentatonic-major",
+        "mixolydian-mode"
+      ],
+      "characteristics": {
+        "mood": [
+          "bright",
+          "soulful",
+          "bluesy"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "bebop-major",
+      "name": "Bebop Major",
+      "aliases": [
+        "Major Bebop Scale",
+        "Barry Harris Sixth Diminished"
+      ],
+      "culture": "African American",
+      "region": "North America",
+      "tradition": "Jazz",
+      "toneCount": 8,
+      "intervalFormula": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "♯5",
+        "6",
+        "7"
+      ],
+      "description": "The major scale with a chromatic passing tone inserted between the fifth and sixth degrees. The extra note makes the scale eight notes long, so running it in straight eighths places every chord tone on a downbeat — the rhythmic engine of bebop melody.\n\nBarry Harris taught it as the 'sixth diminished' scale, alternating a major sixth chord with a diminished seventh.",
+      "usage": "Bebop and straight-ahead jazz improvisation over major and 6/9 chords.",
+      "characteristicPatterns": "Descend from the root in eighths and the chord tones land on the beat automatically. The added ♯5 is a passing note, never a destination.",
+      "relatedScales": [
+        "bebop-dominant",
+        "major-scale",
+        "pentatonic-major"
+      ],
+      "characteristics": {
+        "mood": [
+          "bright",
+          "sophisticated",
+          "energetic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "bebop-dorian",
+      "name": "Bebop Dorian",
+      "aliases": [
+        "Bebop Minor",
+        "Dorian Bebop Scale"
+      ],
+      "culture": "African American",
+      "region": "North America",
+      "tradition": "Jazz",
+      "toneCount": 8,
+      "intervalFormula": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "♭3",
+        "3",
+        "4",
+        "5",
+        "6",
+        "♭7"
+      ],
+      "description": "Dorian mode with a chromatic passing tone between the minor and major third. The added note both smooths the eighth-note flow and imports the blue third familiar from blues playing.\n\nIt is the standard vocabulary for improvising over minor seventh chords in a bebop or hard-bop context.",
+      "usage": "Improvisation over minor seventh and minor sixth chords in jazz.",
+      "characteristicPatterns": "The ♭3 → ♮3 chromatic step is the signature. Works over ii chords in a ii–V–I.",
+      "relatedScales": [
+        "dorian-mode",
+        "bebop-dominant",
+        "blues-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "bluesy",
+          "sophisticated",
+          "soulful"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "harmonic-major",
+      "name": "Harmonic Major",
+      "aliases": [
+        "Ionian ♭6",
+        "Major ♭6"
+      ],
+      "culture": "European",
+      "region": "Western Europe",
+      "tradition": "Classical Western / Jazz",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "♭6",
+        "7"
+      ],
+      "description": "The major scale with a lowered sixth degree, producing an augmented second between ♭6 and 7 — the same tense leap that characterises the harmonic minor, transplanted into a major key.\n\nRimsky-Korsakov catalogued it, and it appears wherever composers want major-key brightness shadowed by sudden darkness.",
+      "usage": "Late-Romantic classical harmony; jazz improvisation over maj7 chords with a ♭13.",
+      "characteristicPatterns": "The ♭6 → 7 augmented second gives the scale its bite. Yields a minor iv chord in a major key.",
+      "relatedScales": [
+        "harmonic-minor-scale",
+        "major-scale",
+        "double-harmonic-major"
+      ],
+      "characteristics": {
+        "mood": [
+          "dramatic",
+          "exotic",
+          "romantic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "hungarian-major",
+      "name": "Hungarian Major",
+      "aliases": [
+        "Lydian ♯2 ♭7"
+      ],
+      "culture": "Hungarian",
+      "region": "Eastern Europe",
+      "tradition": "Hungarian Folk / Classical",
+      "toneCount": 7,
+      "intervalFormula": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "1",
+        "♯2",
+        "3",
+        "♯4",
+        "5",
+        "6",
+        "♭7"
+      ],
+      "description": "A bright, angular scale opening with an augmented second from the root, then a raised fourth. Bartók drew it from Hungarian and Romanian folk material and used it extensively in his string quartets and piano works.\n\nDespite the name it shares little with the Hungarian minor beyond a taste for augmented seconds.",
+      "usage": "Hungarian and Romanian folk melody; Bartók and Kodály; modern jazz over dominant ♯9♯11 chords.",
+      "characteristicPatterns": "The opening root → ♯2 leap is immediately recognisable. Contains both a ♯4 and a ♭7, fitting altered dominant harmony.",
+      "relatedScales": [
+        "hungarian-minor",
+        "lydian-dominant",
+        "romani-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "exotic",
+          "energetic",
+          "dramatic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "insen",
+      "name": "Insen Scale",
+      "aliases": [
+        "In Sen",
+        "Insen-onkai"
+      ],
+      "culture": "Japanese",
+      "region": "East Asia",
+      "tradition": "Japanese Traditional",
+      "toneCount": 5,
+      "intervalFormula": [
+        1,
+        4,
+        2,
+        3,
+        2
+      ],
+      "degrees": [
+        "1",
+        "♭2",
+        "4",
+        "5",
+        "♭7"
+      ],
+      "description": "A five-note koto and shakuhachi scale built from the In tuning family, opening with a semitone and then leaping a major third. The wide gaps leave a great deal of space, which players fill with bends, slides and breath noise rather than extra notes.\n\nClosely related to the In scale but with a flattened seventh in place of the sixth, giving it a cooler, more austere colour.",
+      "usage": "Shakuhachi honkyoku, koto repertoire, and modern film scoring reaching for a Japanese idiom.",
+      "characteristicPatterns": "The opening semitone followed by a minor third leap defines it. Ornamentation between the wide intervals matters more than the notes themselves.",
+      "relatedScales": [
+        "pentatonic-in",
+        "hirajoshi",
+        "iwato"
+      ],
+      "characteristics": {
+        "mood": [
+          "contemplative",
+          "sparse",
+          "melancholic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "enigmatic-scale",
+      "name": "Enigmatic Scale",
+      "aliases": [
+        "Scala Enigmatica"
+      ],
+      "culture": "Italian",
+      "region": "Southern Europe",
+      "tradition": "Classical Western",
+      "toneCount": 7,
+      "intervalFormula": [
+        1,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "degrees": [
+        "1",
+        "♭2",
+        "3",
+        "♯4",
+        "♯5",
+        "♯6",
+        "7"
+      ],
+      "description": "Published as a puzzle in a Milanese journal in 1888 and set by Verdi as the basis of his Ave Maria, this scale mixes a Phrygian-flavoured opening with a whole-tone middle and a chromatic close.\n\nIt belongs to no conventional tonal system, which is precisely the point — Verdi treated it as a compositional challenge rather than a usable mode.",
+      "usage": "A curiosity of late-Romantic composition; occasionally borrowed by metal and progressive rock guitarists.",
+      "characteristicPatterns": "Asymmetric and deliberately unstable. The ♭2 against the natural 3 creates immediate harmonic ambiguity.",
+      "relatedScales": [
+        "whole-tone-scale",
+        "double-harmonic-major",
+        "neapolitan-major"
+      ],
+      "characteristics": {
+        "mood": [
+          "mysterious",
+          "ambiguous",
+          "tense"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "tritone-scale",
+      "name": "Tritone Scale",
+      "aliases": [
+        "Petrushka Scale",
+        "Two-Semitone Tritone Scale"
+      ],
+      "culture": "Russian",
+      "region": "Russia",
+      "tradition": "Classical Western",
+      "toneCount": 6,
+      "intervalFormula": [
+        1,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "degrees": [
+        "1",
+        "♭2",
+        "3",
+        "♭5",
+        "5",
+        "6"
+      ],
+      "description": "A symmetrical six-note scale repeating every tritone, formed by superimposing two major triads a tritone apart. Stravinsky used exactly this collection for the bitonal 'Petrushka chord', giving the scale its common nickname.\n\nThe result is harmonically bright but tonally unmoored — two clear major sonorities that refuse to resolve into one another.",
+      "usage": "20th-century classical bitonality; jazz over altered dominants; film scoring for unease.",
+      "characteristicPatterns": "Everything repeats at the tritone. Think of it as two major triads six semitones apart played as one collection.",
+      "relatedScales": [
+        "diminished-scale",
+        "whole-tone-scale",
+        "altered-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "tense",
+          "dramatic",
+          "mysterious"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": true,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "raga-charukesi",
+      "name": "Raga Charukesi",
+      "aliases": [
+        "Charukeshi"
+      ],
+      "culture": "Indian (Carnatic)",
+      "region": "South India",
+      "tradition": "Carnatic Classical",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "degrees": [
+        "S",
+        "R2",
+        "G3",
+        "M1",
+        "P",
+        "D1",
+        "N2"
+      ],
+      "description": "The 26th melakarta raga, combining a major-scale lower half with a minor-flavoured upper half. That split gives Charukesi its distinctive bittersweet quality — bright ascending, plaintive descending.\n\nIt has crossed readily into Hindustani music and film composition, where it is prized for evoking longing without despair.",
+      "usage": "Carnatic and Hindustani concert performance; widely used in Indian film music for reflective songs.",
+      "characteristicPatterns": "The komal dhaivat (♭6) against the natural third is the emotional core. Phrases often dwell on the ♭6 before descending.",
+      "relatedScales": [
+        "harmonic-major",
+        "shankarabharanam",
+        "raga-kafi"
+      ],
+      "characteristics": {
+        "mood": [
+          "melancholic",
+          "devotional",
+          "romantic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "raga-kirwani",
+      "name": "Raga Kirwani",
+      "aliases": [
+        "Keeravani",
+        "Kirvani"
+      ],
+      "culture": "Indian (Carnatic)",
+      "region": "South India",
+      "tradition": "Carnatic Classical",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "degrees": [
+        "S",
+        "R2",
+        "G2",
+        "M1",
+        "P",
+        "D1",
+        "N3"
+      ],
+      "description": "The 21st melakarta, identical in interval content to the Western harmonic minor. Kirwani is among the most widely performed ragas in both Carnatic and Hindustani traditions and has become a favourite meeting point for Indian and Western musicians.\n\nThe augmented second between ♭6 and 7 gives it the same yearning pull heard in harmonic minor, but the phrasing and ornamentation are entirely Indian.",
+      "usage": "Carnatic concert raga, Hindustani light classical, film music, and Indo-jazz fusion.",
+      "characteristicPatterns": "The ♭6 → ♮7 leap is approached with a slow gamaka rather than played plainly. Strong emphasis on Pa (fifth).",
+      "relatedScales": [
+        "harmonic-minor-scale",
+        "bhairavi",
+        "hungarian-minor"
+      ],
+      "characteristics": {
+        "mood": [
+          "devotional",
+          "romantic",
+          "evening"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "raga-vachaspati",
+      "name": "Raga Vachaspati",
+      "aliases": [
+        "Vachaspathi"
+      ],
+      "culture": "Indian (Carnatic)",
+      "region": "South India",
+      "tradition": "Carnatic Classical",
+      "toneCount": 7,
+      "intervalFormula": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "degrees": [
+        "S",
+        "R2",
+        "G3",
+        "M2",
+        "P",
+        "D2",
+        "N2"
+      ],
+      "description": "The 64th melakarta, matching the Western Lydian dominant (acoustic scale) note for note. Its raised fourth and lowered seventh give it a floating, luminous quality that sits between major and dominant.\n\nBecause it mirrors the fourth mode of melodic minor, it has become a natural bridge raga for jazz musicians exploring Carnatic material.",
+      "usage": "Carnatic performance; jazz improvisation over dominant 7♯11 chords.",
+      "characteristicPatterns": "The prati madhyama (♯4) with a komal nishada (♭7) is the signature pairing. Ascending phrases often highlight the ♯4.",
+      "relatedScales": [
+        "lydian-dominant",
+        "melodic-minor-scale",
+        "kalyani"
+      ],
+      "characteristics": {
+        "mood": [
+          "bright",
+          "energetic",
+          "exotic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "raga-marwa",
+      "name": "Raga Marwa",
+      "aliases": [
+        "Marva"
+      ],
+      "culture": "Indian (Hindustani)",
+      "region": "North India",
+      "tradition": "Hindustani Classical",
+      "toneCount": 6,
+      "intervalFormula": [
+        1,
+        3,
+        2,
+        3,
+        2,
+        1
+      ],
+      "degrees": [
+        "S",
+        "r",
+        "G",
+        "M2",
+        "D",
+        "N"
+      ],
+      "description": "A sunset raga of the Marwa thaat, famous for omitting the fifth entirely and dwelling instead on the flattened second and raised fourth. The missing Pa removes the usual harmonic anchor, producing a hovering, restless quality unlike any other raga.\n\nPerformers often treat the komal rishabh as a temporary tonic, deliberately obscuring where the true Sa lies.",
+      "usage": "Hindustani classical performance at dusk; a cornerstone raga of the Marwa thaat.",
+      "characteristicPatterns": "The absent fifth is the defining feature. Phrases centre on komal Re and natural Dha, avoiding resolution to Sa until the very end.",
+      "relatedScales": [
+        "bhairav",
+        "raga-hamsadhwani",
+        "lydian-mode"
+      ],
+      "characteristics": {
+        "mood": [
+          "contemplative",
+          "mysterious",
+          "evening"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "maqam-kurd",
+      "name": "Maqam Kurd",
+      "aliases": [
+        "Kurd",
+        "Kurdi"
+      ],
+      "culture": "Arabic",
+      "region": "Middle East",
+      "tradition": "Arabic Maqam",
+      "toneCount": 7,
+      "intervalFormula": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "degrees": [
+        "1",
+        "♭2",
+        "♭3",
+        "4",
+        "5",
+        "♭6",
+        "♭7"
+      ],
+      "description": "Built on the Kurd tetrachord — a semitone followed by two whole tones — this maqam matches the Western Phrygian mode. It is one of the few principal maqamat using no quarter tones, which has made it a common entry point for non-Arab musicians.\n\nWidespread across Arabic, Turkish and Kurdish repertoire, it carries a plain, folk-rooted melancholy rather than ornate classicism.",
+      "usage": "Arabic and Turkish classical and folk music; widely used in contemporary Arabic pop.",
+      "characteristicPatterns": "The opening semitone from tonic to ♭2 is the identity of the maqam. No quarter tones, so it transfers directly to fretted instruments.",
+      "relatedScales": [
+        "phrygian-mode",
+        "maqam-bayati",
+        "maqam-nahawand"
+      ],
+      "characteristics": {
+        "mood": [
+          "melancholic",
+          "folk",
+          "contemplative"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "messiaen-mode-3",
+      "name": "Messiaen Mode 3",
+      "aliases": [
+        "Third Mode of Limited Transposition",
+        "Nonatonic Symmetrical"
+      ],
+      "culture": "French",
+      "region": "Western Europe",
+      "tradition": "Classical Western",
+      "toneCount": 9,
+      "intervalFormula": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "♭3",
+        "3",
+        "♯4",
+        "5",
+        "♭6",
+        "6",
+        "7"
+      ],
+      "description": "Nine notes divided into three identical four-semitone cells, giving only four distinct transpositions. Messiaen catalogued it among his modes of limited transposition and used it throughout his organ and orchestral works.\n\nWith nine of the twelve chromatic notes available, it is less a scale than a controlled harmonic field — dense enough to sound almost chromatic while retaining strict internal symmetry.",
+      "usage": "Messiaen and later 20th-century classical composition; occasionally used in film and game scoring for otherworldly colour.",
+      "characteristicPatterns": "Repeats every major third. Each cell is tone–semitone–semitone, so any figure transposes up 4 semitones unchanged.",
+      "relatedScales": [
+        "whole-tone-scale",
+        "diminished-scale",
+        "augmented-scale"
+      ],
+      "characteristics": {
+        "mood": [
+          "mysterious",
+          "dreamlike",
+          "sophisticated"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": true,
+        "hasAugmentedInterval": false
+      }
+    },
+    {
+      "id": "istrian-scale",
+      "name": "Istrian Scale",
+      "aliases": [
+        "Istarska Ljestvica"
+      ],
+      "culture": "Croatian",
+      "region": "Eastern Europe",
+      "tradition": "Croatian Folk",
+      "toneCount": 5,
+      "intervalFormula": [
+        1,
+        2,
+        1,
+        2,
+        6
+      ],
+      "degrees": [
+        "1",
+        "♭2",
+        "♭3",
+        "♭4",
+        "♭5"
+      ],
+      "description": "The basis of the two-part Istrian singing of coastal Croatia, recognised by UNESCO as intangible cultural heritage. Its narrow, compressed intervals sound sharply out of tune to ears trained on equal temperament — which is precisely its character.\n\nThe true tuning lies between the notes of the chromatic scale; the formula here is the closest twelve-tone approximation.",
+      "usage": "Istrian and Kvarner folk singing, sopile (double-reed) music of coastal Croatia.",
+      "characteristicPatterns": "Sung in parallel intervals by two voices that converge on a unison at cadences. The tuning is deliberately non-tempered.",
+      "relatedScales": [
+        "pelog",
+        "blues-scale",
+        "pentatonic-in"
+      ],
+      "characteristics": {
+        "mood": [
+          "folk",
+          "exotic",
+          "dramatic"
+        ],
+        "hasTritone": true,
+        "isAnhemitonic": false,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
+    },
+    {
+      "id": "man-gong",
+      "name": "Man Gong",
+      "aliases": [
+        "Mangong",
+        "Chinese Pentatonic Mode"
+      ],
+      "culture": "Chinese",
+      "region": "East Asia",
+      "tradition": "Chinese Traditional",
+      "toneCount": 5,
+      "intervalFormula": [
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "degrees": [
+        "1",
+        "♭3",
+        "4",
+        "♭6",
+        "♭7"
+      ],
+      "description": "One of the rotations of the Chinese pentatonic system, sometimes called the Man Gong mode. Its wide minor-third gaps give it a hollow, open character well suited to the guqin and other traditional string instruments.\n\nLike all Chinese pentatonic modes it contains no semitones, so no interval in it sounds dissonant — the expression comes from articulation and timbre rather than harmonic tension.",
+      "usage": "Guqin and guzheng repertoire; Chinese traditional and contemporary composition.",
+      "characteristicPatterns": "Anhemitonic throughout — no two adjacent notes are a semitone apart. Phrases exploit the wide leaps rather than filling them.",
+      "relatedScales": [
+        "chinese-gong",
+        "chinese-zhi",
+        "pentatonic-minor"
+      ],
+      "characteristics": {
+        "mood": [
+          "contemplative",
+          "sparse",
+          "melancholic"
+        ],
+        "hasTritone": false,
+        "isAnhemitonic": true,
+        "isSymmetric": false,
+        "hasAugmentedInterval": true
+      }
     }
   ]
 }
