@@ -256,3 +256,25 @@
   .chordName { font-size: 1.5rem; }
   .voicingCard { padding: 0.75rem; }
 }
+
+/* Grouped chord-type rows */
+.typeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.groupLabel {
+  flex: 0 0 6.5rem;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-top: 0.42rem;
+}
+
+@media (max-width: 560px) {
+  .typeRow { flex-direction: column; gap: 0.25rem; }
+  .groupLabel { flex: none; padding-top: 0; }
+}

@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react'
+import { Link } from 'react-router-dom'
 import ScaleCard from '../components/ScaleCard.jsx'
 import FilterPanel from '../components/FilterPanel.jsx'
 import { SearchIcon, SlidersIcon, CloseIcon } from '../components/icons.jsx'
@@ -86,12 +87,16 @@ export default function HomePage({ scales }) {
               {results.length} scale{results.length !== 1 ? 's' : ''}
               {query && ` matching "${query}"`}
             </span>
-            <button
-              className={`${styles.filterToggle} ${hasActiveFilters(filters) ? styles.filterToggleActive : ''}`}
-              onClick={() => setFilterOpen(o => !o)}
-            >
-              <SlidersIcon size={13} /> Filters{hasActiveFilters(filters) ? ' •' : ''}
-            </button>
+            <div className={styles.headerActions}>
+              <Link to="/map" className={styles.viewLink}>Map view</Link>
+              <Link to="/compare" className={styles.viewLink}>Compare</Link>
+              <button
+                className={`${styles.filterToggle} ${hasActiveFilters(filters) ? styles.filterToggleActive : ''}`}
+                onClick={() => setFilterOpen(o => !o)}
+              >
+                <SlidersIcon size={13} /> Filters{hasActiveFilters(filters) ? ' •' : ''}
+              </button>
+            </div>
           </div>
 
           {results.length === 0 ? (

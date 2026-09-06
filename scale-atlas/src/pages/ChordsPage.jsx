@@ -1,25 +1,24 @@
 import { useState, useMemo, useEffect } from 'react'
 import { TUNINGS } from '../data/tunings.js'
 import { findVoicings, voicingToMidi, CHORD_TYPES, NOTE_NAMES } from '../utils/chordUtils.js'
-import { playMidiNotes, stopAll } from '../utils/audioUtils.js'
+import { strumMidiNotes, stopAll } from '../utils/audioUtils.js'
 import ChordDiagram from '../components/visualizations/ChordDiagram.jsx'
 import styles from './ChordsPage.module.css'
 
-const STANDARD = {
-  id: 'standard',
-  name: 'Standard (EADGBE)',
-  midi: [40, 45, 50, 55, 59, 64],
-  strings: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
-  category: 'Standard',
-}
-const ALL_TUNINGS = [STANDARD, ...TUNINGS]
+const ALL_TUNINGS = TUNINGS
+const STANDARD = ALL_TUNINGS.find(t => t.id === 'standard') || ALL_TUNINGS[0]
+
+const CHORD_GROUPS = CHORD_TYPES.reduce((acc, c) => {
+  ;(acc[c.group] = acc[c.group] || []).push(c)
+  return acc
+}, {})
 
 const BY_CATEGORY = ALL_TUNINGS.reduce((acc, t) => {
   ;(acc[t.category] = acc[t.category] || []).push(t)
   return acc
 }, {})
 
-export default function ChordsPage() {
+export default function ChordsPage({ embedded = false }) {
   const [tuningId, setTuningId] = useState('standard')
   const [rootIdx, setRootIdx] = useState(0)
   const [chordTypeId, setChordTypeId] = useState('maj')
@@ -44,20 +43,22 @@ export default function ChordsPage() {
     if (voicings.length === 0) return
     const midiNotes = voicingToMidi(voicings[activeVoicing], tuning.midi)
     setPlaying(true)
-    await playMidiNotes(midiNotes)
+    await strumMidiNotes(midiNotes)
     setTimeout(() => setPlaying(false), 2000)
   }
 
   return (
-    <div className={styles.page}>
-      <div className="container">
+    <div className={embedded ? '' : styles.page}>
+      <div className={embedded ? '' : 'container'}>
 
-        <header className={styles.header}>
-          <div>
-            <h1 className={styles.title}>Chords</h1>
-            <p className={styles.subtitle}>Guitar chord shapes across tunings</p>
-          </div>
-        </header>
+        {!embedded && (
+          <header className={styles.header}>
+            <div>
+              <h1 className={styles.title}>Chords</h1>
+              <p className={styles.subtitle}>Guitar chord shapes across tunings</p>
+            </div>
+          </header>
+        )}
 
         <div className={styles.controls}>
           {/* Tuning */}
@@ -102,17 +103,22 @@ export default function ChordsPage() {
           {/* Chord type */}
           <div className={styles.controlGroup}>
             <label className={styles.controlLabel}>Type</label>
-            <div className={styles.typeGrid}>
-              {CHORD_TYPES.map(ct => (
-                <button
-                  key={ct.id}
-                  className={`${styles.typeBtn} ${ct.id === chordTypeId ? styles.typeBtnActive : ''}`}
-                  onClick={() => setChordTypeId(ct.id)}
-                >
-                  {ct.label}
-                </button>
-              ))}
-            </div>
+            {Object.entries(CHORD_GROUPS).map(([group, types]) => (
+              <div key={group} className={styles.typeRow}>
+                <span className={styles.groupLabel}>{group}</span>
+                <div className={styles.typeGrid}>
+                  {types.map(ct => (
+                    <button
+                      key={ct.id}
+                      className={`${styles.typeBtn} ${ct.id === chordTypeId ? styles.typeBtnActive : ''}`}
+                      onClick={() => setChordTypeId(ct.id)}
+                    >
+                      {ct.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -33,3 +33,17 @@
   color: var(--text);
   text-decoration: none;
 }
+
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.links a:hover { color: var(--accent); text-decoration: none; }

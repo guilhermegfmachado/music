@@ -2,16 +2,12 @@ import styles from './ChordDiagram.module.css'
 
 const NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
-const STR = 6
 const ROWS = 5
 const LEFT = 22
 const TOP = 24
 const SG = 14   // string gap
 const FG = 16   // fret gap
-const W = LEFT + SG * (STR - 1) + LEFT      // 108
-const H = TOP + FG * ROWS + 20              // 124
 
-const sx = i => LEFT + i * SG
 const fy = row => TOP + (row - 0.5) * FG   // vertical center of fret row
 
 /**
@@ -22,6 +18,11 @@ const fy = row => TOP + (row - 0.5) * FG   // vertical center of fret row
  * label:      optional chord name shown above
  */
 export default function ChordDiagram({ voicing, tuningMidi, rootSemitone, label }) {
+  const STR = voicing.length
+  const W = LEFT + SG * (STR - 1) + LEFT
+  const H = TOP + FG * ROWS + 20
+  const sx = i => LEFT + i * SG
+
   const frettedFrets = voicing.filter(f => f > 0)
   const minFretted = frettedFrets.length > 0 ? Math.min(...frettedFrets) : 0
   const isOpenPos = minFretted <= 1

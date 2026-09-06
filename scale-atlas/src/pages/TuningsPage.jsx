@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { TUNINGS, barreChordMap, diatonicRole } from '../data/tunings.js'
 import styles from './TuningsPage.module.css'
 
-const CATEGORIES = ['Open Major', 'Open Minor', 'Modal', 'Modified Standard', 'International', 'Alternative']
+const CATEGORIES = ['Standard', 'Modified Standard', 'Open Major', 'Open Minor', 'Modal', 'International', 'Alternative']
 
 function StringDisplay({ strings }) {
   return (
@@ -111,7 +111,7 @@ function RelatedScales({ scaleIds, scales }) {
   )
 }
 
-export default function TuningsPage({ scales }) {
+export default function TuningsPage({ scales, embedded = false }) {
   const [selected, setSelected] = useState(TUNINGS[0].id)
   const tuning = TUNINGS.find(t => t.id === selected)
 
@@ -121,12 +121,14 @@ export default function TuningsPage({ scales }) {
   })).filter(g => g.tunings.length > 0)
 
   return (
-    <div className={styles.page}>
-      <div className="container">
-        <div className={styles.header}>
-          <h1 className={styles.title}>Guitar Tunings Guide</h1>
-          <p className={styles.subtitle}>Open, modal, international, and alternative tunings — chord positions, shapes, and scales to explore in each one.</p>
-        </div>
+    <div className={embedded ? '' : styles.page}>
+      <div className={embedded ? '' : 'container'}>
+        {!embedded && (
+          <div className={styles.header}>
+            <h1 className={styles.title}>Guitar Tunings Guide</h1>
+            <p className={styles.subtitle}>Open, modal, international, and alternative tunings — chord positions, shapes, and scales to explore in each one.</p>
+          </div>
+        )}
 
         <div className={styles.layout}>
           {/* Sidebar */}

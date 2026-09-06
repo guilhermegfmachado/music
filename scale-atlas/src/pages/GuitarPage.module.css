@@ -1,0 +1,56 @@
+.page {
+  padding: 2.5rem 0 4rem;
+  min-height: calc(100vh - 56px);
+}
+
+.header {
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.75rem;
+}
+
+.tab {
+  padding: 0.55rem 1.1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.tab:hover { color: var(--text); }
+
+.tabActive {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .title { font-size: 1.75rem; }
+  .tab { padding: 0.5rem 0.8rem; font-size: 0.85rem; }
+}

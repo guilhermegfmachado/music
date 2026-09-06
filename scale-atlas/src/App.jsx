@@ -11,7 +11,7 @@ const PracticePage    = lazy(() => import('./pages/PracticePage.jsx'))
 const MapPage         = lazy(() => import('./pages/MapPage.jsx'))
 const TuningsPage     = lazy(() => import('./pages/TuningsPage.jsx'))
 const RhythmsPage     = lazy(() => import('./pages/RhythmsPage.jsx'))
-const ChordsPage      = lazy(() => import('./pages/ChordsPage.jsx'))
+const GuitarPage      = lazy(() => import('./pages/GuitarPage.jsx'))
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -36,9 +36,10 @@ export default function App() {
             <Route path="/compare" element={<ComparePage scales={scales} />} />
             <Route path="/practice" element={<PracticePage scales={scales} />} />
             <Route path="/map" element={<MapPage scales={scales} theme={theme} />} />
-            <Route path="/tunings" element={<TuningsPage scales={scales} />} />
+            <Route path="/guitar" element={<GuitarPage scales={scales} />} />
+            <Route path="/tunings" element={<GuitarPage scales={scales} defaultTab="tunings" />} />
             <Route path="/rhythms" element={<RhythmsPage scales={scales} />} />
-            <Route path="/chords" element={<ChordsPage />} />
+            <Route path="/chords" element={<GuitarPage scales={scales} />} />
           </Routes>
         </Suspense>
       </div>

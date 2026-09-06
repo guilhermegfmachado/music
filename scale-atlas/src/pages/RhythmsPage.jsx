@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import * as Tone from 'tone'
+import { ensureAudio } from '../utils/audioUtils.js'
 import styles from './RhythmsPage.module.css'
 
 // Time signature → beat groupings (array of accent weights: 2=strong, 1=weak, 0=off)
@@ -93,8 +94,8 @@ function Metronome({ pattern }) {
   const stepDur = getStepDuration(ts)
 
   const stopMetronome = useCallback(() => {
-    Tone.getTransport().stop()
-    Tone.getTransport().cancel()
+    // Dispose only this sequence. Stopping/cancelling the shared Transport
+    // would also kill scale playback scheduled by audioUtils.
     if (seqRef.current) { seqRef.current.dispose(); seqRef.current = null }
     playingRef.current = false
     setPlaying(false)
@@ -102,7 +103,7 @@ function Metronome({ pattern }) {
   }, [])
 
   const startMetronome = useCallback(async () => {
-    await Tone.start()
+    await ensureAudio()
     stopMetronome()
     const { accentSynth, clickSynth } = getOrCreateSynths()
     Tone.getTransport().bpm.value = bpm
@@ -116,8 +117,8 @@ function Metronome({ pattern }) {
       }, time)
     }, Array.from({ length: steps.length }, (_, idx) => idx), stepDur)
 
-    seqRef.current.start(0)
-    Tone.getTransport().start()
+    seqRef.current.start(Tone.getTransport().seconds)
+    if (Tone.getTransport().state !== 'started') Tone.getTransport().start()
     playingRef.current = true
     setPlaying(true)
   }, [bpm, steps, stepDur, stopMetronome])
